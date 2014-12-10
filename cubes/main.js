@@ -36,7 +36,6 @@ function game(){
   render();
 }
 function update(){
-collision();  
 if(keys[38]){
   player.y -= speed;
 }
@@ -72,7 +71,7 @@ function render(){
     player.x = 0;
   }
 }
-
+/*
 function process(){
   score +=1;
   enemy.x = Math.floor(Math.random()*50);
@@ -87,6 +86,7 @@ function collision(first, second){
     process();
   };
 }
+*/
 
 setInterval(function(){
   game();

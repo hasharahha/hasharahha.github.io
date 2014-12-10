@@ -8,8 +8,8 @@ var player ={
   height: 20
 }
 var enemy ={
-  x: Math.random()*(500-20),
-  y: Math.random()*(400-20),
+  x: Math.random()*50,
+  y: Math.random()*50,
   width: 20,
   height: 20
 }

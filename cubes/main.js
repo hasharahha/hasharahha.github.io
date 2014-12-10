@@ -43,8 +43,8 @@ function render(){
   if(player.y <0){
     player.y = 0;
   }
-  else if(player.y > 380){
-    player.y = 380;
+  else if(player.x <0){
+    player.x = 0;
   }
 }
 

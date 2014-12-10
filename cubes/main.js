@@ -82,7 +82,6 @@ function AttackPlayer(){
 }
 }
 function render(){
-  ai();
   ctx.fillStyle ="blue"
   ctx.fillRect(player.x, player.y, player.width, player.height);
   ctx.fillStyle ="green";
@@ -118,18 +117,13 @@ function Respawn(){
 
 function collision(first, second){
   return !(first.x > second.x + second.width||
-  first.x < second.x + second.width||
+  first.x < second.x + second.width ||
   first.y > second.y + second.height||
-  first.y < second.y + second.height)
+  first.y < second.y + second.height);
   
   
 }
 
-function ai(){
-  if(player.x > enemy.x + enemy.width){
-    enemy.x +=2;
-  }
-}
 
 setInterval(function(){
   game();

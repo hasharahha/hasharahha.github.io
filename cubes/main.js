@@ -43,6 +43,9 @@ function render(){
   if(player.y <0){
     player.y = 0;
   }
+  else if(player.y > 380){
+    player.y = 380;
+  }
 }
 
 setInterval(function(){

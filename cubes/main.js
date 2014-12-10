@@ -15,8 +15,8 @@ var enemy ={
 }
 
 var bomb ={
-  x: 50,
-  y: 50,
+  x: 100,
+  y: 100,
   width: 10,
   height: 10,
 };

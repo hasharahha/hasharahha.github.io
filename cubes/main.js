@@ -39,12 +39,10 @@ else if(keys[37]){
   player.x -= speed;
 }
 else if(keys[32]){
-  bomb.x = player.x;
-  bomb.y = player.y;
+
 }
 }
 function render(){
-  bomb();
   ctx.fillRect(player.x, player.y, player.width, player.height);
   if(player.y <0){
     player.y = 0;
@@ -53,11 +51,7 @@ function render(){
     player.x = 0;
   }
 }
-function bomb(){
-if(bomb.x&&bomb.y){
-  ctx.fillRect(bomb.x, bomb.y, 10, 10);
-}  
-}
+
 
 setInterval(function(){
   game();

@@ -109,8 +109,8 @@ function render(){
 
 function process(){
   score.points +=1;
-  enemy.x = Math.floor(Math.random()*150);
-  enemy.y = Math.floor(Math.random()*100);
+  enemy.x = Math.floor(Math.random()*300);
+  enemy.y = Math.floor(Math.random()*125);
 }
 function Respawn(){
   score.points -= 10;

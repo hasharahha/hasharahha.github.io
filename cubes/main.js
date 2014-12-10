@@ -8,7 +8,11 @@ var player ={
   height: 20
 }
 var bomb ={};
-
+var score ={
+  points: 0,
+  health: 3,
+  bombs: 0
+}
 var keys =[];
 
 window.addEventListener("keydown", function(e){
@@ -44,6 +48,14 @@ alert("You have 0 cubes");
 }
 function render(){
   ctx.fillRect(player.x, player.y, player.width, player.height);
+  
+  ctx.font ="bold 25px helvetica";
+  ctx.fillStyle ="red";
+  ctx.fillText("Health: "+score.health, 20, 20);
+  ctx.fillStyle ="black";
+  ctx.fillText("Score: "+score.points, 20, 25);
+  ctx.fillText("Bombs: "+score.bombs, 20, 30);
+  
   if(player.y <0){
     player.y = 0;
   }
@@ -52,6 +64,9 @@ function render(){
   }
 }
 
+function process(){
+  
+}
 
 setInterval(function(){
   game();

@@ -36,7 +36,9 @@ function game(){
   render();
 }
 function update(){
-  collision(player, enemy);
+  if(collision(player, enemy)){
+    process();
+  };
 if(keys[38]){
   player.y -= speed;
 }
@@ -80,12 +82,12 @@ function process(){
 }
 
 function collision(first, second){
-  if(first.x > second.x + second.width||
+  return !(first.x > second.x + second.width||
   first.x + first.width < second.width||
   first.y > second.y + second.height||
-  first.y + first.width < second.height){
-    process();
-  }
+  first.y + first.width < second.height)
+  
+  
 }
 
 

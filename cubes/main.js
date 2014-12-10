@@ -22,7 +22,7 @@ var bomb ={
 };
 var score ={
   points: 0,
-  health: 500,
+  health: 10,
   bombs: 1
 }
 var keys =[];
@@ -48,8 +48,7 @@ function update(){
     process();
   }
   if(collision(enemy, player)){
-    AttackPlayer();
-    process();
+    Respawn();
   }
   if(score.health < 1){
     document.getElementById("Game").style.display='none';
@@ -108,6 +107,12 @@ function process(){
   score.points +=1;
   enemy.x = Math.floor(Math.random()*150);
   enemy.y = Math.floor(Math.random()*100);
+}
+function Respawn(){
+  score.points -= 10;
+  player.x = Math.floor(Math.random()*125);
+  player.y = Math.floor(Math.random()*115);
+  health -=1;
 }
 
 function collision(first, second){

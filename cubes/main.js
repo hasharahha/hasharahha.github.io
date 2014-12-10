@@ -36,7 +36,7 @@ function game(){
   render();
 }
 function update(){
-  collision();
+  collision(player, enemy);
 if(keys[38]){
   player.y -= speed;
 }

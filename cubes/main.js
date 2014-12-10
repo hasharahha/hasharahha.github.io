@@ -129,6 +129,11 @@ function collision(first, second){
 }
 function countdown(){
   score.time -=1;
+  if(score.time < 1){
+    score.time=0;
+    alert("Game over")
+    window.location ='http://hasharahha.github.io/cubes/index.html';
+  }
 }
 
 setInterval(function(){

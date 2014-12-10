@@ -15,8 +15,8 @@ var enemy ={
 }
 
 var destroyer ={
-  x: 300,
-  y: 300,
+  x: 241,
+  y: 272,
   width: 5,
   height: 5
 }

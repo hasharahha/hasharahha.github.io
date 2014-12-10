@@ -82,6 +82,7 @@ function AttackPlayer(){
 }
 }
 function render(){
+  ai();
   ctx.fillStyle ="blue"
   ctx.fillRect(player.x, player.y, player.width, player.height);
   ctx.fillStyle ="green";
@@ -124,6 +125,11 @@ function collision(first, second){
   
 }
 
+function ai(){
+  if(player.x > enemy.x + enemy.width){
+    enemy.x +=2;
+  }
+}
 
 setInterval(function(){
   game();

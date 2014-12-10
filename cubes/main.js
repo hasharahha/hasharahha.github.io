@@ -130,7 +130,7 @@ function render(){
   ctx.fillStyle ="black";
   ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height)
   ctx.fillStyle ="yellow";
-  ctx.fillRect(destroyer.x, destroyer.y, destroyer.width, destroyer.y)
+  ctx.fillRect(destroyer.x, destroyer.y, destroyer.width, destroyer.height)
   ctx.font ="bold 16px helvetica";
   ctx.fillStyle ="red";
   ctx.fillText("Health: "+score.health, 20, 20);

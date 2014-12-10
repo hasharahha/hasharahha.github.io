@@ -5,7 +5,7 @@ var player ={
   x: 40,
   y: 30,
   width: 20,
-  height: 20
+  height: 10
 }
 var enemy ={
   x: Math.random()*150,

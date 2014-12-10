@@ -75,6 +75,19 @@ bomb.y = player.y+15
 Explode();
 score.bombs ==0;
 }
+if(keys[65]){
+  bomb.x -=1;
+}
+if(keys[68]){
+bomb.x +=1;  
+}
+if(keys[83]){
+  bomb.y -=1;
+}
+if(keys[87]){
+  bomb.y +=1;
+}
+
 function Explode(){
   
 }

@@ -82,6 +82,20 @@ function AttackPlayer(){
   score.health -=1;
 }
 }
+//Jb
+function Move(){
+var rnd = Math.floor(Math.random()*1000);  
+if(rnd==250){
+enemy.y -=2;
+enemy.x -=1;
+}
+if(rnd==500){
+  enemy.x -=1;
+}
+if(rnd==750){
+  enemy.x +=1;
+}
+//JB
 function render(){
   Move();
   ctx.fillStyle ="blue"
@@ -147,17 +161,6 @@ setInterval(function(){
 
 //Movement for enemy , sort of an ametur but i'll make it work
 
-function Move(){
-var rnd = Math.floor(Math.random()*1000);  
-if(rnd==250){
-enemy.y -=2;
-enemy.x -=1;
-}
-if(rnd==500){
-  enemy.x -=1;
-}
-if(rnd==750){
-  enemy.x +=1;
-}
 
-}
+
+

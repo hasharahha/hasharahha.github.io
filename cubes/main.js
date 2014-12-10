@@ -49,12 +49,12 @@ alert("You have 0 cubes");
 function render(){
   ctx.fillRect(player.x, player.y, player.width, player.height);
   
-  ctx.font ="bold 25px helvetica";
+  ctx.font ="bold 16px helvetica";
   ctx.fillStyle ="red";
   ctx.fillText("Health: "+score.health, 20, 20);
   ctx.fillStyle ="black";
-  ctx.fillText("Score: "+score.points, 20, 25);
-  ctx.fillText("Bombs: "+score.bombs, 20, 30);
+  ctx.fillText("Score: "+score.points, 20, 35);
+  ctx.fillText("Bombs: "+score.bombs, 20, 50);
   
   if(player.y <0){
     player.y = 0;

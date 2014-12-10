@@ -27,7 +27,7 @@ function update(){
 if(keys[38]){
   player.y -= speed;
 }
-if(keys[40]){
+else if(keys[40]){
   player.y += speed;
 }
 }

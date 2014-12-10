@@ -14,7 +14,12 @@ var enemy ={
   height: 20
 }
 
-var bomb ={};
+var bomb ={
+  x: 1000,
+  y: 1000,
+  width: 10,
+  height: 10,
+};
 var score ={
   points: 0,
   health: 3,
@@ -52,7 +57,12 @@ else if(keys[37]){
   player.x -= speed;
 }
 else if(keys[32]){
-alert("You have 0 cubes");
+bomb.x = player.x
+bomb.y = player.y
+Explode();
+}
+function Explode(){
+  
 }
 }
 function render(){
@@ -60,6 +70,8 @@ function render(){
   ctx.fillRect(player.x, player.y, player.width, player.height);
   ctx.fillStyle ="green";
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
+  ctx.fillStyle ="black";
+  ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height);
   ctx.font ="bold 16px helvetica";
   ctx.fillStyle ="red";
   ctx.fillText("Health: "+score.health, 20, 20);

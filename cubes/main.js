@@ -1,3 +1,4 @@
+alert("Made by Jacob")
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var speed = 3;

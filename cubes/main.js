@@ -83,6 +83,7 @@ function AttackPlayer(){
 }
 }
 //Jb
+
 function Move(){
 var rnd = Math.floor(Math.random()*1000);  
 if(rnd==250){
@@ -95,9 +96,9 @@ if(rnd==500){
 if(rnd==750){
   enemy.x +=1;
 }
+}
 //JB
 function render(){
-  Move();
   ctx.fillStyle ="blue"
   ctx.fillRect(player.x, player.y, player.width, player.height);
   ctx.fillStyle ="green";

@@ -64,7 +64,7 @@ else if(keys[37]){
 }
 else if(keys[32]){
 bomb.x = player.x 
-bomb.y = player.y+10
+bomb.y = player.y+15
 Explode();
 score.bombs ==0;
 }

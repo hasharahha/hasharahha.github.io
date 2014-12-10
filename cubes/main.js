@@ -14,6 +14,13 @@ var enemy ={
   height: 20,
 }
 
+var destroyer ={
+  x: 300,
+  y: 300,
+  width: 5,
+  height: 5
+}
+
 var bomb ={
   x: 100,
   y: 100,
@@ -50,6 +57,9 @@ function update(){
   }
   if(collision(enemy, player)){
     
+  }
+  if(collision(destroyer, player)){
+    AttackPlayer();
   }
   if(score.health < 1){
     document.getElementById("Game").style.display='none';
@@ -118,7 +128,9 @@ function render(){
   ctx.fillStyle ="green";
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   ctx.fillStyle ="black";
-  ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height);
+  ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height)
+  ctx.fillStyle ="yellow";
+  ctx.fillRect(destroyer.x, destroyer.y, destroyer.width, destroyer.y)
   ctx.font ="bold 16px helvetica";
   ctx.fillStyle ="red";
   ctx.fillText("Health: "+score.health, 20, 20);
@@ -128,7 +140,9 @@ function render(){
   ctx.fillText("Time-left:"+ score.time, 20, 65);
   ctx.font ="bold 12px helvetica";
   ctx.fillText("Made by Jacob Bondley", 20, 80);
-  
+  setTimeout(function(){
+    destroyer.x -=1;
+  }, 1500);
   if(player.y <0){
     player.y = 0;
   }

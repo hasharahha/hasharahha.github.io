@@ -23,7 +23,7 @@ var bomb ={
 var score ={
   points: 0,
   health: 3,
-  bombs: 0
+  bombs: 1
 }
 var keys =[];
 
@@ -44,6 +44,9 @@ function update(){
   if(collision(player, enemy)){
     process();
   };
+  if(collision(enemy, bomb)){
+    process();
+  }
 if(keys[38]){
   player.y -= speed;
 }
@@ -60,6 +63,7 @@ else if(keys[32]){
 bomb.x = player.x
 bomb.y = player.y
 Explode();
+score.bombs ==0;
 }
 function Explode(){
   

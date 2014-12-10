@@ -15,8 +15,8 @@ var enemy ={
 }
 
 var bomb ={
-  x: 1000,
-  y: 1000,
+  x: 50,
+  y: 50,
   width: 10,
   height: 10,
 };
@@ -47,6 +47,13 @@ function update(){
   if(collision(enemy, bomb)){
     process();
   }
+  if(collision(player, bomb)){
+    AttackPlayer();
+  }
+  if(score.health < 1){
+    alert("You lose");
+    window.location ='http://hasharahha.github.io/cubes/index.html';
+  }
 if(keys[38]){
   player.y -= speed;
 }
@@ -60,13 +67,16 @@ else if(keys[37]){
   player.x -= speed;
 }
 else if(keys[32]){
-bomb.x = player.x
-bomb.y = player.y
+bomb.x = player.x 
+bomb.y = player.y+10
 Explode();
 score.bombs ==0;
 }
 function Explode(){
   
+}
+function AttackPlayer(){
+  score.health -=1;
 }
 }
 function render(){

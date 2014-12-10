@@ -30,6 +30,9 @@ if(keys[38]){
 else if(keys[40]){
   player.y += speed;
 }
+else if(keys[39]){
+  player.x -= speed;
+}
 }
 function render(){
   ctx.fillRect(player.x, player.y, player.width, player.height);

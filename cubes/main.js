@@ -11,7 +11,8 @@ var enemy ={
   x: Math.random()*150,
   y: Math.random()*100,
   width: 20,
-  height: 20
+  height: 20,
+  moved: 0
 }
 
 var bomb ={
@@ -83,6 +84,7 @@ function AttackPlayer(){
 }
 }
 function render(){
+  Move();
   ctx.fillStyle ="blue"
   ctx.fillRect(player.x, player.y, player.width, player.height);
   ctx.fillStyle ="green";
@@ -143,3 +145,21 @@ setInterval(function(){
 setInterval(function(){
   countdown();
 }, 1500)
+
+//Movement for enemy , sort of an ametur but i'll make it work
+
+function Move(){
+var rnd = Math.floor(Math.random()*1000);  
+if(rnd===250&&enemy.moved===0){
+  enemy.moved +=1;
+enemy.y -=2;
+enemy.x -=1;
+}
+if(rnd===500){
+  enemy.x -=1;
+}
+if(rnd===750){
+  enemy.x +=1;
+}
+
+}

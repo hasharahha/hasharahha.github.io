@@ -22,7 +22,7 @@ var bomb ={
 };
 var score ={
   points: 0,
-  health: 3,
+  health: 500,
   bombs: 1
 }
 var keys =[];
@@ -49,6 +49,13 @@ function update(){
   }
   if(collision(enemy, player)){
     AttackPlayer();
+    process();
+  }
+  if(score.health < 1){
+    document.getElementById("Game").style.display='none';
+    var msg = document.createElement('h1');
+    msg.setAttribute("innerHTML", "You lose");
+    document.body.appendChild(msg);
   }
 if(keys[38]){
   player.y -= speed;

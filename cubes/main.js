@@ -7,6 +7,13 @@ var player ={
   width: 20,
   height: 20
 }
+var enemy ={
+  x: Math.random()*(500-20),
+  y: Math.random()*(400-20),
+  width: 20,
+  height: 20
+}
+
 var bomb ={};
 var score ={
   points: 0,
@@ -47,8 +54,10 @@ alert("You have 0 cubes");
 }
 }
 function render(){
+  ctx.fillStyle ="blue"
   ctx.fillRect(player.x, player.y, player.width, player.height);
-  
+  ctx.fillStyle ="green";
+  ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   ctx.font ="bold 16px helvetica";
   ctx.fillStyle ="red";
   ctx.fillText("Health: "+score.health, 20, 20);

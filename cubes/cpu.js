@@ -6,13 +6,15 @@ AI();
 }, 1000)
 
 function Move(){
-if(rnd ==="34"){
+if(move ==="34"){
   enemy.y -=1;
 }
-else if(enemy.y ==="300"){
+else if(move ==="300"){
   enemy.x +=1;
 }
-else if()
+else if(move ==="250"){
+  enemy.y -=2;
+}
 
 }
 

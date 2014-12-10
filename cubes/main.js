@@ -76,7 +76,7 @@ function render(){
 }
 
 function process(){
-  score +=1;
+  score.points +=1;
   enemy.x = Math.floor(Math.random()*50);
   enemy.y = Math.floor(Math.random()*50);
 }

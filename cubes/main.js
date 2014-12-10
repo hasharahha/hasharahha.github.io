@@ -26,7 +26,10 @@ function game(){
 function update(){
 if(keys[38]){
   player.y -= speed;
-}  
+}
+if(keys[40]){
+  player.y += speed;
+}
 }
 function render(){
   ctx.fillRect(player.x, player.y, player.width, player.height);

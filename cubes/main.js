@@ -12,7 +12,6 @@ var enemy ={
   y: Math.random()*100,
   width: 20,
   height: 20,
-  moved: 0
 }
 
 var bomb ={
@@ -150,15 +149,14 @@ setInterval(function(){
 
 function Move(){
 var rnd = Math.floor(Math.random()*1000);  
-if(rnd===250&&enemy.moved===0){
-  enemy.moved +=1;
+if(rnd==250){
 enemy.y -=2;
 enemy.x -=1;
 }
-if(rnd===500){
+if(rnd==500){
   enemy.x -=1;
 }
-if(rnd===750){
+if(rnd==750){
   enemy.x +=1;
 }
 

@@ -19,6 +19,7 @@ window.addEventListener("keyup", function(e){
 
 
 function game(){
+  ctx.clearRect(0, 0, 400, 500);
   update();
   render();
 }

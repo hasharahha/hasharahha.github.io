@@ -1,4 +1,11 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 
-ctx.fillRect(10, 10, 20, 20);
+var keys =[];
+
+window.addEventListener("keydown", function(e){
+  keys[e.keyCode] = true;
+})
+window.addEventListener("keyup", function(e){
+  keys[e.keyCode] = false;
+})

@@ -31,6 +31,9 @@ else if(keys[40]){
   player.y += speed;
 }
 else if(keys[39]){
+  player.x += speed;
+}
+else if(keys[37]){
   player.x -= speed;
 }
 }

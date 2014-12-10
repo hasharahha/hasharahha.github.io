@@ -60,16 +60,16 @@ function update(){
 if(keys[38]){
   player.y -= speed;
 }
-else if(keys[40]){
+if(keys[40]){
   player.y += speed;
 }
-else if(keys[39]){
+if(keys[39]){
   player.x += speed;
 }
-else if(keys[37]){
+if(keys[37]){
   player.x -= speed;
 }
-else if(keys[32]){
+if(keys[32]){
 bomb.x = player.x 
 bomb.y = player.y+15
 Explode();

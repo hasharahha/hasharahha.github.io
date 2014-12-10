@@ -55,4 +55,4 @@ function render(){
 
 setInterval(function(){
   game();
-}, 1000/60)
+}, 1000/30)

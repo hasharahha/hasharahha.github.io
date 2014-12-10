@@ -48,7 +48,7 @@ function update(){
     process();
   }
   if(collision(enemy, player)){
-    Respawn();
+    setTimeout("Respawn()", 2000);
   }
   if(score.health < 1){
     document.getElementById("Game").style.display='none';

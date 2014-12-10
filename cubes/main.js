@@ -74,15 +74,15 @@ function render(){
 }
 
 function process(){
-  score ++;
-  enemy.x = Math.random()*50;
-  enemy.y = Math.random()*50;
+  score +=1;
+  enemy.x = Math.floor(Math.random()*50);
+  enemy.y = Math.floor(Math.random()*50);
 }
 
 function collision(first, second){
-  if(first.x > second.x + second.width ||
-  first.x + first.width < second.width ||
-  first.y > second.y + second.height ||
+  if(first.x > second.x + second.width||
+  first.x + first.width < second.width||
+  first.y > second.y + second.height||
   first.y + first.width < second.height){
     process();
   };

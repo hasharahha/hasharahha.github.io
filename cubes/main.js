@@ -50,10 +50,6 @@ function update(){
   if(collision(player, bomb)){
     AttackPlayer();
   }
-  if(score.health < 1){
-    alert("You lose");
-    window.location ='http://hasharahha.github.io/cubes/index.html';
-  }
 if(keys[38]){
   player.y -= speed;
 }

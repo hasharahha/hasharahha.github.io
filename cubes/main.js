@@ -8,7 +8,7 @@ var player ={
   height: 20
 }
 var enemy ={
-  x: Math.random()*100,
+  x: Math.random()*150,
   y: Math.random()*100,
   width: 20,
   height: 20
@@ -77,7 +77,7 @@ function render(){
 
 function process(){
   score.points +=1;
-  enemy.x = Math.floor(Math.random()*100);
+  enemy.x = Math.floor(Math.random()*150);
   enemy.y = Math.floor(Math.random()*100);
 }
 

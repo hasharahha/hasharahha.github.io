@@ -94,6 +94,7 @@ function render(){
   ctx.fillStyle ="black";
   ctx.fillText("Score: "+score.points, 20, 35);
   ctx.fillText("Bombs: "+score.bombs, 20, 50);
+  ctx.fillText("Made by Jacob Bondley", 20, 65);
   
   if(player.y <0){
     player.y = 0;

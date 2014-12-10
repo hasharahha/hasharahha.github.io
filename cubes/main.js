@@ -39,7 +39,7 @@ else if(keys[37]){
   player.x -= speed;
 }
 else if(keys[32]){
-
+alert("You have 0 cubes");
 }
 }
 function render(){

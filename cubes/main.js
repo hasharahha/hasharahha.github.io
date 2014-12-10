@@ -23,7 +23,8 @@ var bomb ={
 var score ={
   points: 0,
   health: 10,
-  bombs: 1
+  bombs: 1,
+  time: 150
 }
 var keys =[];
 
@@ -94,7 +95,9 @@ function render(){
   ctx.fillStyle ="black";
   ctx.fillText("Score: "+score.points, 20, 35);
   ctx.fillText("Bombs: "+score.bombs, 20, 50);
-  ctx.fillText("Made by Jacob Bondley", 20, 65);
+  ctx.fillText("Time-left:"+ score.time, 20, 65);
+  ctx.font ="bold 12px helvetica";
+  ctx.fillText("Made by Jacob Bondley", 20, 80);
   
   if(player.y <0){
     player.y = 0;
@@ -124,8 +127,14 @@ function collision(first, second){
   
   
 }
-
+function countdown(){
+  score.time -=1;
+}
 
 setInterval(function(){
   game();
 }, 1000/30)
+
+setInterval(function(){
+  countdown();
+}, 1500)

@@ -47,7 +47,7 @@ function update(){
   if(collision(enemy, bomb)){
     process();
   }
-  if(collision(player, bomb)){
+  if(collision(enemy, player)){
     AttackPlayer();
   }
 if(keys[38]){

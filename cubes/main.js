@@ -118,9 +118,9 @@ function Respawn(){
 
 function collision(first, second){
   return !(first.x > second.x + second.width||
-  first.x + first.width < second.width||
-  first.y > second.y + second.height||
-  first.y + first.width < second.height)
+  first.x + first.width < 10||
+  first.y > second.y + 10||
+  first.y + first.width < second.y + 10)
   
   
 }

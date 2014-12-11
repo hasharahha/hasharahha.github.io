@@ -27,8 +27,8 @@ var player2 ={
   weight: 1
 };
 var enemy1 ={
-  x: Math.floor(Math.random()*700),
-  y: Math.floor(Math.random()*400),
+  x: 70,
+  y: 70,
   height: 10,
   width: 10,
   color:"black",
@@ -66,6 +66,7 @@ function update(){
   }
   if(keys[87]&&player1.fuel > 1){
     player1.y -= player1.speed;
+    player1.fuel -=1;
   }
   if(keys[67]){
     player1.fuel +=1;
@@ -78,6 +79,7 @@ function update(){
   }
   if(keys[38]&&player2.fuel > 1){
     player2.y -= player2.speed;
+    player2.fuel -=1;
   }
   if(keys[191]){
     player2.fuel +=1;

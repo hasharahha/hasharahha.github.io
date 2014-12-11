@@ -15,7 +15,7 @@ var enemy ={
 }
 
 var destroyer ={
-  x: 70,
+  x: 200,
   y: 60,
   width: 5,
   height: 5
@@ -97,9 +97,6 @@ if(keys[83]){
 if(keys[87]){
   bomb.y -=1;
 }
-setTimout(function(){
-  destroyer.x =200;
-}, 4000);
 function Explode(){
   
 }

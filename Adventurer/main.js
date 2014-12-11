@@ -11,7 +11,7 @@ var player1 ={
   fuel: 6000,
   mode:"G"
   };
-  var player2 ={
+  var p2 ={
     x: 600,
     y: 40,
     height: 10,
@@ -41,7 +41,8 @@ var player1 ={
     ctx.fillStyle ="yellow";
     ctx.clearRect(1, 1, 1000, 500);
     ctx.fillRect(player1.x, player1.y, player1.width, player1.height);
-    ctx.fillRect(player2.x, player2.y, player2.width, player2.height);
+    ctx.fillStyle ="blue";
+    ctx.fillRect(p2.x, p2.y, p2.width, p2.height);
     ctx.fillStyle ="black"
     ctx.font ="bold 15px helvetica";
     ctx.fillText("Your Fuel: "+player1.fuel, 130, 19);
@@ -69,7 +70,7 @@ var player1 ={
 player1.y +=1;
   }
   if(player2.mode=="G"){
-    player2.y +=1;
+    p2.y +=1;
   }
   }
   function render(){

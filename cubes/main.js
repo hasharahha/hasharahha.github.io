@@ -130,14 +130,14 @@ function render(){
   ctx.fillRect(player.x, player.y, player.width, player.height);
   ctx.fillStyle ="green";
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
-  ctx.fillStyle ="black";
+  ctx.fillStyle ="lightblue";
   ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height)
   ctx.fillStyle ="yellow";
   ctx.fillRect(destroyer.x, destroyer.y, destroyer.width, destroyer.height)
   ctx.font ="bold 16px helvetica";
   ctx.fillStyle ="red";
   ctx.fillText("Health: "+score.health, 20, 20);
-  ctx.fillStyle ="black";
+  ctx.fillStyle ="white";
   ctx.fillText("Score: "+score.points, 20, 35);
   ctx.fillText("Bombs: "+score.bombs, 20, 50);
   ctx.fillText("Time-left:"+ score.time, 20, 65);

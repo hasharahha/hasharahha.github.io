@@ -11,7 +11,8 @@ var player ={
   };
   var cpu ={};
   var  tiles ={
-  block:
+  block:[10, 10, 30, 5],
+  block2:[15, 20, 30, 5]
   }
   
   var keys =[];
@@ -23,6 +24,7 @@ var player ={
     keys[e.keyCode] = false;
   })
   cpu.loadLevel = function(){
+    ctx.fillRect(tiles.block[1], tiles.block[2], tiles.block[3], tiles.block[4]);
   }
   cpu.update =function(){
     

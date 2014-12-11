@@ -118,7 +118,7 @@ function render(){
   ctx.fillRect(player2.x, player2.y, player2.width, player2.height);
   ctx.fillStyle = enemy1.color;
   ctx.fillRect(enemy1.x, enemy1.y, enemy1.width, enemy1.height);
-  ctx.fillStyle ="lightblue";
+  ctx.fillStyle ="green";
   ctx.font ="bold 16px helvetica";
   //Scores
   ctx.fillText("Player 1 Score: "+player1.score, 20, 20);
@@ -131,7 +131,7 @@ function collision(first, second){
   return !(first.x > second.x + second.width||
   first.x + first.height < second.x||
   first.y > second.y + second.height||
-  first.y + first.width < second.y);
+  first.y + first.width < second.y)
   
   
 }

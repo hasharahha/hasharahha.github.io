@@ -32,7 +32,7 @@ var enemy1 ={
   height: 10,
   width: 10,
   color:"black",
-}
+};
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;

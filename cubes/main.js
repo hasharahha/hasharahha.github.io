@@ -134,7 +134,9 @@ function render(){
   enemyimg.onload = function(){
     ctx.drawImage(enemyimg, enemy.x, enemy.y, enemy.width, enemy.height);
   };
+  /*
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
+  */
   ctx.fillStyle ="lightblue";
   ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height)
   ctx.fillStyle ="yellow";

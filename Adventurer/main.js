@@ -49,11 +49,10 @@ var player ={
       player.y -= player.speed;
       player.fuel -=5;
     }
-
+player.y +=1;
   }
   function render(){
-    ctx.fillStyle ="yellow";
-    ctx.fillRect(player.x, player.y, player.width, player.height);
+  //This isn't needed because, load level will render everything exept enemies
   }
   function process(){
     

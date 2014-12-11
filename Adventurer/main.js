@@ -26,9 +26,10 @@ var player ={
     keys[e.keyCode] = false;
   })
   function loadLevel(){
-    ctx.fillStyle ="black";
+    ctx.fillStyle ="yellow";
     ctx.clearRect(1, 1, 500, 400);
     ctx.fillRect(player.x, player.y, player.width, player.height);
+    ctx.fillStyle ="black"
     ctx.fillRect(10, 20, 30, 5);
     ctx.fillRect(45, 50, 40, 5);
     ctx.fillRect(80, 20, 15, 5);

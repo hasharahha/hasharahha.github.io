@@ -4,8 +4,8 @@ var ctx = canvas.getContext("2d");
 var player ={
   x: 40,
   y: 45,
-  height: 5,
-  width: 5,
+  height: 10,
+  width: 10,
   speed: 2,
   health: 3
   };
@@ -37,7 +37,7 @@ var player ={
   }
   function render(){
     ctx.fillStyle ="yellow";
-    ctx.fillRect(player.x, player.y, player.width, player.height)
+    ctx.fillRect(player.x, player.y, player.width, player.height);
   }
   function process(){
     

@@ -1,7 +1,7 @@
 //Made by Jacob Bondley
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
-var player1 ={
+var player ={
   x: 55,
   y: 40,
   height: 10,
@@ -40,7 +40,7 @@ var player1 ={
   function loadLevel(){
     ctx.fillStyle ="yellow";
     ctx.clearRect(1, 1, 1000, 500);
-    ctx.fillRect(player1.x, player1.y, player1.width, player1.height);
+    ctx.fillRect(player1., player.y, player.width, player.height);
     ctx.fillStyle ="blue";
     ctx.fillRect(p2.x, p2.y, p2.width, p2.height);
     ctx.fillStyle ="black"
@@ -57,17 +57,17 @@ var player1 ={
   function update(){
     loadLevel();
     if(keys[37]){
-      player1.x -= player.speed;
+      player.x -= player.speed;
     }
     if(keys[39]){
-      player1.x += player.speed;
+      player.x += player.speed;
     }
     if(keys[32]&& player.fuel > 1){
-      player1.y -= player.speed;
-      player1.fuel -=5;
+      player.y -= player.speed;
+      player.fuel -=5;
     }
-    if(player1.mode=="G"){
-player1.y +=1;
+    if(player.mode=="G"){
+player.y +=1;
   }
   if(player2.mode=="G"){
     p2.y +=1;

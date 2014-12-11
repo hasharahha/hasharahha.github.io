@@ -1,15 +1,26 @@
 //Made by Jacob Bondley
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
-var player ={
+var player1 ={
   x: 55,
   y: 40,
   height: 10,
   width: 10,
   speed: 2,
   health: 3,
-  fuel: 6000
+  fuel: 6000,
+  mode:"G"
   };
+  var player2 ={
+    x: 600,
+    y: 40,
+    height: 10,
+    width: 10,
+    speed: 2,
+    health: 3,
+    fuel: 6000,
+    mode:"G"
+  }
   var cpu ={};
   /*
   
@@ -29,10 +40,11 @@ var player ={
   function loadLevel(){
     ctx.fillStyle ="yellow";
     ctx.clearRect(1, 1, 1000, 500);
-    ctx.fillRect(player.x, player.y, player.width, player.height);
+    ctx.fillRect(player1.x, player1.y, player1.width, player1.height);
+    ctx.fillRect(player2.x, player2.y, player2.width, player2.height);
     ctx.fillStyle ="black"
     ctx.font ="bold 15px helvetica";
-    ctx.fillText("Your Fuel: "+player.fuel, 130, 19);
+    ctx.fillText("Your Fuel: "+player1.fuel, 130, 19);
     ctx.fillRect(10, 20, 30, 5);
     ctx.fillRect(45, 50, 40, 5);
     ctx.fillRect(80, 20, 15, 5);
@@ -44,16 +56,21 @@ var player ={
   function update(){
     loadLevel();
     if(keys[37]){
-      player.x -= player.speed;
+      player1.x -= player.speed;
     }
     if(keys[39]){
-      player.x += player.speed;
+      player1.x += player.speed;
     }
     if(keys[32]&& player.fuel > 1){
-      player.y -= player.speed;
-      player.fuel -=5;
+      player1.y -= player.speed;
+      player1.fuel -=5;
     }
-player.y +=1;
+    if(player1.mode=="G"){
+player1.y +=1;
+  }
+  if(player2.mode=="G"){
+    player2.y +=1;
+  }
   }
   function render(){
   //This isn't needed because, load level will render everything exept enemies

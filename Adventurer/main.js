@@ -99,6 +99,11 @@ function process(){
     enemy1.x = Math.floor(Math.random()*700);
     enemy1.y = Math.floor(Math.random()*500);
   }
+  if(collision(player2, enemy1)){
+    player2.score +=1;
+    enemy1.x: Math.floor(Math.random()*725);
+    enemy1.y: Math.floor(Math.random()*500);
+  }
   
 }
 function render(){
@@ -107,7 +112,16 @@ function render(){
   ctx.fillRect(player1.x, player1.y, player1.width, player1.height);
   ctx.fillStyle = player2.color;
   ctx.fillRect(player2.x, player2.y, player2.width, player2.height);
+  ctx.fillStyle = enemy1.color;
+  ctx.fillRect(enemy1.x, enemy1.y, enemy1.width, enemy1.height);
+  ctx.fillStyle ="lightblue";
+  ctx.font ="bold 16px helvetica";
   //Scores
+  ctx.fillText("Player 1 Score: "+player1.score, 20, 20);
+  ctx.fillText("Player 2 score: "+player2.score, 500, 20);
+  ctx.fillStyle ="red";
+  ctx.fillText("Health: "+player1.health, 20, 50);
+  ctx.fillText("Health: "+player2.health, 500, 50);
 }
 function collision(first, second){
   return !(first.x > second.x + second.width||

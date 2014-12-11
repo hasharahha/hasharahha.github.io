@@ -78,7 +78,12 @@ function process(){
   
 }
 function render(){
-  
+  ctx.clearRect(1, 1, 1000, 700);
+  ctx.fillStyle = player1.color;
+  ctx.fillRect(player1.x, player1.y, player1.width, player1.height);
+  ctx.fillStyle = player2.color;
+  ctx.fillRect(player2.x, player2.y, player2.width, player2.height);
+  //Scores
 }
 
 function gameloop(){

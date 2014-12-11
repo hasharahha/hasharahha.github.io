@@ -45,7 +45,7 @@ var player ={
     if(keys[39]){
       player.x += player.speed;
     }
-    if(key[32]){
+    if(keys[32]){
       player.y -= player.speed;
       player.fuel -=5;
     }
@@ -70,7 +70,9 @@ var player ={
     }, 1000/30);
   }
 
-
+setInterval(function(){
+  update();
+}, 1000/30)
 
 window.requestAnimationFrame(function(){
   gameloop();

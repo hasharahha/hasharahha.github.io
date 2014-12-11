@@ -7,7 +7,8 @@ var player ={
   height: 10,
   width: 10,
   speed: 2,
-  health: 3
+  health: 3,
+  fuel: 1000
   };
   var cpu ={};
   /*
@@ -30,12 +31,25 @@ var player ={
     ctx.clearRect(1, 1, 500, 400);
     ctx.fillRect(player.x, player.y, player.width, player.height);
     ctx.fillStyle ="black"
+    ctx.font ="bold 15px helvetica";
+    ctx.fillText("Your Fuel: "+player.fuel, 130, 19);
     ctx.fillRect(10, 20, 30, 5);
     ctx.fillRect(45, 50, 40, 5);
     ctx.fillRect(80, 20, 15, 5);
   }
   function update(){
     loadLevel();
+    if(keys[37]){
+      player.x -= player.speed;
+    }
+    if(keys[39]){
+      player.x += player.speed;
+    }
+    if(key[32]){
+      player.y -= player.speed;
+      player.fuel -=5;
+    }
+
   }
   function render(){
     ctx.fillStyle ="yellow";

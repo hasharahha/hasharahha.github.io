@@ -137,7 +137,7 @@ function render(){
   playerimg = new Image();
   playerimg.src="http://img1.wikia.nocookie.net/__cb20110303220545/bomberman/images/f/fe/Bomberman.gif";
   playerimg.onload = function(){
-    ctx.drawImage(enemyimg, player.x, player.y, player.width, player.height);
+    ctx.drawImage(playerimg, player.x, player.y, player.width, player.height);
   };
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   ctx.fillStyle ="lightblue";

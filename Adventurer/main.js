@@ -16,6 +16,11 @@ var player_1 ={
 /*
 Controls:
 Player_1: 
-A <-- [65]
-D --> [68]
+A LEFT [65]
+D RIGHT [68]
+W UP [87]
+Player_2:
+Larrow LEFT [37]
+Rarrow RIGHT [39]
+
 */

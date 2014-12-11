@@ -9,7 +9,7 @@ var player ={
   speed: 2,
   health: 3
   };
-  
+  var cpu ={};
   var  tiles ={
   BlackBlock: true,
   WhiteBlock: true,
@@ -27,14 +27,21 @@ var player ={
   })
   
   function gameloop(){
-    alert("hello");
-    
+    cpu.render();
+    cpu.update();
+    cpu.process();
     
     //The loop
     window.requestAnimationFrame(function(){
       gameloop();
     }, 1000/30);
   }
+
+cpu.update = function(){
+  //key updates
+}
+
+
 
 window.requestAnimationFrame(function(){
   gameloop();

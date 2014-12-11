@@ -12,7 +12,8 @@ var player1 ={
   speed: 3,
   score: 0,
   fuel: 6000,
-  color:"yellow"
+  color:"yellow",
+  weight: 1
 };
 var player2 ={
   x: 300,
@@ -22,7 +23,8 @@ var player2 ={
   speed: 3,
   score: 0,
   fuel: 6000,
-  color:"blue"
+  color:"blue",
+  weight: 1
 };
 
 window.addEventListener("keydown", function(e){
@@ -75,7 +77,8 @@ function update(){
   }
 }
 function process(){
-  
+  player1.y += player1.weight;
+  player2.y += player2.weight;
 }
 function render(){
   ctx.clearRect(1, 1, 1000, 700);

@@ -61,6 +61,18 @@ function update(){
   if(keys[67]){
     player1.fuel +=1;
   }
+  if(keys[37]){
+    player2.x -= player2.speed;
+  }
+  if(keys[39]){
+    player2.x += player2.speed;
+  }
+  if(keys[38]){
+    player2.y -= player2.speed;
+  }
+  if(keys[191]){
+    player2.fuel +=1;
+  }
 }
 function process(){
   

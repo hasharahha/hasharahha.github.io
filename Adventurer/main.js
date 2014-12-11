@@ -6,7 +6,7 @@ var static;
 var keys =[];
 var player1 ={
   x: 20,
-  y: 20,
+  y: 40,
   height: 10,
   width: 10,
   speed: 3,
@@ -15,8 +15,8 @@ var player1 ={
   color:"yellow"
 };
 var player2 ={
-  x: 20,
-  y: 300,
+  x: 300,
+  y: 40,
   height: 10,
   width: 10,
   speed: 3,

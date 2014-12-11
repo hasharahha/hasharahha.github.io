@@ -144,7 +144,7 @@ var  playerimg = new Image();
     player.loaded = true;
   };
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
-  ctx.fillStyle ="lightblue";
+  ctx.fillStyle ="black";
 var bombimg = new Image();
 bombimg.src ="https://dl.dropboxusercontent.com/s/k6qk3sg15j2dvac/images.jpg";
 bombimg.onload = function(){

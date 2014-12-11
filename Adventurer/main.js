@@ -13,12 +13,14 @@ var player1 ={
   score: 0,
   fuel: 6000,
   color:"yellow",
+  health: 14,
   weight: 1
 };
 var player2 ={
   x: 300,
   y: 40,
   height: 10,
+  health: 3,
   width: 10,
   speed: 3,
   score: 0,

@@ -5,15 +5,16 @@ var player ={
   x: 40,
   y: 30,
   width: 20,
-  height: 20
+  height: 20,
+  loaded: false
 }
 var enemy ={
   x: Math.random()*150,
   y: Math.random()*100,
   width: 20,
   height: 20,
+  loaded: false
 }
-
 var destroyer ={
   x: 200,
   y: 60,
@@ -132,12 +133,13 @@ function render(){
   var enemyimg = new Image();
   enemyimg.src="https://cdn.tutsplus.com/vector/uploads/legacy/tuts/165_Shiny_Dice/3.jpg";
   enemyimg.onload = function(){
+    enemy.loaded = true;
     ctx.drawImage(enemyimg, enemy.x, enemy.y, enemy.width, enemy.height);
   };
   playerimg = new Image();
   playerimg.src="http://img1.wikia.nocookie.net/__cb20110303220545/bomberman/images/f/fe/Bomberman.gif";
   playerimg.onload = function(){
-    ctx.drawImage(playerimg, player.x, player.y, player.width, player.height);
+    player.loaded = true;
   };
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   ctx.fillStyle ="lightblue";
@@ -153,6 +155,10 @@ function render(){
   ctx.fillText("Time-left:"+ score.time, 20, 65);
   ctx.font ="bold 12px helvetica";
   ctx.fillText("Made by Jacob Bondley", 20, 80);
+if(player.loaded==true&&enemy.loaded==true){
+ctx.drawImage(playerimg, player.x, player.y, player.width, player.height);
+ctx.drawImage(enemyimg, enemy.x, enemy.y, enemy.width, enemy.height);
+}
   setTimeout(function(){
     destroyer.x -=1;
   }, 1500);

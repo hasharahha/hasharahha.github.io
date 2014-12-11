@@ -98,7 +98,7 @@ if(keys[87]){
   bomb.y -=1;
 }
 if(destroyer.x < 1){
-  destroyer.x =230;
+  destroyer.x =280;
 }
 function Explode(){
   

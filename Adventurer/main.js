@@ -2,10 +2,10 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var player ={
-  x: 9,
-  y: 19,
-  height: 3,
-  width: 3,
+  x: 5,
+  y: 15,
+  height: 5,
+  width: 5,
   speed: 2,
   health: 3
   };
@@ -26,6 +26,7 @@ var player ={
     keys[e.keyCode] = false;
   })
   function loadLevel(){
+    ctx.fillStyle ="black";
     ctx.clearRect(1, 1, 500, 400);
     ctx.fillRect(10, 20, 30, 5);
     ctx.fillRect(45, 50, 40, 5);

@@ -15,5 +15,7 @@ var player_1 ={
 }
 /*
 Controls:
-
+Player_1: 
+A <-- [65]
+D --> [68]
 */

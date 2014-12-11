@@ -67,9 +67,6 @@ function update(){
     ctx.fillText("Your Score: "+score.points, 80, 105)
     player.x = 5000;
     player.y = 5000;
-    setInterval(function(){
-      window.location ='http://hasharahha@github.io/cubes/index.html';
-    }, 3000);
   }
 if(keys[38]){
   player.y -= speed;
@@ -182,7 +179,8 @@ function countdown(){
   if(score.time < 1){
     score.time=0;
     alert("Game over")
-    window.location ='http://hasharahha.github.io/cubes/index.html';
+    ctx.fillStyle ="white";
+    ctx.fillText("Game over, Score: "+score.points);
   }
 }
 

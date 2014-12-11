@@ -69,7 +69,7 @@ function update(){
     player.y = 5000;
     setInterval(function(){
       window.location ='http://hasharahha@github.io/cubes/index.html';
-    }, 5000);
+    }, 3000);
   }
 if(keys[38]){
   player.y -= speed;

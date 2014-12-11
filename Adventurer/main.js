@@ -22,15 +22,14 @@ var player ={
   
   window.addEventListener("keydown", function(e){
     keys[e.keyCode] = true;
-  })
+  });
   window.addEventListener("keyup", function(e){
     keys[e.keyCode] = false;
-  })
+  });
   function loadLevel(){
     ctx.fillStyle ="yellow";
     ctx.clearRect(1, 1, 1000, 500);
     ctx.fillRect(player.x, player.y, player.width, player.height);
-    ctx.fillStyle ="blue";
     ctx.fillStyle ="black"
     ctx.font ="bold 15px helvetica";
     ctx.fillText("Your Fuel: "+player1.fuel, 130, 19);

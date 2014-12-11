@@ -2,7 +2,7 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var player ={
-  x: 35,
+  x: 55,
   y: 40,
   height: 10,
   width: 10,

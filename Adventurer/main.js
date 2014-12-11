@@ -10,10 +10,12 @@ var player ={
   health: 3
   };
   var cpu ={};
+  /*
   var  tiles ={
   block:[10, 10, 30, 5],
   block2:[15, 20, 30, 5]
   }
+  */
   
   var keys =[];
   
@@ -24,10 +26,10 @@ var player ={
     keys[e.keyCode] = false;
   })
   cpu.loadLevel = function(){
-    ctx.fillRect(tiles.block[1], tiles.block[2], tiles.block[3], tiles.block[4]);
+    ctx.fillRect(10, 10, 30, 5);
   }
   cpu.update =function(){
-    
+    cpu.loadLevel();
   }
   cpu.render = function(){
     

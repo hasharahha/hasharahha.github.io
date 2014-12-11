@@ -128,13 +128,14 @@ if(rnd==750){
 //JB
 function render(){
   ctx.fillStyle ="blue"
+  /*
   ctx.fillRect(player.x, player.y, player.width, player.height);
+  */
   ctx.fillStyle ="green";
   var enemyimg = new Image();
   enemyimg.src="https://cdn.tutsplus.com/vector/uploads/legacy/tuts/165_Shiny_Dice/3.jpg";
   enemyimg.onload = function(){
     enemy.loaded = true;
-    ctx.drawImage(enemyimg, enemy.x, enemy.y, enemy.width, enemy.height);
   };
   playerimg = new Image();
   playerimg.src="http://img1.wikia.nocookie.net/__cb20110303220545/bomberman/images/f/fe/Bomberman.gif";

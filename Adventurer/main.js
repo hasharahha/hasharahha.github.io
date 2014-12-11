@@ -36,6 +36,10 @@ var player ={
     ctx.fillRect(10, 20, 30, 5);
     ctx.fillRect(45, 50, 40, 5);
     ctx.fillRect(80, 20, 15, 5);
+    ctx.beginPath();
+    ctx.moveTo(500, 0);
+    ctx.lineTo(500, 1000);
+    ctx.stroke();
   }
   function update(){
     loadLevel();

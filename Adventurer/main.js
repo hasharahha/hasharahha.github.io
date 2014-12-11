@@ -28,6 +28,7 @@ var player ={
   function loadLevel(){
     ctx.fillStyle ="black";
     ctx.clearRect(1, 1, 500, 400);
+    ctx.fillRect(player.x, player.y, player.width, player.height);
     ctx.fillRect(10, 20, 30, 5);
     ctx.fillRect(45, 50, 40, 5);
     ctx.fillRect(80, 20, 15, 5);

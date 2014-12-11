@@ -26,7 +26,7 @@ var player ={
     keys[e.keyCode] = false;
   })
   function loadLevel(){
-    ctx.fillRect(10, 10, 30, 5);
+    ctx.fillRect(10, 20, 30, 5);
   }
   function update(){
     loadLevel();

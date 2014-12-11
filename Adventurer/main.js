@@ -31,7 +31,7 @@ var enemy1 ={
   y: 70,
   height: 10,
   width: 10,
-  color:"black",
+  color:"black"
 };
 
 window.addEventListener("keydown", function(e){

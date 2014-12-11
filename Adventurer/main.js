@@ -17,7 +17,6 @@ var player ={
   block2:[35, 20, 30, 5]
   block3:[]
   */
-  alert("loading");
   var keys =[];
   
   window.addEventListener("keydown", function(e){

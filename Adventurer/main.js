@@ -8,7 +8,7 @@ var player ={
   width: 10,
   speed: 2,
   health: 3,
-  fuel: 1000
+  fuel: 6000
   };
   var cpu ={};
   /*

@@ -89,16 +89,16 @@ Explode();
 score.bombs ==0;
 }
 if(keys[65]){
-  bomb.x -=1;
+  bomb.x -=2;
 }
 if(keys[68]){
-bomb.x +=1;  
+bomb.x +=2;  
 }
 if(keys[83]){
-  bomb.y +=1;
+  bomb.y +=2;
 }
 if(keys[87]){
-  bomb.y -=1;
+  bomb.y -=2;
 }
 if(destroyer.x < 1){
   destroyer.x =280;

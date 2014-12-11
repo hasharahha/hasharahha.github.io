@@ -129,6 +129,11 @@ function render(){
   ctx.fillStyle ="blue"
   ctx.fillRect(player.x, player.y, player.width, player.height);
   ctx.fillStyle ="green";
+  var enemyimg = new Image();
+  enemyimg.src="https://cdn.tutsplus.com/vector/uploads/legacy/tuts/165_Shiny_Dice/3.jpg";
+  enemyimg.onload = function(){
+    ctx.drawImage(enemyimg, enemy.x, enemy.y, enemy.width, enemy.height);
+  };
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   ctx.fillStyle ="lightblue";
   ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height)

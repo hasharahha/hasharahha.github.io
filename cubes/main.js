@@ -27,6 +27,7 @@ var bomb ={
   y: 100,
   width: 10,
   height: 10,
+  loaded: false
 };
 var score ={
   points: 0,
@@ -137,13 +138,18 @@ function render(){
   enemyimg.onload = function(){
     enemy.loaded = true;
   };
-  playerimg = new Image();
+var  playerimg = new Image();
   playerimg.src="http://img1.wikia.nocookie.net/__cb20110303220545/bomberman/images/f/fe/Bomberman.gif";
   playerimg.onload = function(){
     player.loaded = true;
   };
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   ctx.fillStyle ="lightblue";
+var bombimg = new Image();
+bombimg.src ="https://dl.dropboxusercontent.com/s/k6qk3sg15j2dvac/images.jpg";
+bombimg.onload = function(){
+bomb.loaded = true;
+};
   ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height)
   ctx.fillStyle ="yellow";
   ctx.fillRect(destroyer.x, destroyer.y, destroyer.width, destroyer.height)
@@ -156,9 +162,10 @@ function render(){
   ctx.fillText("Time-left:"+ score.time, 20, 65);
   ctx.font ="bold 12px helvetica";
   ctx.fillText("Made by Jacob Bondley", 20, 80);
-if(player.loaded==true&&enemy.loaded==true){
+if(player.loaded==true&&enemy.loaded==true&&bomb.loaded==true){
 ctx.drawImage(playerimg, player.x, player.y, player.width, player.height);
 ctx.drawImage(enemyimg, enemy.x, enemy.y, enemy.width, enemy.height);
+ctx.drawImage(bombimg, bomb.x, bomb.y, bomb.width, bomb.height);
 }
   setTimeout(function(){
     destroyer.x -=1;

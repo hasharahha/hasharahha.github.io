@@ -67,7 +67,9 @@ function update(){
     ctx.fillText("Your Score: "+score.points, 80, 105)
     player.x = 5000;
     player.y = 5000;
-    
+    setInterval(function(){
+      window.location ='http://hasharahha@github.io/cubes/index.html';
+    }, 5000);
   }
 if(keys[38]){
   player.y -= speed;

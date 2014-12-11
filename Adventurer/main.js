@@ -19,8 +19,11 @@ Player_1:
 A LEFT [65]
 D RIGHT [68]
 W UP [87]
+/ CHARGE [191]
 Player_2:
 Larrow LEFT [37]
 Rarrow RIGHT [39]
+Uarrow UP [38]
+C CHARGE [67]
 
 */

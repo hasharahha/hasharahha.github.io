@@ -11,10 +11,7 @@ var player ={
   };
   var cpu ={};
   var  tiles ={
-  BlackBlock: true,
-  WhiteBlock: true,
-  GreenBlock: true,
-  YellowBlock: false
+  block:
   }
   
   var keys =[];
@@ -25,6 +22,17 @@ var player ={
   window.addEventListener("keyup", function(e){
     keys[e.keyCode] = false;
   })
+  cpu.loadLevel = function(){
+  }
+  cpu.update =function(){
+    
+  }
+  cpu.render = function(){
+    
+  }
+  cpu.process = function(){
+    
+  }
   
   function gameloop(){
     cpu.render();

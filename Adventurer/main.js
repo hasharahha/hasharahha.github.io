@@ -26,6 +26,13 @@ var player2 ={
   color:"blue",
   weight: 1
 };
+var enemy1 ={
+  x: Math.floor(Math.random()*700),
+  y: Math.floor(Math.random()*400),
+  height: 10,
+  width: 10,
+  color:"black",
+}
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;
@@ -79,6 +86,20 @@ function update(){
 function process(){
   player1.y += player1.weight;
   player2.y += player2.weight;
+  if(collision(player1, player2)){
+    player1.score +=1;
+    player2.health -=1;
+  }
+  if(collision(player2, player1)){
+    player2.score +=1;
+    player1.health -=1;
+  }
+  if(collision(player1, enemy1)){
+    player1.score +=1;
+    enemy1.x = Math.floor(Math.random()*700);
+    enemy1.y = Math.floor(Math.random()*500);
+  }
+  
 }
 function render(){
   ctx.clearRect(1, 1, 1000, 700);

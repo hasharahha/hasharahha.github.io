@@ -19,4 +19,17 @@ var player ={
   
   var keys =[];
   
-  window.addEventListener
+  window.addEventListener("keydown", function(e){
+    keys[e.keyCode] = true;
+  })
+  window.addEventListener("keyup", function(e){
+    keys[e.keyCode] = false;
+  })
+  
+  function gameloop(){
+    alert("hello");
+  }
+
+window.requestAnimationFrame(function(){
+  gameloop();
+}, 1000/30);

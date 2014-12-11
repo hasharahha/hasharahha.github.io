@@ -8,8 +8,7 @@ var player ={
   width: 10,
   speed: 2,
   health: 3,
-  fuel: 6000,
-  mode:"G"
+  fuel: 6000
   };
   var cpu ={};
   /*
@@ -55,9 +54,7 @@ var player ={
       player.y -= player.speed;
       player.fuel -=5;
     }
-    if(player.mode=="G"){
 player.y +=1;
-    }
   }
   function render(){
   //This isn't needed because, load level will render everything exept enemies

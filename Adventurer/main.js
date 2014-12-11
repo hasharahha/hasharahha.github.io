@@ -85,6 +85,14 @@ function render(){
   ctx.fillRect(player2.x, player2.y, player2.width, player2.height);
   //Scores
 }
+function collision(first, second){
+  return !(first.x > second.x + second.width||
+  first.x + first.height < second.x||
+  first.y > second.y + second.height||
+  first.y + first.width < second.y);
+  
+  
+}
 
 function gameloop(){
   update();

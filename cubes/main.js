@@ -62,8 +62,12 @@ function update(){
     AttackPlayer();
   }
   if(score.health < 1){
-    document.getElementById("Game").style.display='none';
-    alert("You lost \n your score was: \n"+score.points);
+    ctx.fillStyle ="white";
+    ctx.fillText("Game over", 80, 90);
+    ctx.fillText("Your Score: "+score.points, 80, 105)
+    player.x = 5000;
+    player.y = 5000;
+    
   }
 if(keys[38]){
   player.y -= speed;

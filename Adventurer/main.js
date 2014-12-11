@@ -28,6 +28,12 @@ var player ={
   
   function gameloop(){
     alert("hello");
+    
+    
+    //The loop
+    window.requestAnimationFrame(function(){
+      gameloop();
+    }, 1000/30);
   }
 
 window.requestAnimationFrame(function(){

@@ -133,7 +133,7 @@ function render(){
   */
   ctx.fillStyle ="green";
   var enemyimg = new Image();
-  enemyimg.src="https://cdn.tutsplus.com/vector/uploads/legacy/tuts/165_Shiny_Dice/3.jpg";
+  enemyimg.src="http://cdn.gammz.com/games/thumbs/2014/03/24/bomber-mine_8000_1.jpg";
   enemyimg.onload = function(){
     enemy.loaded = true;
   };

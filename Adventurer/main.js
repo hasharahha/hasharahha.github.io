@@ -27,6 +27,7 @@ var player ={
   })
   function loadLevel(){
     ctx.fillRect(10, 20, 30, 5);
+    ctx.fillRect(25, 30, 30, 5);
   }
   function update(){
     loadLevel();

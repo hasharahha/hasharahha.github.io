@@ -25,33 +25,29 @@ var player ={
   window.addEventListener("keyup", function(e){
     keys[e.keyCode] = false;
   })
-  cpu.loadLevel = function(){
+  function loadLevel(){
     ctx.fillRect(10, 10, 30, 5);
   }
-  cpu.update =function(){
-    cpu.loadLevel();
+  function update(){
+    loadLevel();
   }
-  cpu.render = function(){
+  function render(){
     
   }
-  cpu.process = function(){
+  function process(){
     
   }
   
   function gameloop(){
-    cpu.render();
-    cpu.update();
-    cpu.process();
+    render();
+    update();
+    process();
     
     //The loop
     window.requestAnimationFrame(function(){
       gameloop();
     }, 1000/30);
   }
-
-cpu.update = function(){
-  //key updates
-}
 
 
 

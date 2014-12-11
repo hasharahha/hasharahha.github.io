@@ -11,10 +11,10 @@ var player ={
   };
   var cpu ={};
   /*
-  var  tiles ={
+  
   block:[10, 10, 30, 5],
-  block2:[15, 20, 30, 5]
-  }
+  block2:[35, 20, 30, 5]
+  block3:[]
   */
   alert("loading");
   var keys =[];
@@ -27,7 +27,7 @@ var player ={
   })
   function loadLevel(){
     ctx.fillRect(10, 20, 30, 5);
-    ctx.fillRect(25, 30, 30, 5);
+    ctx.fillRect(45, 50, 40, 5);
   }
   function update(){
     loadLevel();

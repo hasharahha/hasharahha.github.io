@@ -29,7 +29,7 @@ var bomb ={
 };
 var score ={
   points: 0,
-  health: 10,
+  health: 21,
   bombs: 1,
   time: 150
 }
@@ -63,9 +63,7 @@ function update(){
   }
   if(score.health < 1){
     document.getElementById("Game").style.display='none';
-    var msg = document.createElement('h1');
-    msg.setAttribute("innerHTML", "You lose");
-    document.body.appendChild(msg);
+    alert("You lost \n your score was: \n"+score.points);
   }
 if(keys[38]){
   player.y -= speed;

@@ -97,7 +97,9 @@ if(keys[83]){
 if(keys[87]){
   bomb.y -=1;
 }
-
+setTimout(function(){
+  destroyer.x =200;
+}, 4000);
 function Explode(){
   
 }

@@ -150,9 +150,7 @@ bombimg.src ="https://dl.dropboxusercontent.com/s/k6qk3sg15j2dvac/images.jpg";
 bombimg.onload = function(){
 bomb.loaded = true;
 };
-/*
-  ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height)
-  */
+  ctx.fillRect(bomb.x, bomb.y, bomb.width, bomb.height);
   ctx.fillStyle ="yellow";
   ctx.fillRect(destroyer.x, destroyer.y, destroyer.width, destroyer.height)
   ctx.font ="bold 16px helvetica";

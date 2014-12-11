@@ -11,16 +11,6 @@ var player ={
   fuel: 6000,
   mode:"G"
   };
-  var p2 ={
-    x: 600,
-    y: 40,
-    height: 10,
-    width: 10,
-    speed: 2,
-    health: 3,
-    fuel: 6000,
-    mode:"G"
-  }
   var cpu ={};
   /*
   
@@ -40,9 +30,8 @@ var player ={
   function loadLevel(){
     ctx.fillStyle ="yellow";
     ctx.clearRect(1, 1, 1000, 500);
-    ctx.fillRect(player1., player.y, player.width, player.height);
+    ctx.fillRect(player.x, player.y, player.width, player.height);
     ctx.fillStyle ="blue";
-    ctx.fillRect(p2.x, p2.y, p2.width, p2.height);
     ctx.fillStyle ="black"
     ctx.font ="bold 15px helvetica";
     ctx.fillText("Your Fuel: "+player1.fuel, 130, 19);
@@ -68,10 +57,7 @@ var player ={
     }
     if(player.mode=="G"){
 player.y +=1;
-  }
-  if(player2.mode=="G"){
-    p2.y +=1;
-  }
+    }
   }
   function render(){
   //This isn't needed because, load level will render everything exept enemies

@@ -93,6 +93,9 @@ function render(){
   ctx.fillStyle = enemy.color;
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   //Scores
+  ctx.fontStyle ="bold 14px helvetica";
+  ctx.fillText("P1 Score: "+player1.score, 20, 20);
+  ctx.fillText("P2 Score: "+player2.score, 600, 20);
 }
 
 function collision(first, second){

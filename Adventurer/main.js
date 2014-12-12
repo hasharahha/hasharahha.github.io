@@ -82,7 +82,16 @@ function update(){
   }
 }
 function process(){
-  
+  if(collision(player1, enemy)){
+    enemy.x = Math.floor(Math.random()*700);
+    enemy.y = Math.floor(Math.random()*500);
+    player1.score +=1;
+  }
+  if(collision(player2, enemy)){
+    enemy.x = Math.floor(Math.random()*700);
+    enemy.y = Math.floor(Math.ranodm()*500);
+    player2.score +=1;
+  }
 }
 function render(){
   ctx.clearRect(1, 1, 1000, 700);
@@ -99,7 +108,7 @@ function render(){
   ctx.fillText("P2 Score: "+player2.score, 600, 20);
   ctx.fillStyle ="black";
   ctx.fillText("P1 Fuel: "+player1.fuel, 20, 50);
-  ctx.fillText("P2 Fule: "+player2.fuel, 600, 50);
+  ctx.fillText("P2 Fuel: "+player2.fuel, 600, 50);
 }
 
 function collision(first, second){

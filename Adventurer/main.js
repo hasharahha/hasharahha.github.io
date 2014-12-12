@@ -25,6 +25,14 @@ var player2 ={
   color:"blue"
 };
 
+var enemy ={
+  x: 50,
+  y: 50,
+  height: 10,
+  width: 10,
+  color:"black"
+};
+
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;
 });
@@ -82,6 +90,8 @@ function render(){
   ctx.fillRect(player1.x, player1.y, player1.width, player1.height);
   ctx.fillStyle = player2.color;
   ctx.fillRect(player2.x, player2.y, player2.width, player2.height);
+  ctx.fillStyle = enemy.color;
+  ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   //Scores
 }
 

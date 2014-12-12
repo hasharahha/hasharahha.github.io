@@ -89,12 +89,12 @@ function process(){
   if(collision(player1, enemy)){
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.random()*500);
-    player1.score +=1;
+    player1.score ++;
   }
   if(collision(player2, enemy)){
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.ranodm()*500);
-    player2.score +=1;
+    player2.score ++;
   }
 }
 function render(){

@@ -84,6 +84,8 @@ function update(){
   }
 }
 function process(){
+  player1.y +=1;
+  player2.y +=1;
   if(collision(player1, enemy)){
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.random()*500);

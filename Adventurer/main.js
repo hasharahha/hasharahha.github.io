@@ -94,9 +94,12 @@ function render(){
   ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
   //Scores
   ctx.font ="bold 14px helvetica";
-  ctx.fillStyle ="lightred";
+  ctx.fillStyle ="red";
   ctx.fillText("P1 Score: "+player1.score, 20, 20);
   ctx.fillText("P2 Score: "+player2.score, 600, 20);
+  ctx.fillStyle ="black";
+  ctx.fillText("P1 Fuel: "+player1.fuel, 20, 50);
+  ctx.fillText("P2 Fule: "+player2.fuel, 600, 50);
 }
 
 function collision(first, second){

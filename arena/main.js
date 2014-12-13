@@ -7,10 +7,23 @@ var game ={
 height: window.innerHeight,
 width: window.innerWidth
 fps: 1000/30,
-speed: 1,
-bg:gray
+speed: 1
 }
 
-document.getElementById("game").setAttribute("style", "background-color: gray;");
-document.getElementById("game").setAttribute("height", game.height);
-document.getElementById("game").setAttribute("width", game.width);
+function render(){
+document.getElementById("game").width = game.width;
+document.getElementById("game").height = game.height;
+}
+
+function gameloop(){
+  
+  
+  render();
+  window.requestAnimationFrame(function(){
+    gameloop();
+  }, game.fps);
+}
+
+window.requestAnimationFrame(function(){
+  gameloop();
+}, game.fps);

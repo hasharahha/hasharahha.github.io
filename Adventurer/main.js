@@ -235,8 +235,21 @@ function Shop(player){
       player1.width +=1;
       player1.score -=10;
     }
+    if(Player=="player2"){
+    if(item=="/speed"&&player2.score >= 3){
+      player2.speed +=1;
+      player2.score -=3;
+    }
+    if(item=="/fuel"&&player2.score >= 5){
+      player2.fuel +=500;
+      player2.score -=3;
+    }
+    if(item=="/size"&&player2.score >= 20){
+      player2.height +=1;
+      player2.width +=1;
+      player2.score -=20;
+    }
   }
-}
 
 function gameloop(){
   update();

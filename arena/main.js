@@ -27,6 +27,14 @@ var player ={
   bullets: 10,
   speed: 2
 }
+var ball ={
+  x: 10,
+  y: 540,
+  diameter: 10,
+  pi: 3.14159265,
+  radius: 5,
+  balance: 0
+}
 //Game logic and rendering , Very basic
 function update(){
   if(keys[37]){
@@ -51,6 +59,10 @@ document.getElementById("game").height = game.height;
 document.getElementById("game").style.backgroundColor = game.bg;
 //render player
 ctx.fillRect(player.x, player.y, player.width, player.height);
+//render ball
+ctx.beginPath();
+ctx.arc(ball.x, ball.y, ball.diameter, ball.balance,2*ball.pi);
+ctx.stroke();
 }
 
 function gameloop(){

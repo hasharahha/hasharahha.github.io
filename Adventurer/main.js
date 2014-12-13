@@ -89,12 +89,12 @@ function process(){
   if(collision(player1, enemy)){
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.random()*500);
-    player1.score ++;
+    player1.score +=1;;
   }
   if(collision(player2, enemy)){
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.ranodm()*500);
-    player2.score ++;
+    player2.score +=1;
   }
 }
 function render(){
@@ -113,6 +113,11 @@ function render(){
   ctx.fillStyle ="black";
   ctx.fillText("P1 Fuel: "+player1.fuel, 20, 50);
   ctx.fillText("P2 Fuel: "+player2.fuel, 600, 50);
+  //divides
+  ctx.beginPath();
+  ctx.moveTo(350, 1);
+  ctx.lineTo(350, 520);
+  ctx.stroke();
 }
 
 function collision(first, second){

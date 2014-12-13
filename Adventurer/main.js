@@ -87,14 +87,14 @@ function process(){
   player1.y +=1;
   player2.y +=1;
   if(collision(player1, enemy)){
+    player1.fuel +=500;
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.random()*500);
-    player1.fuel +=500;;
   }
   if(collision(player2, enemy)){
+    player2.fuel +=500;
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.ranodm()*500);
-    player2.fuel +=500;
   }
 }
 function render(){

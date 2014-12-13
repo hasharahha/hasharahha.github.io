@@ -12,7 +12,8 @@ var player1 ={
   speed: 3,
   score: 0,
   fuel: 6000,
-  color:"yellow"
+  color:"yellow",
+  level: 1
 };
 var player2 ={
   x: 420,
@@ -22,7 +23,8 @@ var player2 ={
   speed: 3,
   score: 0,
   fuel: 6000,
-  color:"blue"
+  color:"blue",
+  level: 1
 };
 
 var enemy ={
@@ -137,6 +139,20 @@ function process(){
     player2.x =400;
     player1.y =30;
     player2.y =30;
+  }
+  if(player1.score ==10&&player1.level ==1){
+    player1.level +=1;
+    player1.height +=1;
+    player1.width +=1;
+    player1.weight +=1;
+    player1.speed +=2;
+  }
+  if(player2.score ==10&&player2.level ==1){
+    player2.level +=1;
+    player2.height +=1;
+    player2.width +=1;
+    player2.weight +=1;
+    player2.speed +=2;
   }
 }
 function render(){

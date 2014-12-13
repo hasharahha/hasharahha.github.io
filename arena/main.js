@@ -45,7 +45,7 @@ document.getElementById("game").width = game.width;
 document.getElementById("game").height = game.height;
 document.getElementById("game").style.backgroundColor = game.bg;
 //render player
-ctx.fillRect(player.x, player.y, player.height, player.width);
+ctx.fillRect(player.x, player.y, player.width, player.width);
 }
 
 function gameloop(){

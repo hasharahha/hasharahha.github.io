@@ -34,7 +34,7 @@ var ball ={
   pi: 3.14159265,
   radius: 5,
   balance: 0,
-  velocity: ball.y -=1
+  velocity: ball.y -1
 }
 //Game logic and rendering , Very basic
 function update(){
@@ -54,7 +54,7 @@ function process(){
     player.x = game.width - player.width;
   }
   if(ball.y < 1){
-    ball.velocity == ball.y +=1;
+    ball.velocity == ball.y+1;
   }
 }
 function render(){

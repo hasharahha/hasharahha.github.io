@@ -40,8 +40,8 @@ function process(){
   if(player.x < 1){
     player.x =1;
   }
-  if(player.x > game.width - player.x){
-    player.x = game.width - player.x;
+  if(player.x > game.width - player.width){
+    player.x = game.width - player.width;
   }
 }
 function render(){

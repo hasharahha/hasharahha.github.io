@@ -30,6 +30,7 @@ var enemy ={
   y: 50,
   height: 10,
   width: 10,
+  fuel: 1000,
   color:"black"
 };
 
@@ -154,6 +155,8 @@ function render(){
   ctx.fillStyle ="black";
   ctx.fillText("P1 Fuel: "+player1.fuel, 20, 50);
   ctx.fillText("P2 Fuel: "+player2.fuel, 600, 50);
+  ctx.fillStyle ="yellow";
+  ctx.fillText("CPU Fuel: "+enemy.fuel, 320, 50);
   //divides
   ctx.beginPath();
   ctx.moveTo(350, 1);
@@ -197,8 +200,9 @@ function ai(){
   if(rnd < 200){
     enemy.y -=2;
   }
-  if(rnd < 300&&rnd > 200){
+  if(rnd < 300&&rnd > 200&&enemy.fuel > 1){
     enemy.y -=3;
+    enemy.fuel -=5;
   }
   if(enemy.y > 519){
     enemy.x = Math.floor(Math.random()*600);

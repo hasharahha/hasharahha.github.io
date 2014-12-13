@@ -68,7 +68,7 @@ function update(){
     player1.fuel -=5;
   }
   if(keys[67]){
-    player1.fuel +=1;
+    Shop("player1");
   }
   if(keys[37]){
     player2.x -= player2.speed;
@@ -81,7 +81,7 @@ function update(){
     player2.fuel -=5;
   }
   if(keys[191]){
-    player2.fuel +=1;
+    Shop("player2");
   }
 }
 function process(){

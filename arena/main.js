@@ -37,15 +37,20 @@ function update(){
   }
 }
 function process(){
-  
+  if(player.x < 1){
+    player.x =1;
+  }
+  if(player.x > game.width - player.x){
+    player.x = game.width - player.x;
+  }
 }
 function render(){
-  ctx.clearRect(1, 1, game.height, game.width);
+  ctx.clearRect(1, 1, game.width, game.height);
 document.getElementById("game").width = game.width;
 document.getElementById("game").height = game.height;
 document.getElementById("game").style.backgroundColor = game.bg;
 //render player
-ctx.fillRect(player.x, player.y, player.width, player.width);
+ctx.fillRect(player.x, player.y, player.width, player.height);
 }
 
 function gameloop(){

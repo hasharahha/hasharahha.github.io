@@ -15,8 +15,8 @@ var player1 ={
   color:"yellow"
 };
 var player2 ={
-  x: 20,
-  y: 300,
+  x: 420,
+  y: 20,
   height: 10,
   width: 10,
   speed: 3,
@@ -97,6 +97,32 @@ function process(){
     player2.score +=1;
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.ranodm()*500);
+  }
+  if(player1.y < 1){
+    player1.y =2;
+    player1.x =2;
+  }
+  if(player1.x < 1){
+    player1.y =2;
+    player1.x +2;
+  }
+  if(player2.y < 1){
+    player2.y =2;
+    player2.x =2;
+  }
+  if(player2.x < 1){
+    player2.x =2;
+    player2.y =2;
+  }
+  if(player1.y < 519){
+    player1.x =5000;
+    player1.y =10;
+    ctx.fillText("Game Over! Your score: "+player1.score, 30, 50);
+  }
+  if(player2.y < 519){
+    player2.x =5000;
+    player2.y =9;
+    ctx.fillText("Game Over! Your score: "+player2.score, 350, 50);
   }
 }
 function render(){

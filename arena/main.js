@@ -10,6 +10,6 @@ speed: 1,
 bg:gray
 }
 
-document.getElementById("game").setAttribute("style", "background-color: "+game.bg);
+document.getElementById("game").setAttribute("style", "background-color: gray;");
 document.getElementById("game").setAttribute("height", game.height);
 document.getElementById("game").setAttribute("width", game.width);

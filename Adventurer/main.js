@@ -188,6 +188,12 @@ function ai(){
   if(rnd =="1000"){
     enemy.x -=1;
   }
+  if(rnd > 750){
+    enemy.x +=1;
+  }
+  if(rnd > 900){
+    enemy.y -=1;
+  }
   if(enemy.y > 519){
     enemy.x = Math.floor(Math.random()*600);
     enemy.y = Math.floor(Math.random()*500);

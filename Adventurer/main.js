@@ -114,12 +114,12 @@ function process(){
     player2.x =2;
     player2.y =2;
   }
-  if(player1.y < 519){
+  if(player1.y > 519){
     player1.x =5000;
     player1.y =10;
     ctx.fillText("Game Over! Your score: "+player1.score, 30, 50);
   }
-  if(player2.y < 519){
+  if(player2.y > 519){
     player2.x =5000;
     player2.y =9;
     ctx.fillText("Game Over! Your score: "+player2.score, 350, 50);

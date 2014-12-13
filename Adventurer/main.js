@@ -217,6 +217,27 @@ function ai(){
     enemy.y +=1;
   }
 }
+
+function Shop(player){
+  var item = prompt("Shop:  enter Item to upgrade \n /speed - 3 \n /fuel - 5 \n /size - 10", "/Item");
+  var Player = player;
+  if(Player=="player1"){
+    if(item=="/speed"&&player1.score >= 3){
+      player1.speed +=1;
+      player1.score -=3;
+    }
+    if(item=="/fuel"&&player1.score >= 5){
+      player1.fuel +=500;
+      player1.score -=3;
+    }
+    if(item=="/size"&&player1.score >= 10){
+      player1.height +=1;
+      player1.width +=1;
+      player1.score -=10;
+    }
+  }
+}
+
 function gameloop(){
   update();
   process();

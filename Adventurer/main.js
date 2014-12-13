@@ -184,17 +184,17 @@ function process(){
   }
   if(player1.score ==50&&player1.level ==4){
     player1.level +=1;
-    player1.height +=8;
-    player1.width +=8;
+    player1.height +=10;
+    player1.width +=10;
     player1.weight +=4;
-    player1.speed +=2;
+    player1.speed +=3;
   }
   if(player2.score ==50&&player2.level ==4){
     player2.level +=1;
-    player2.height +=8;
-    player2.width +=8;
-    player.weight +=4;
-    player.speed +=2;
+    player2.height +=10;
+    player2.width +=10;
+    player2.weight +=4;
+    player2.speed +=3;
   }
 }
 function render(){

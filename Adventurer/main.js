@@ -176,17 +176,24 @@ function collision(first, second){
 var rnd;
 function ai(){
   rnd = Math.floor(Math.random()*1001);
-  if(rnd==250){
+  if(rnd =="250"){
     enemy.y -=1;
   }
-  if(rnd==500){
+  if(rnd =="500"){
     enemy.x +=1;
   }
-  if(rnd==750){
+  if(rnd =="750"){
     enemy.y +=1;
   }
-  if(rnd==1000){
+  if(rnd =="1000"){
     enemy.x -=1;
+  }
+  if(enemy.y > 519){
+    enemy.x = Math.floor(Math.random()*600);
+    enemy.y = Math.floor(Math.random()*500);
+  }
+  else{
+    enemy.y +=1;
   }
 }
 function gameloop(){

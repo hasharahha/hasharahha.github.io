@@ -155,6 +155,10 @@ function render(){
   ctx.moveTo(350, 1);
   ctx.lineTo(350, 520);
   ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(1, 518);
+  ctx.lineTo(800, 518);
+  ctx.stroke();
 }
 
 function collision(first, second){

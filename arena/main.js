@@ -43,6 +43,7 @@ function update(){
   if(keys[39]){
     player.x += player.speed;
   }
+  ball.y -=1;
 }
 function process(){
   if(player.x < 1){
@@ -61,7 +62,7 @@ document.getElementById("game").style.backgroundColor = game.bg;
 ctx.fillRect(player.x, player.y, player.width, player.height);
 //render ball
 ctx.beginPath();
-ctx.arc(ball.x, ball.y, ball.diameter, ball.balance,2*ball.pi);
+ctx.arc(ball.x, ball.y, ball.radius, ball.balance,2*ball.pi);
 ctx.stroke();
 }
 

@@ -1,6 +1,7 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
+alert("loaded")
 //game class
 var game ={
 height: window.innerHeight,

@@ -250,7 +250,7 @@ function Shop(player){
       player2.score -=20;
     }
   }
-
+}
 function gameloop(){
   update();
   process();

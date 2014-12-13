@@ -62,7 +62,7 @@ function update(){
   if(keys[68]){
     player1.x += player1.speed;
   }
-  if(keys[87]&&player.fuel > 1){
+  if(keys[87]&&player1.fuel > 1){
     player1.y -= player1.speed;
     player1.fuel -=5;
   }
@@ -122,7 +122,16 @@ function process(){
   if(player2.y > 519){
     player2.x =5000;
     player2.y =9;
+    ctx.fillStyle ="gray";
     ctx.fillText("Game Over! Your score: "+player2.score, 350, 50);
+  }
+  if(collision(player1, player2)){
+    player1.fuel -=500;
+    player2.fuel -=500;
+    player1.x =30;
+    player2.x =400;
+    player1.y =30;
+    player2.y =30;
   }
 }
 function render(){

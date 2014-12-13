@@ -68,7 +68,7 @@ function update(){
     player1.fuel -=5;
   }
   if(keys[67]){
-    Shop("player1");
+    Shop1("player1");
   }
   if(keys[37]){
     player2.x -= player2.speed;
@@ -81,7 +81,7 @@ function update(){
     player2.fuel -=5;
   }
   if(keys[191]){
-    Shop("player2");
+    Shop2();
   }
 }
 function process(){
@@ -218,10 +218,8 @@ function ai(){
   }
 }
 
-function Shop(player){
+function Shop1(){
   var item = prompt("Shop:  enter Item to upgrade \n /speed - 3 \n /fuel - 5 \n /size - 10", "/Item");
-  var Player = player;
-  if(Player=="player1"){
     if(item=="/speed"&&player1.score >= 3){
       player1.speed +=1;
       player1.score -=3;
@@ -235,7 +233,8 @@ function Shop(player){
       player1.width +=1;
       player1.score -=10;
     }
-    if(Player=="player2"){
+}
+function Shop2(){
     if(item=="/speed"&&player2.score >= 3){
       player2.speed +=1;
       player2.score -=3;
@@ -250,7 +249,6 @@ function Shop(player){
       player2.score -=20;
     }
   }
-}
 function gameloop(){
   update();
   process();

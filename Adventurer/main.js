@@ -194,6 +194,9 @@ function ai(){
   if(rnd > 900){
     enemy.y -=1;
   }
+  if(rnd < 200){
+    enemy.y -=2;
+  }
   if(enemy.y > 519){
     enemy.x = Math.floor(Math.random()*600);
     enemy.y = Math.floor(Math.random()*500);

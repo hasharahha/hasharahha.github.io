@@ -68,7 +68,7 @@ function update(){
     player1.fuel -=5;
   }
   if(keys[67]){
-    Shop1("player1");
+    Shop1();
   }
   if(keys[37]){
     player2.x -= player2.speed;
@@ -224,14 +224,17 @@ function Shop1(){
       player1.speed +=1;
       player1.score -=3;
     }
-    if(item=="/fuel"&&player1.score >= 5){
+    else if(item=="/fuel"&&player1.score >= 5){
       player1.fuel +=500;
       player1.score -=3;
     }
-    if(item=="/size"&&player1.score >= 10){
+    else if(item=="/size"&&player1.score >= 10){
       player1.height +=1;
       player1.width +=1;
       player1.score -=10;
+    }
+    else{
+      
     }
 }
 function Shop2(){
@@ -239,14 +242,17 @@ function Shop2(){
       player2.speed +=1;
       player2.score -=3;
     }
-    if(item=="/fuel"&&player2.score >= 5){
+    else if(item=="/fuel"&&player2.score >= 5){
       player2.fuel +=500;
       player2.score -=3;
     }
-    if(item=="/size"&&player2.score >= 20){
+    else if(item=="/size"&&player2.score >= 20){
       player2.height +=1;
       player2.width +=1;
       player2.score -=20;
+    }
+    else{
+      
     }
   }
 function gameloop(){

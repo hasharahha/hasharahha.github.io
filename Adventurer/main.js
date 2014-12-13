@@ -11,7 +11,7 @@ var player1 ={
   width: 10,
   speed: 3,
   score: 0,
-  fuel: 1500,
+  fuel: 1000,
   color:"yellow",
   level: 1,
   weight: 1
@@ -23,7 +23,7 @@ var player2 ={
   width: 10,
   speed: 3,
   score: 0,
-  fuel: 1500,
+  fuel: 1000,
   color:"blue",
   level: 1,
   weight: 1
@@ -186,14 +186,14 @@ function process(){
     player1.level +=1;
     player1.height +=10;
     player1.width +=10;
-    player1.weight +=4;
+    player1.weight +=3;
     player1.speed +=3;
   }
   if(player2.score ==50&&player2.level ==4){
     player2.level +=1;
     player2.height +=10;
     player2.width +=10;
-    player2.weight +=4;
+    player2.weight +=3;
     player2.speed +=3;
   }
 }

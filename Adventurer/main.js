@@ -13,7 +13,8 @@ var player1 ={
   score: 0,
   fuel: 6000,
   color:"yellow",
-  level: 1
+  level: 1,
+  weight: 1
 };
 var player2 ={
   x: 420,
@@ -24,7 +25,8 @@ var player2 ={
   score: 0,
   fuel: 6000,
   color:"blue",
-  level: 1
+  level: 1,
+  weight: 1
 };
 
 var enemy ={
@@ -87,8 +89,8 @@ function update(){
   }
 }
 function process(){
-  player1.y +=1;
-  player2.y +=1;
+  player1.y += player1.weight;
+  player2.y += player2.weight;
   if(collision(player1, enemy)){
     player1.fuel +=500;
     player1.score +=1;

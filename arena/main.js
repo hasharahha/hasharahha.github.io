@@ -4,8 +4,8 @@ var static;
 alert("loaded")
 //game class
 var game ={
-height: window.innerHeight,
-width: window.innerWidth
+height: 600,
+width: 700,
 fps: 1000/30,
 speed: 1
 }

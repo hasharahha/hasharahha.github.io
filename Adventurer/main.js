@@ -11,7 +11,7 @@ var player1 ={
   width: 10,
   speed: 3,
   score: 0,
-  fuel: 1000,
+  fuel: 1500,
   color:"yellow",
   level: 1,
   weight: 1
@@ -23,7 +23,7 @@ var player2 ={
   width: 10,
   speed: 3,
   score: 0,
-  fuel: 1000,
+  fuel: 1500,
   color:"blue",
   level: 1,
   weight: 1

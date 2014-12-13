@@ -170,6 +170,18 @@ function process(){
     player2.weight +=2;
     player2.speed +=2;
   }
+  if(player1.score ==30&&player1.level ==3){
+    player1.level +=1;
+    player1.width +=2;
+    player1.height +=2;
+    player1.weight +=1;
+  }
+  if(player2.score ==30&&player1.level ==3){
+    player2.level +=1;
+    player2.width +=2;
+    player2.height +=2;
+    player2.weight +=1;
+  }
 }
 function render(){
   ctx.clearRect(1, 1, 1000, 700);

@@ -204,6 +204,9 @@ function ai(){
     enemy.y -=3;
     enemy.fuel -=5;
   }
+  if(rnd < 100&&enemy.fuel < 1){
+    enemy.fuel +=100;
+  }
   if(enemy.y > 519){
     enemy.x = Math.floor(Math.random()*600);
     enemy.y = Math.floor(Math.random()*500);

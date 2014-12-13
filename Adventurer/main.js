@@ -92,13 +92,13 @@ function process(){
   player1.y += player1.weight;
   player2.y += player2.weight;
   if(collision(player1, enemy)){
-    player1.fuel +=500;
+    player1.fuel +=250;
     player1.score +=1;
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.random()*500);
   }
   if(collision(player2, enemy)){
-    player2.fuel +=500;
+    player2.fuel +=250;
     player2.score +=1;
     enemy.x = Math.floor(Math.random()*700);
     enemy.y = Math.floor(Math.ranodm()*500);
@@ -135,8 +135,8 @@ function process(){
     enemy.y =40;
   }
   if(collision(player1, player2)){
-    player1.fuel -=500;
-    player2.fuel -=500;
+    player1.fuel -=100;
+    player2.fuel -=100;
     player1.x =30;
     player2.x =400;
     player1.y =30;
@@ -195,6 +195,12 @@ function process(){
     player2.width +=10;
     player2.weight +=3;
     player2.speed +=3;
+  }
+  if(player1.fuel < 1){
+    player1.weight +=1;
+  }
+  if(player2.fuel < 1){
+    player2.weight +=1;
   }
 }
 function render(){

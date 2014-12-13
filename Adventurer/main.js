@@ -125,6 +125,10 @@ function process(){
     ctx.fillStyle ="gray";
     ctx.fillText("Game Over! Your score: "+player2.score, 350, 50);
   }
+  if(enemy.x < 1){
+    enemy.x =40;
+    enemy.y =40;
+  }
   if(collision(player1, player2)){
     player1.fuel -=500;
     player2.fuel -=500;
@@ -169,10 +173,26 @@ function collision(first, second){
   
   
 }
-
+var rnd;
+function ai(){
+  rnd = Math.floor(Math.random()*1001);
+  if(rnd==250){
+    enemy.y -=1;
+  }
+  if(rnd==500){
+    enemy.x +=1;
+  }
+  if(rnd==750){
+    enemy.y +=1;
+  }
+  if(rnd==1000){
+    enemy.x -=1;
+  }
+}
 function gameloop(){
   update();
   process();
+  ai();
   render();
 }
 

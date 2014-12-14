@@ -87,8 +87,6 @@ function render(){
   document.getElementById("game").height = game.height;
   document.getElementById("game").width = game.width;
     ctx.drawImage(playerimg, player.Pos, 0, player.width, player.height, player.x, player.y, player.width, player.height);
-    ctx.fillStyle ="black";
-    ctx.fillRect(enemt.x, enemy.y, enemy.width, enemy.height);
 }
 
 //collision i use for every game

@@ -17,7 +17,8 @@ var player ={
   score: 0,
   loaded: false,
   Pos: 0,
-  speed: 2
+  speed: 2,
+  weight: 1
 };
 var playerDirectionX = player.frontX;
 var playerDirrectionY = player.frontY;
@@ -54,6 +55,10 @@ function update(){
     player.Pos =62;
     player.x += player.speed;
   }
+  if(keys[32]){
+    player.Pos =33;
+    player.y -= 3;
+  }
 }
 function process(){
   if(player.x > 595){
@@ -68,6 +73,7 @@ function process(){
   if(player.y > 465){
     player.y = 465;
   }
+  player.y += player.weight;
 }
 function render(){
   document.getElementById("game").height = game.height;

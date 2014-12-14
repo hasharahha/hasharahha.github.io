@@ -56,8 +56,14 @@ function update(){
   }
 }
 function process(){
-  if(player.x > 596){
-    player.x == 596;
+  if(player.x > 595){
+    player.x = 595;
+  }
+  if(player.x < 1){
+    player.x =1;
+  }
+  if(player.y < 1){
+    player.y =1;
   }
 }
 function render(){

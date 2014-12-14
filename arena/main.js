@@ -1,4 +1,4 @@
-//And the Game begins
+﻿//And the Game begins
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
@@ -75,7 +75,12 @@ function process(){
   if(player.y > 465){
     player.y = 465;
   }
-}
+    if(player.stamina < 1){
+      setTimeout(function(){
+      player.stamina =20;
+    }, 2000);
+    }
+  }
   player.y += player.weight;
 }
 function render(){
@@ -103,4 +108,4 @@ function gameloop(){
 
 window.requestAnimationFrame(function(){
   gameloop();
-}, game.fps);
+}, game.fps)

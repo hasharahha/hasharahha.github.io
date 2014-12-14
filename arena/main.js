@@ -10,8 +10,8 @@ var game ={
 }
 //player class
 var player ={
-  x: 20,
-  y: 20,
+  x: 0,
+  y: 0,
   height: 32,
   width: 16,
   score: 0,
@@ -35,6 +35,7 @@ playerimg.onload = function(){
   player.loaded =true;
 ctx.drawImage(playerimg, player.x, player.y, player.width, player.height);
 };
+/*
 //Detecters
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;
@@ -78,3 +79,4 @@ function gameloop(){
 window.requestAnimationFrame(function(){
   gameloop();
 }, game.fps)
+*/

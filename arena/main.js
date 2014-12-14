@@ -103,5 +103,5 @@ window.requestAnimationFrame(function(){
 }, game.fps)
 
 setInterval(function(){
-  stamina =20;
+  player.stamina =20;
 }, 3000);

@@ -65,6 +65,9 @@ function process(){
   if(player.y < 1){
     player.y =1;
   }
+  if(player.y < 465){
+    player.y = 465;
+  }
 }
 function render(){
   document.getElementById("game").height = game.height;

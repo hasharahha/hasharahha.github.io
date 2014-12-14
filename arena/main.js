@@ -22,12 +22,11 @@ var player ={
   stamina: 20,
 };
 // blocks
-var block1 ={
-  name:"dirt",
-  x: 30,
-  y: 560,
-  height: 10,
-  width: 50
+var enemy ={
+  x: 10,
+  y: 10,
+  height: 32,
+  width: 16
 };
 //load player
 var playerimg = new Image();
@@ -88,8 +87,14 @@ function render(){
   document.getElementById("game").height = game.height;
   document.getElementById("game").width = game.width;
     ctx.drawImage(playerimg, player.Pos, 0, player.width, player.height, player.x, player.y, player.width, player.height);
-    ctx.fillStyle ="brown";
-    ctx.fillRect(block1.x, block1.y, block1.width, block1.height);  
+    ctx.fillStyle ="black";
+    ctx.fillRect(enemt.x, enemy.y, enemy.width, enemy.height);
+    //scores
+    ctx.fillStyle ="blue";
+    ctx.font ="bold 10px helvetica";
+    ctx.fillText("Score: "+player.score, 10, 10);
+    ctx.fillText("Stamina: "+player.stamina/5, 10, 25);
+    crx.fillText("Fuel: ", 10, 40);
 }
 
 //collision i use for every game

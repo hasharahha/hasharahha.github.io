@@ -30,10 +30,11 @@ var playerDirectionX = player.frontX;
 var playerDirrectionY = player.frontY;
 //load player
 var playerimg = new Image();
-playerimg.src = player.src;
+playerimg.src ="https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.pn";
 playerimg.onload = function(){
-  player.loaded = true;
-}
+  player.loaded =true;
+ctx.drawImage(playerimg, player.x, player.y, player.width, player.height, playerDirectionX, playerDirectionY, player.width, player.height);
+};
 //Detecters
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;

@@ -18,7 +18,8 @@ var player ={
   loaded: false,
   Pos: 0,
   speed: 2,
-  weight: 1
+  weight: 1,
+  stamina: 20,
 };
 var playerDirectionX = player.frontX;
 var playerDirrectionY = player.frontY;
@@ -55,8 +56,9 @@ function update(){
     player.Pos =62;
     player.x += player.speed;
   }
-  if(keys[32]){
-    player.Pos =33;
+  if(keys[32]&&player.stamina > 1){
+    player.stamina -=1;
+    player.Pos =17;
     player.y -= 3;
   }
 }
@@ -72,6 +74,11 @@ function process(){
   }
   if(player.y > 465){
     player.y = 465;
+  }
+  if(player.stamina < 1){
+    window.requestAnimationFrame(function(){
+      player.stamina =20;
+    }, 5000)
   }
   player.y += player.weight;
 }

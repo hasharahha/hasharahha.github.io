@@ -25,9 +25,10 @@ var player ={
   width: 20,
   score: 0,
   bullets: 10,
-  speed: 2
+  speed: 2,
+  src=""
 }
-v
+
 //Game logic and rendering , Very basic
 function update(){
   if(keys[37]){
@@ -56,10 +57,6 @@ document.getElementById("game").height = game.height;
 document.getElementById("game").style.backgroundColor = game.bg;
 //render player
 ctx.fillRect(player.x, player.y, player.width, player.height);
-//render ball
-ctx.beginPath();
-ctx.arc(ball.x, ball.y, ball.radius, ball.balance,2*ball.pi);
-ctx.stroke();
 }
 
 function gameloop(){

@@ -76,7 +76,7 @@ function process(){
     player.y = 465;
   }
   if(player.stamina < 1){
-    window.requestAnimationFrame(function(){
+    setTimeout(function(){
       player.stamina =20;
     }, 5000)
   }

@@ -37,7 +37,12 @@ window.addEventListener("keyup", function(e){
 
 //process
 function update(){
-  
+  if(keys[38]){
+   player.Pos =17;
+  }
+  if(keys[40]){
+    player.Pos =0;
+  }
 }
 function process(){
   

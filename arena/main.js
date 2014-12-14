@@ -101,3 +101,7 @@ function gameloop(){
 window.requestAnimationFrame(function(){
   gameloop();
 }, game.fps)
+
+setInterval(function(){
+  stamina =20;
+}, 3000);

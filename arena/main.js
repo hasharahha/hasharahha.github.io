@@ -1,4 +1,4 @@
-﻿//And the Game begins
+//And the Game begins
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
@@ -38,7 +38,8 @@ window.addEventListener("keyup", function(e){
 
 //process
 function update(){
-  if(keys[38]){
+  if(keys[38]&&player.stamina > 4){
+    player.stamina -=1
    player.Pos =17;
    player.y -= player.speed;
   }

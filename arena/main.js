@@ -30,7 +30,7 @@ var playerDirectionX = player.frontX;
 var playerDirrectionY = player.frontY;
 //load player
 var playerimg = new Image();
-playerimg.src ="https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.pn";
+playerimg.src ="https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.png";
 playerimg.onload = function(){
   player.loaded =true;
 ctx.drawImage(playerimg, player.x, player.y, player.width, player.height, playerDirectionX, playerDirectionY, player.width, player.height);

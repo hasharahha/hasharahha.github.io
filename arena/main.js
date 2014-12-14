@@ -65,7 +65,7 @@ function process(){
   if(player.y < 1){
     player.y =1;
   }
-  if(player.y < 465){
+  if(player.y > 465){
     player.y = 465;
   }
 }

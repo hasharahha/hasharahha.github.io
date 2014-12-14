@@ -75,11 +75,6 @@ function process(){
   if(player.y > 465){
     player.y = 465;
   }
-    if(player.stamina < 1){
-      setTimeout(function(){
-      player.stamina =20;
-    }, 2000);
-    }
   }
   player.y += player.weight;
 }
@@ -109,3 +104,6 @@ function gameloop(){
 window.requestAnimationFrame(function(){
   gameloop();
 }, game.fps)
+setInterval(function(){
+  player.stamina =20;
+}, 4000)

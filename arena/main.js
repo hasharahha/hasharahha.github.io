@@ -21,6 +21,14 @@ var player ={
   weight: 1,
   stamina: 20,
 };
+// blocks
+var block1 ={
+  name:"dirt",
+  x: 30,
+  y: 560,
+  height: 10,
+  width: 50
+}
 //load player
 var playerimg = new Image();
 playerimg.src ="https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.png";
@@ -80,6 +88,8 @@ function render(){
   document.getElementById("game").height = game.height;
   document.getElementById("game").width = game.width;
     ctx.drawImage(playerimg, player.Pos, 0, player.width, player.height, player.x, player.y, player.width, player.height);
+    ctx.fillStyle ="brown";
+    ctx.fillRect(block1.x, block1.y, block1.width, block1.height;)  
 }
 
 //collision i use for every game

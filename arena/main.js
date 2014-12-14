@@ -53,7 +53,7 @@ function render(){
   document.getElementById("game").height = game.height;
   document.getElementById("game").width = game.width;
   if(player.loaded == true){
-    ctx.drawImage(playerimg, player.x, player.y, player.height, player.width, playerDirectionX, playerDirectionY);
+    ctx.drawImage(playerimg, player.x, player.y, player.width, player.height, playerDirectionX, playerDirectionY, player.width, player.height);
   }
 }
 

@@ -94,7 +94,7 @@ function render(){
     ctx.font ="bold 10px helvetica";
     ctx.fillText("Score: "+player.score, 10, 10);
     ctx.fillText("Stamina: "+player.stamina/5, 10, 25);
-    crx.fillText("Fuel: ", 10, 40);
+    ctx.fillText("Fuel: ", 10, 40);
 }
 
 //collision i use for every game

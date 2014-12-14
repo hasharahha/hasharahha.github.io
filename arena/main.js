@@ -43,6 +43,9 @@ function update(){
   if(keys[40]){
     player.Pos =0;
   }
+  if(keys[37]){
+    player.Pos =33;
+  }
 }
 function process(){
   

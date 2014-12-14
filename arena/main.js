@@ -3,6 +3,11 @@ var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
 var keys =[];
+var game ={
+  fps: 1000/30,
+  height: 500,
+  width: 600
+}
 //player class
 var player ={
   x: 20,
@@ -11,6 +16,7 @@ var player ={
   width: 16,
   score: 0,
   src: "https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.png",
+  loaded: false,
   eastX: -34,
   eastY: 0,
   westX: -51,
@@ -22,3 +28,52 @@ var player ={
 };
 var playerDirectionX = player.frontX;
 var playerDirrectionY = player.frontY;
+//load player
+var playerimg = new Image();
+playerimg.src = player.src;
+playerimg.onload = function(){
+  player.loaded = true;
+}
+//Detecters
+window.addEventListener("keydown", function(e){
+  keys[e.keyCode] = true;
+}, false);
+window.addEventListener("keyup", function(e){
+  keys[e.keyCode] = false;
+});
+
+//process
+function update(){
+  
+}
+function process(){
+  
+}
+function render(){
+  document.getElementById("game").height = game.height;
+  document.getElementById("game").width = game.width;
+  if(player.loaded == true){
+    ctx.drawImage(playerimg, player.x, player.y, player.height, player.width, playerDirectionX, playerDirectionY);
+  }
+}
+
+
+function gameloop(){
+  update();
+  process();
+  render();
+  
+  //Contnue the loop
+  window.requestAnimationFrame(function(){
+    gameloop();
+  }, game.fps)
+}
+
+
+
+
+
+
+window.requestAnimationFrame(function(){
+  gameloop();
+}, game.fps)

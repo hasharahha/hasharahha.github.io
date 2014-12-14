@@ -75,10 +75,11 @@ function process(){
   if(player.y > 465){
     player.y = 465;
   }
-  if(player.stamina < 1){
-    setTimeout(function(){
+    if(player.stamina < 1){
+      setTimeout(function(){
       player.stamina =20;
-    }, 5000)
+    }, 2000);
+    }
   }
   player.y += player.weight;
 }

@@ -30,7 +30,7 @@ playerimg.onload = function(){
   player.loaded =true;
 ctx.drawImage(playerimg, 17, 0, 16, 32, 0, 0, 16, 32);
 };
-/*
+
 //Detecters
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;
@@ -50,7 +50,7 @@ function render(){
   document.getElementById("game").height = game.height;
   document.getElementById("game").width = game.width;
   if(player.loaded == true){
-    ctx.drawImage(playerimg, player.x, player.y, player.width, player.height, playerDirectionX, playerDirectionY, player.width, player.height);
+    ctx.drawImage(playerimg, posX, 0, player.width, player.height, player.x, player.y, player.width, player.height);
   }
 }
 
@@ -74,4 +74,3 @@ function gameloop(){
 window.requestAnimationFrame(function(){
   gameloop();
 }, game.fps)
-*/

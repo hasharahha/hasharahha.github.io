@@ -27,15 +27,7 @@ var player ={
   bullets: 10,
   speed: 2
 }
-var ball ={
-  x: 10,
-  y: 540,
-  diameter: 10,
-  pi: 3.14159265,
-  radius: 5,
-  balance: 0,
-  velocity: ball.y -1
-}
+v
 //Game logic and rendering , Very basic
 function update(){
   if(keys[37]){

@@ -16,13 +16,9 @@ var player ={
   width: 16,
   score: 0,
   loaded: false,
-  eastX: -34,
-  eastY: 0,
-  westX: -51,
-  westY: 0,
   frontX: 0,
   frontY: 0,
-  backX: -17,
+  backX: 17,
   backY: 0
 };
 var playerDirectionX = player.frontX;
@@ -32,7 +28,7 @@ var playerimg = new Image();
 playerimg.src ="https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.png";
 playerimg.onload = function(){
   player.loaded =true;
-ctx.drawImage(playerimg, 0, 0, 16, 32, 0, 0, 16, 32);
+ctx.drawImage(playerimg, 0, 0, 16, 32, backX, 0, 16, 32);
 };
 /*
 //Detecters

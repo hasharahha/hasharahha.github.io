@@ -21,8 +21,6 @@ var player ={
   weight: 1,
   stamina: 20,
 };
-var playerDirectionX = player.frontX;
-var playerDirrectionY = player.frontY;
 //load player
 var playerimg = new Image();
 playerimg.src ="https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.png";
@@ -75,11 +73,6 @@ function process(){
   if(player.y > 465){
     player.y = 465;
   }
-    if(player.stamina < 1){
-      setTimeout(function(){
-      player.stamina =20;
-    }, 2000);
-    }
   }
   player.y += player.weight;
 }

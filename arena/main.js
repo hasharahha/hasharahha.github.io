@@ -89,12 +89,6 @@ function render(){
     ctx.drawImage(playerimg, player.Pos, 0, player.width, player.height, player.x, player.y, player.width, player.height);
     ctx.fillStyle ="black";
     ctx.fillRect(enemt.x, enemy.y, enemy.width, enemy.height);
-    //scores
-    ctx.fillStyle ="blue";
-    ctx.font ="bold 10px helvetica";
-    ctx.fillText("Score: "+player.score, 10, 10);
-    ctx.fillText("Stamina: "+player.stamina/5, 10, 25);
-    ctx.fillText("Fuel: ", 10, 40);
 }
 
 //collision i use for every game

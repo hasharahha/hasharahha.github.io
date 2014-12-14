@@ -73,7 +73,6 @@ function process(){
   if(player.y > 465){
     player.y = 465;
   }
-  }
   player.y += player.weight;
 }
 function render(){

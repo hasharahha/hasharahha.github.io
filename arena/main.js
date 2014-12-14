@@ -46,7 +46,7 @@ function update(){
   if(keys[37]){
     player.Pos =33;
   }
-  id(keys[39]){
+  if(keys[39]){
     player.Pos =62;
   }
 }

@@ -82,6 +82,15 @@ function render(){
     ctx.drawImage(playerimg, player.Pos, 0, player.width, player.height, player.x, player.y, player.width, player.height);
 }
 
+//collision i use for every game
+function collision(first, second){
+  return !(first.x > second.x + second.width||
+  first.x + first.height < second.x||
+  first.y > second.y + second.height||
+  first.y + first.width < second.y)
+  
+  
+}
 
 function gameloop(){
   update();

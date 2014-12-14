@@ -16,7 +16,8 @@ var player ={
   width: 16,
   score: 0,
   loaded: false,
-  Pos: 0
+  Pos: 0,
+  speed: 2
 };
 var playerDirectionX = player.frontX;
 var playerDirrectionY = player.frontY;
@@ -39,15 +40,19 @@ window.addEventListener("keyup", function(e){
 function update(){
   if(keys[38]){
    player.Pos =17;
+   player.y -= player.speed;
   }
   if(keys[40]){
     player.Pos =0;
+    player.y += player.speed;
   }
   if(keys[37]){
     player.Pos =33;
+    player.x -= player.speed;
   }
   if(keys[39]){
     player.Pos =62;
+    player.x += player.speed;
   }
 }
 function process(){

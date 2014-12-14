@@ -16,10 +16,7 @@ var player ={
   width: 16,
   score: 0,
   loaded: false,
-  frontX: 0,
-  frontY: 0,
-  backX: 17,
-  backY: 0
+  Pos: 0
 };
 var playerDirectionX = player.frontX;
 var playerDirrectionY = player.frontY;

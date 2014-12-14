@@ -28,7 +28,7 @@ var playerimg = new Image();
 playerimg.src ="https://dl.dropboxusercontent.com/s/006jpxndv604hgk/player.png";
 playerimg.onload = function(){
   player.loaded =true;
-ctx.drawImage(playerimg, 0, 0, 16, 32, player.backX, 0, 16, 32);
+ctx.drawImage(playerimg, player.backX, 0, 16, 32, 0, 0, 16, 32);
 };
 /*
 //Detecters

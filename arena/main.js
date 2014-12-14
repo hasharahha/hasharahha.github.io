@@ -34,7 +34,7 @@ window.addEventListener("keydown", function(e){
 }, false);
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] = false;
-});
+}, false);
 
 //process
 function update(){

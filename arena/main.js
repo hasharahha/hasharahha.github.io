@@ -56,7 +56,9 @@ function update(){
   }
 }
 function process(){
-  
+  if(player.x > 596){
+    player.x == 596;
+  }
 }
 function render(){
   document.getElementById("game").height = game.height;

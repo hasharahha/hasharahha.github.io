@@ -61,12 +61,13 @@ function update(){
    player1.pos =64;
    player1.x += player1.speed;
   }
-  if(keys[87]&&player1.speed ==3){
-    player1.pos =192;
-  }
   if(keys[87]&&player1.fuel > 1){
     player1.pos =128;
     player1.y -= player1.speed
+  }
+  if(keys[37]){
+    player2.pos =64;
+    player2.x -= player2.speed;
   }
 }
 function process(){

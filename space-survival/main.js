@@ -96,9 +96,7 @@ function process(){
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
   //scores
-  ctx.fillStyle ="black";
-  ctx.font ="bold 14px helvetica";
-  ctx.fillText("P1 score: "+player1.score, 3, 8);
+  
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);

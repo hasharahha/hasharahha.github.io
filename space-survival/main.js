@@ -89,10 +89,6 @@ function process(){
   if(player1.x < 1){
     playe1.x =1;
   }
-  static = game.width;
-  if(player1.y > staic - 64){
-    player1.y =static-64;
-  }
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);

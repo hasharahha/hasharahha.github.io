@@ -5,7 +5,7 @@ var static;
 var keys =[];
 var game ={
   height: 600,
-  width: 800,
+  width: 1000,
   fps: 1000/30,
   color:"gray"
 }

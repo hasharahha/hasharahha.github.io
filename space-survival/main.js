@@ -87,7 +87,7 @@ function process(){
     player1.y =1;
   }
   if(player1.x < 1){
-    playe1.x =1;
+    player1.x =1;
   }
 }
 function render(){

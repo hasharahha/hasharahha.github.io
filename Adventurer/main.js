@@ -101,6 +101,14 @@ function update(){
     player2.height +=1;
     player2.width +=1;
 }
+if(keys[49]&&keys[190]){
+  player1.height -=1;
+  player1.width -=1
+}
+if(keys[50]&&keys[190]){
+  player2.height -=1;
+  player2.width -=1;
+}
 }
 function process(){
   player1.y += player1.weight;

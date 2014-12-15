@@ -51,9 +51,13 @@ window.addEventListener("keyup", function(e){
 
 
 function update(){
-  if(keys[65]){
+  if(keys[65]&& player1.fuel > 1){
     player1.pos =64;
     player1.x -= player1.speed;
+  }
+  if(keys[68]&&player1.fuel > 1){
+   player1.pos =64;
+   player1.x += player1.speed;
   }
 }
 function process(){

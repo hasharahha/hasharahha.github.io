@@ -2,8 +2,8 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var game ={
-  height: 500,
-  width: 600,
+  height: 600,
+  width: 800,
   fps: 1000/30,
   color:"gray"
 }

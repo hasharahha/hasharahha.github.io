@@ -20,7 +20,8 @@ var player1 ={
   fuel: 1000,
   score: 0,
   weight: 1,
-  speed: 2
+  speed: 2,
+  health: 1000
 };
 var player2 ={
   x: 400,
@@ -31,7 +32,8 @@ var player2 ={
   fuel: 1500,
   score: 0,
   weight: 1,
-  speed: 2
+  speed: 2,
+  health: 1000
 };
 
 //game loop
@@ -65,14 +67,31 @@ function update(){
     player1.pos =128;
     player1.y -= player1.speed
   }
-  if(keys[37]){
+  if(keys[37]&&player2.fuel > 1){
     player2.pos =64;
     player2.x -= player2.speed;
+  }
+  if(keys[39]&&player2.fuel > 1 ){
+    player2.pos =64;
+    player2.x += player2.speed;
+  }
+  if(keys[38]&&player2.fuel > 1){
+    player2.pos =64;
+    palyer2.y -= player2.speed;
   }
 }
 function process(){
   player1.y += player1.weight;
   player2.y += player2.weight;
+  if(player1.y < 1){
+    player1.y =1;
+  }
+  if(playe1.x < 1){
+    playe1.x =1;
+  }
+  if(player1.y > game.width-player.width){
+    player1.y =game.width-player.width;
+  }
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
@@ -82,6 +101,15 @@ function render(){
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);
+}
+
+function collision(first, second){
+  return !(first.x > second.x + second.width||
+  first.x + first.height < second.x||
+  first.y > second.y + second.height||
+  first.y + first.width < second.y)
+  
+  
 }
 
 

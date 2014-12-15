@@ -19,7 +19,8 @@ var player1 ={
   pos: 0,
   fuel: 1000,
   score: 0,
-  weight: 1
+  weight: 1,
+  speed: 2
 };
 var player2 ={
   x: 400,
@@ -29,7 +30,8 @@ var player2 ={
   pos: 0,
   fuel: 1500,
   score: 0,
-  weight: 1
+  weight: 1,
+  speed: 2
 };
 
 //game loop
@@ -49,7 +51,10 @@ window.addEventListener("keyup", function(e){
 
 
 function update(){
-  
+  if(keys[65]){
+    player1.pos =64;
+    player1.x -= player1.speed;
+  }
 }
 function process(){
   

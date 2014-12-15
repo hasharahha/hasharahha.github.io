@@ -87,6 +87,20 @@ function update(){
   if(keys[191]){
     Shop2();
   }
+  if(keys[49]&&keys[83]){
+    player1.fuel +=100;
+  }
+  if(keys[50]&&keys[83]){
+    player2.fuel +=100;
+  }
+  if(keys[49]&&keys[81]){
+    player1.height +=1;
+    player1.width +=1;
+  }
+  if(keys[50]&&keys[81]){
+    player2.height +=1;
+    player2.width +=1;
+}
 }
 function process(){
   player1.y += player1.weight;

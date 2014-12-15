@@ -44,6 +44,8 @@ window.addEventListener("keydown", function(e){
 }, false);
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] = false;
+  player1.pos =0;
+  player2.pos =0;
 }, false);
 
 

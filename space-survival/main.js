@@ -90,7 +90,7 @@ function process(){
     player1.x =1;
   }
   if(player1.y > 660){
-    player1.y =660;
+    player1.x =660;
   }
 }
 function render(){

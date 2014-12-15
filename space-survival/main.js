@@ -4,6 +4,14 @@ var ctx = canvas.getContext("2d");
 var static;
 var players = new Image();
 players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";
+var fuel =new Image();
+fuel.src ="https://dl.dropboxusercontent.com/s/a6geeh6pqnh4a5v/fuel%20gauge.png";
+var score ={
+  fuelpos: 0,
+  fuelx: 10,
+  fuely: 500,
+  scorepos: 0
+};
 var keys =[];
 var game ={
   height: 600,
@@ -96,7 +104,7 @@ function process(){
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
   //scores
-  
+  ctx.drawImage(fuel, score.fuelpos, 0, 64, 64, score.fuelx, score.fuely, 64, 64);
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);

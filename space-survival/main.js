@@ -86,11 +86,12 @@ function process(){
   if(player1.y < 1){
     player1.y =1;
   }
-  if(playe1.x < 1){
+  if(player1.x < 1){
     playe1.x =1;
   }
-  if(player1.y > game.width-player.width){
-    player1.y =game.width-player.width;
+  static = game.width;
+  if(player1.y > staic - 64){
+    player1.y =static-64;
   }
 }
 function render(){

@@ -60,6 +60,7 @@ function process(){
   
 }
 function render(){
+  ctx.clearRect(0, 0, game.width, game.height);
   //scores
   
   

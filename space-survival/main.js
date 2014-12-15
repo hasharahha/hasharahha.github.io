@@ -89,6 +89,9 @@ function process(){
   if(player1.x < 1){
     player1.x =1;
   }
+  if(player1.y > 660){
+    player1.y =660;
+  }
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);

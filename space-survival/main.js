@@ -1,11 +1,9 @@
 //All game logic and rendering
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
-canvas.style.backgroundColor ="gray";
 ctx.fillStyle ="blue";
-ctx.fillText("Loading...", 500, 400);
-ctx.fillText("Made by Jacob Bondley", 500, 430);
-ctx.fillText("Space survival", 500, 460);
+ctx.fillText("Loading...", 0, 0);
+ctx.fillText("(c) Jacob Bondley", 0, 15);
 setTimeout("Start()", 5000);
 var static;
 var players = new Image();

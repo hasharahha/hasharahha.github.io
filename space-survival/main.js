@@ -6,6 +6,8 @@ var players = new Image();
 players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";
 var fuel =new Image();
 fuel.src ="https://dl.dropboxusercontent.com/s/a6geeh6pqnh4a5v/fuel%20gauge.png";
+var enemyimg = new Image();
+enemy.src ="https://dl.dropboxusercontent.com/s/nkqmpyodvgyyd0h/enemy.png"
 var score ={
   fuel1pos: 0,
   fuel1x: 10,
@@ -46,7 +48,13 @@ var player2 ={
   speed: 2,
   health: 1000
 };
-
+var enemy ={
+  x: 30,
+  y: 30,
+  height: 64,
+  width: 64,
+  static: null
+};
 //game loop
 gameloop();
 canvas.height = game.height;
@@ -116,6 +124,8 @@ function render(){
   //scores
   ctx.drawImage(fuel, score.fuel1pos, 0, 64, 64, score.fuel1x, score.fuel1y, 64, 64);
   ctx.drawImage(fuel, score.fuel2pos, 0, 64, 64, score.fuel2x, score.fuel2y, 64, 64);
+  //enemy ha ha ha
+  ctx.drawImage(enemyimg, enemy.x, enemy.y);
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);

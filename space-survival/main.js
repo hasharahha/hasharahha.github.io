@@ -1,7 +1,7 @@
 //All game logic and rendering
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
-canvas.style.backgound ="gray";
+canvas.style.backgroundColor ="gray";
 ctx.fillStyle ="blue";
 ctx.fillText("Loading...", 500, 400);
 ctx.fillText("Made by Jacob Bondley", 500, 430);

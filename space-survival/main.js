@@ -6,7 +6,7 @@ ctx.fillText("Space Survival V1.0", 0, 15)
 ctx.fillText("Loading...", 0, 45);
 ctx.fillText("(c) Jacob Bondley", 0, 30);
 ctx.fillText("2 players - Game will start in 5 seconds");
-setTimeout("Start()", 6000);
+setTimeout("Start()", 5000);
 var static;
 var players = new Image();
 players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";

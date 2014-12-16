@@ -103,7 +103,6 @@ function process(){
   if(player1.y > 660){
     player1.x =660;
   }
-  FuelCheck();
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
@@ -114,6 +113,7 @@ function render(){
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);
 }
+/*
 function FuelCheck(){
   if(player1.fuel < 4000&&player1.fuel > 3000){
     score.fuel1pos =0;
@@ -131,6 +131,7 @@ function FuelCheck(){
     score.fuel1pos =256;
   }
 }
+*/
 
 function collision(first, second){
   return !(first.x > second.x + second.width||

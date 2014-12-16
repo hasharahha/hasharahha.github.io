@@ -7,7 +7,7 @@ players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";
 var fuel =new Image();
 fuel.src ="https://dl.dropboxusercontent.com/s/a6geeh6pqnh4a5v/fuel%20gauge.png";
 var enemyimg = new Image();
-enemy.src ="https://dl.dropboxusercontent.com/s/nkqmpyodvgyyd0h/enemy.png"
+enemyimg.src ="https://dl.dropboxusercontent.com/s/nkqmpyodvgyyd0h/enemy.png"
 var score ={
   fuel1pos: 0,
   fuel1x: 10,

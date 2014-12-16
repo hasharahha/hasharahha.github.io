@@ -7,9 +7,12 @@ players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";
 var fuel =new Image();
 fuel.src ="https://dl.dropboxusercontent.com/s/a6geeh6pqnh4a5v/fuel%20gauge.png";
 var score ={
-  fuelpos: 0,
-  fuelx: 10,
-  fuely: 500,
+  fuelpos1: 0,
+  fuel1x: 10,
+  fuel1y: 500,
+  fuel2pos: 0,
+  fuel2x: 500,
+  fuel2y: 500,
   scorepos: 0
 };
 var keys =[];
@@ -100,14 +103,33 @@ function process(){
   if(player1.y > 660){
     player1.x =660;
   }
+  FuelCheck();
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
   //scores
-  ctx.drawImage(fuel, score.fuelpos, 0, 64, 64, score.fuelx, score.fuely, 64, 64);
+  ctx.drawImage(fuel, score.fuel1pos, 0, 64, 64, score.fuel1x, score.fuel1y, 64, 64);
+  ctx.drawImage(fuel, score.fuel2pos, 0, 64, 64, score.fuel2x, score.fuel2.y, 64, 64);
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);
+}
+function FuelCheck(){
+  if(player1.fuel < 4000&&player1.fuel > 3000){
+    score.fuel1pos =0;
+  }
+  if(player1.fuel < 3000&&player1.fuel > 2000){
+    score.fuel1pos =64;
+  }
+  if(player1.fuel < 2000&&player1.fuel > 1000){
+    score.fuel1pos =128;
+  }
+  if(player1.fuel < 1000&&player1.fuel > 800){
+    score.fuel1pos =192;
+  }
+  if(player1.fuel < 800&&player1.fuel > 600){
+    score.fuel1pos =256;
+  }
 }
 
 function collision(first, second){

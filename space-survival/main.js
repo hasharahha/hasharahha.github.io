@@ -131,9 +131,9 @@ function FuelCheck(){
   if(player1.fuel < 800&&player1.fuel > 600){
     score.fuel1pos =256;
   }
-  window.requestAnimationFam(function(){
+  window.requestAnimationFrame(function(){
     FuelCheck();
-  })
+  });
 }
 
 

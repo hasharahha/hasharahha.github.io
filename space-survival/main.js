@@ -108,9 +108,7 @@ function render(){
   ctx.clearRect(0, 0, game.width, game.height);
   //scores
   ctx.drawImage(fuel, score.fuel1pos, 0, 64, 64, score.fuel1x, score.fuel1y, 64, 64);
-  /*
-  ctx.drawImage(fuel, score.fuel2pos, 0, 64, 64, score.fuel2x, score.fuel2.y, 64, 64);
-  */
+  ctx.drawImage(fuel, score.fuel2pos, 0, 64, 64, score.fuel2x, score.fuel2y, 64, 64);
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);

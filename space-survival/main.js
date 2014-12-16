@@ -1,6 +1,9 @@
 //All game logic and rendering
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
+canvas.style.backgound ="gray";
+ctx.fillStyle ="blue";
+ctx.fillText("Space war survival", 500, 500);
 var static;
 var players = new Image();
 players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";
@@ -56,10 +59,11 @@ var enemy ={
   static: null
 };
 //game loop
+function Start(){
 gameloop();
 canvas.height = game.height;
 canvas.width = game.width;
-
+}
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;
 }, false);

@@ -113,6 +113,7 @@ function render(){
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);
 }
+FuelCheck();
 
 function FuelCheck(){
   if(player1.fuel < 4000&&player1.fuel > 3000){
@@ -130,6 +131,9 @@ function FuelCheck(){
   if(player1.fuel < 800&&player1.fuel > 600){
     score.fuel1pos =256;
   }
+  window.requestAnimationFam(function(){
+    FuelCheck();
+  })
 }
 
 

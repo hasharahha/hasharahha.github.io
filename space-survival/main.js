@@ -146,6 +146,32 @@ function FuelCheck(){
   if(player1.fuel < 1){
     score.fuel1pos = 704;
   }
+
+ if(player2.fuel < 4000&&player2.fuel > 3000){
+    score.fuel2pos =0;
+  }
+  if(player2.fuel < 3000&&player2.fuel > 2000){
+    score.fuel2pos =64;
+  }
+  if(player2.fuel < 2000&&player2.fuel > 1000){
+    score.fuel2pos =128;
+  }
+  if(player2.fuel < 1000&&player2.fuel > 800){
+    score.fuel2pos =192;
+  }
+  if(player2.fuel < 800&&player2.fuel > 600){
+    score.fuel2pos =256;
+  }
+  if(player2.fuel < 600&&player2.fuel > 400){
+    score.fuel2pos =321;
+  }
+  if(player2.fuel < 100&&player2.fuel > 50){
+    score.fuel2pos = 640;
+  }
+  if(player2.fuel < 1){
+    score.fuel2pos = 704;
+  }
+
   window.requestAnimationFrame(function(){
     FuelCheck();
   });

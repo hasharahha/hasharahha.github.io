@@ -49,8 +49,8 @@ var player2 ={
   health: 1000
 };
 var enemy ={
-  x: 30,
-  y: 30,
+  x: 70,
+  y: 70,
   height: 64,
   width: 64,
   static: null
@@ -117,6 +117,22 @@ function process(){
   
   if(player1.fuel < 1){
     player1.y += player1.weight;
+  }
+  if(collision(player1, enemy)){
+    player1.fuel +=250;
+    getFuel();
+  }
+  if(collision(player2, enemy)){
+    player2.fuel +=250;
+    getFuel();
+  }
+  if(collision(player1, player2)){
+    player1.fuel -=100;
+    player2.fuel -=100;
+    player1.x = 10;
+    player1.y = 10;
+    player2.x = 500;
+    player2.y = 10;
   }
 }
 function render(){
@@ -187,6 +203,10 @@ function FuelCheck(){
   });
 }
 
+function getFuel(){
+  enemy.x =Math.floor(Math.random()*game.width-enemy.width);
+  enemy.y =Math.floor(Math.random()*game.height-enemy.height);
+}
 
 function collision(first, second){
   return !(first.x > second.x + second.width||

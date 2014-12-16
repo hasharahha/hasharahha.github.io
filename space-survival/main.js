@@ -106,6 +106,10 @@ function process(){
     player1.x =660;
   }
   FuelCheck();
+  
+  if(player1.fuel < 1){
+    player1.y += player1.weight;
+  }
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
@@ -132,6 +136,15 @@ function FuelCheck(){
   }
   if(player1.fuel < 800&&player1.fuel > 600){
     score.fuel1pos =256;
+  }
+  if(player1.fuel < 600&&player1.fuel > 400){
+    score.fuel1pos =321;
+  }
+  if(player1.fuel < 100&&player1.fuel > 50){
+    score.fuel1pos = 640;
+  }
+  if(player1.fuel < 1){
+    score.fuel1pos = 704;
   }
   window.requestAnimationFrame(function(){
     FuelCheck();

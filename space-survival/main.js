@@ -7,7 +7,7 @@ players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";
 var fuel =new Image();
 fuel.src ="https://dl.dropboxusercontent.com/s/a6geeh6pqnh4a5v/fuel%20gauge.png";
 var score ={
-  fuelpos1: 0,
+  fuel1pos: 0,
   fuel1x: 10,
   fuel1y: 500,
   fuel2pos: 0,

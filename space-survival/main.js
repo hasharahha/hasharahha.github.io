@@ -76,6 +76,7 @@ function update(){
   }
   if(keys[87]&&player1.fuel > 1){
     player1.pos =128;
+    player1.fuel -= player1.speed;
     player1.y -= player1.speed
   }
   if(keys[37]&&player2.fuel > 1){
@@ -88,6 +89,7 @@ function update(){
   }
   if(keys[38]&&player2.fuel > 1){
     player2.pos =64;
+    player2.fuel -= player2.speed;
     player2.y -= player2.speed;
   }
 }

@@ -33,7 +33,7 @@ var player1 ={
   fuel: 3000,
   score: 0,
   weight: 1,
-  speed: 2,
+  speed: 3,
   health: 1000
 };
 var player2 ={
@@ -45,7 +45,7 @@ var player2 ={
   fuel: 3000,
   score: 0,
   weight: 1,
-  speed: 2,
+  speed: 3,
   health: 1000
 };
 var enemy ={
@@ -204,8 +204,8 @@ function FuelCheck(){
 }
 
 function getFuel(){
-  enemy.x =Math.floor(Math.random()*game.width-enemy.width);
-  enemy.y =Math.floor(Math.random()*game.height-enemy.height);
+  enemy.x =Math.floor(Math.random()*700);
+  enemy.y =Math.floor(Math.random()*500);
 }
 
 function collision(first, second){

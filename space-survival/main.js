@@ -17,8 +17,8 @@ enemyimg.src ="https://dl.dropboxusercontent.com/s/nkqmpyodvgyyd0h/enemy.png";
 var missileimg = new Image();
 missileimg.src ="https://dl.dropboxusercontent.com/s/6gwmuemtsg8097m/result.png";
 var missile1 ={
-  x: null,
-  y: null,
+  x: 2000,
+  y: 2000,
   height: 32,
   width: 32,
   nheight: 32,
@@ -28,8 +28,8 @@ var missile1 ={
   posY: 0
 };
 var missile2 ={
-  x: null,
-  y: null,
+  x: 2000,
+  y: 2000,
   height: 32,
   width: 32,
   nheight: 32,
@@ -183,6 +183,9 @@ function render(){
   ctx.drawImage(fuel, score.fuel2pos, 0, 64, 64, score.fuel2x, score.fuel2y, 64, 64);
   //enemy ha ha ha
   ctx.drawImage(enemyimg, enemy.x, enemy.y);
+  //Misiles Render
+  ctx.drawImage(missileimg, missile1.pos, 0, missile1.width, missile1.height, missile1.x, missile1.y, missile1.width, missile1.height);
+  ctx.drawImage(missileimg, missile2.pos, 32, missile2.width, missile2.height, missile2.x, missile2.y, missile2.width, missile1.height);
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.nwidth, player1.nheight);
   ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.nwidth, player2.nheight);

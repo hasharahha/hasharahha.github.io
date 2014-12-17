@@ -289,13 +289,15 @@ function MissileAnim(){
   missile2.y -=1;
 }
 function shoot1(entity){
+  entity.fuel -=500;
   missile1.x = entity.x;
-  missile1.y = entity.y - entity.height;
+  missile1.y = entity.y - 32;
   missile1.pos =32;
 }
 function shoot2(entity){
+  entity.fuel -=500;
   missile2.x = entity.x;
-  missile2.y = entity.y - entity.height;
+  missile2.y = entity.y - 32;
   missile2.pos =32;
 }
 

@@ -151,6 +151,15 @@ function process(){
   if(player1.y > 660){
     player1.x =660;
   }
+  if(player2.y < 1){
+    player2.y =1;
+  }
+  if(player2.x < 1){
+    player2.x =1;
+  }
+  if(player1.y > 660){
+    player2.x =660;
+  }
   FuelCheck();
   
   if(player1.fuel < 1){
@@ -267,6 +276,11 @@ if(player2.skill ==5){
 function getFuel(){
   enemy.x =Math.floor(Math.random()*700);
   enemy.y =Math.floor(Math.random()*500);
+}
+
+function shoot1(entity){
+  missile1.x = entity.x;
+  missile1.y = entity
 }
 
 function collision(first, second){

@@ -24,7 +24,19 @@ var missile1 ={
   nheight: 32,
   nwidth: 32,
   speed: 3,
-  pos: 32
+  posX: 32,
+  posY: 0
+};
+var missile2 ={
+  x: null,
+  y: null,
+  height: 32,
+  width: 32,
+  nheight: 32,
+  nwidth: 32,
+  speed: 3,
+  posX: 0,
+  posY: 32
 };
 
 var score ={

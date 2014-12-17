@@ -281,16 +281,30 @@ function FuelCheck(){
 function skillupdate(){
 if(player1.skill ==5){
   player1.skill +=1;
-  player1.nheight +=20;
-  player1.nwidth +=20;
+  player1.nheight +=5;
+  player1.nwidth +=5;
   player1.speed +=3;
   player1.weight +=1;
 }
 if(player2.skill ==5){
   player2.skill+=1;
-  player2.nheight +=20;
-  player2.nwidth +=20;
+  player2.nheight +=5;
+  player2.nwidth +=5;
   player2.speed +=3;
+  player2.weight +=1;
+}
+if(player1.skill ==10){
+  player1.skill +=1;
+  player1.nheight +=5;
+  player1.nweight +=5;
+  player1.speed +=1;
+  player1.weight +=1;
+}
+if(player2.skill ==10){
+  player2.skill +=1;
+  player2.nheight +=5;
+  player2.nwidth +=5;
+  player2.speed +=1;
   player2.weight +=1;
 }
 }

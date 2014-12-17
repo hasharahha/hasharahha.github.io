@@ -138,6 +138,12 @@ function update(){
     player2.fuel -= player2.speed;
     player2.y -= player2.speed;
   }
+  if(keys[83]){
+    shoot1(player1);
+  }
+  if(keys[40]){
+    shoot2(player2);
+  }
 }
 function process(){
   player1.y += player1.weight;
@@ -280,7 +286,13 @@ function getFuel(){
 
 function shoot1(entity){
   missile1.x = entity.x;
-  missile1.y = entity
+  missile1.y = entity.y - entity.height;
+  missile1.pos =32;
+}
+function shoot2(entity){
+  missile2.x = entity.x;
+  missile2.x = entity.y - entity.height;
+  missile2.pos =32;
 }
 
 function collision(first, second){

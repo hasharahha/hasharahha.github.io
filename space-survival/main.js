@@ -158,10 +158,12 @@ function process(){
   }
   if(collision(player1, enemy)){
     player1.fuel +=250;
+    player2.skill +=1;
     getFuel();
   }
   if(collision(player2, enemy)){
     player2.fuel +=250;
+    player2.skill +=1;
     getFuel();
   }
   if(collision(player1, player2)){

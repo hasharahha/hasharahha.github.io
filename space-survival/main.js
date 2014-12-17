@@ -68,7 +68,8 @@ var player1 ={
   weight: 1,
   speed: 3,
   health: 1000,
-  skill: 0
+  skill: 0,
+  missiles: 1
 };
 var player2 ={
   x: 400,
@@ -83,7 +84,8 @@ var player2 ={
   weight: 1,
   speed: 3,
   health: 1000,
-  skill: 0
+  skill: 0,
+  missiles: 1
 };
 var enemy ={
   x: 70,
@@ -95,6 +97,7 @@ var enemy ={
 //game loop
 function Start(){
 gameloop();
+MissileLoop();
 canvas.height = game.height;
 canvas.width = game.width;
 }
@@ -188,6 +191,18 @@ function process(){
     player1.y = 10;
     player2.x = 500;
     player2.y = 10;
+  }
+  if(collision(missile1, player2)){
+    player2.fuel -=100;
+    player2.x = Math.floor(Math.random()*500);
+    player2.y = Math.floor(Math.random()*500);
+    player1.fuel +=100;
+  }
+  if(collision(missile2, player2)){
+    player1.fuel -=100;
+    player1.x = Math.floor(Math.random()*600);
+    player1.y = Math.floor(Math.random()*500);
+    player2.fuel +=100;
   }
   skillupdate();
   MissileAnim();
@@ -289,16 +304,22 @@ function MissileAnim(){
   missile2.y -=1;
 }
 function shoot1(entity){
-  entity.fuel -=500;
+  if(entity.missiles >= 1){
+  entity.missiles -=1;
+  entity.fuel -=100;
   missile1.x = entity.x;
   missile1.y = entity.y - 32;
   missile1.pos =32;
+  }
 }
 function shoot2(entity){
-  entity.fuel -=500;
+  if(entity.missiles >= 1){
+  entity.missiles -=1;
+  entity.fuel -=100;
   missile2.x = entity.x;
   missile2.y = entity.y - 32;
   missile2.pos =32;
+  }
 }
 
 function collision(first, second){
@@ -318,4 +339,11 @@ function gameloop(){
   window.requestAnimationFrame(function(){
     gameloop();
   }, game.fps);
+}
+function MissileLoop(){
+  player1.missiles =1;
+  player2.missiles =2;
+  window.requestAnimationFrame(function(){
+    MissileLoop();
+  }, 5000);
 }

@@ -60,24 +60,30 @@ var player1 ={
   y: 10,
   height: 64,
   width: 64,
+  nheight: 64,
+  nwidth: 64,
   pos: 0,
   fuel: 3000,
   score: 0,
   weight: 1,
   speed: 3,
-  health: 1000
+  health: 1000,
+  skill: 0
 };
 var player2 ={
   x: 400,
   y: 10,
   height: 64,
   width: 64,
+  nheight: 64,
+  nwidth: 64,
   pos: 0,
   fuel: 3000,
   score: 0,
   weight: 1,
   speed: 3,
-  health: 1000
+  health: 1000,
+  skill: 0
 };
 var enemy ={
   x: 70,
@@ -166,6 +172,7 @@ function process(){
     player2.x = 500;
     player2.y = 10;
   }
+  skillupdate();
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
@@ -175,8 +182,8 @@ function render(){
   //enemy ha ha ha
   ctx.drawImage(enemyimg, enemy.x, enemy.y);
   //player1
-  ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.width, player1.height);
-  ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.width, player2.height);
+  ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.nwidth, player1.nheight);
+  ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.nwidth, player2.nheight);
 }
 
 function FuelCheck(){
@@ -233,6 +240,23 @@ function FuelCheck(){
   window.requestAnimationFrame(function(){
     FuelCheck();
   });
+}
+
+function skillupdate(){
+if(player1.skill ==5){
+  player1.skill +=1;
+  player1.nheight +=20;
+  player1.nwidth +=20;
+  player1.speed +=3;
+  player1.weight +=1;
+}
+if(player2.skill ==5){
+  player2.skill+=1;
+  player2.nheight +=20;
+  player2.nwidth +=20;
+  player2.speed +=3;
+  player2.weight +=1;
+}
 }
 
 function getFuel(){

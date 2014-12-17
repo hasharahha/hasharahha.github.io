@@ -190,6 +190,7 @@ function process(){
     player2.y = 10;
   }
   skillupdate();
+  MissileAnim();
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);
@@ -283,7 +284,10 @@ function getFuel(){
   enemy.x =Math.floor(Math.random()*700);
   enemy.y =Math.floor(Math.random()*500);
 }
-
+function MissileAnim(){
+  missile1.y -=1;
+  missile2.y -=1;
+}
 function shoot1(entity){
   missile1.x = entity.x;
   missile1.y = entity.y - entity.height;
@@ -291,7 +295,7 @@ function shoot1(entity){
 }
 function shoot2(entity){
   missile2.x = entity.x;
-  missile2.x = entity.y - entity.height;
+  missile2.y = entity.y - entity.height;
   missile2.pos =32;
 }
 

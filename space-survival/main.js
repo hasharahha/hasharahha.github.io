@@ -198,7 +198,7 @@ function process(){
     player2.y = Math.floor(Math.random()*500);
     player1.fuel +=100;
   }
-  if(collision(missile2, player2)){
+  if(collision(missile2, player1)){
     player1.fuel -=100;
     player1.x = Math.floor(Math.random()*600);
     player1.y = Math.floor(Math.random()*500);

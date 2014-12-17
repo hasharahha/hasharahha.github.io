@@ -13,7 +13,20 @@ players.src ="https://dl.dropboxusercontent.com/s/z146qmtw6vwkuix/players.png";
 var fuel =new Image();
 fuel.src ="https://dl.dropboxusercontent.com/s/a6geeh6pqnh4a5v/fuel%20gauge.png";
 var enemyimg = new Image();
-enemyimg.src ="https://dl.dropboxusercontent.com/s/nkqmpyodvgyyd0h/enemy.png"
+enemyimg.src ="https://dl.dropboxusercontent.com/s/nkqmpyodvgyyd0h/enemy.png";
+var missileimg = new Image();
+missileimg.src ="https://dl.dropboxusercontent.com/s/6gwmuemtsg8097m/result.png";
+var missile1 ={
+  x: null,
+  y: null,
+  height: 32,
+  width: 32,
+  nheight: 32,
+  nwidth: 32,
+  speed: 3,
+  pos: 32
+};
+
 var score ={
   fuel1pos: 0,
   fuel1x: 10,

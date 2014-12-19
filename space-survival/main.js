@@ -206,6 +206,16 @@ function process(){
   }
   skillupdate();
   MissileAnim();
+  if(player1.y >= 600-60){
+    alert("Player 1 Lost");
+    confirm("Restart");
+    window.location ='http://hasharahha.github.io/space-survival/index.html';
+  }
+  if(player2.y >= 600-60){
+    alert("Player2 lost");
+    confirm("Restart");
+    window.location ='http://hasharahha.github.io/space-survival/index.html';
+  }
 }
 function render(){
   ctx.clearRect(0, 0, game.width, game.height);

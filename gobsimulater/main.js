@@ -51,8 +51,6 @@ function process(){
 
 function Animate(){
 
-  if()
-
 }
 
 function render(){

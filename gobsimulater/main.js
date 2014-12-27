@@ -14,7 +14,8 @@ var player ={
   spriteX: 0,
   spriteY: 84
 };
-
+var anim;
+var speed =1000;
 gameloop();
 
 window.addEventListener("keydown", function(e){
@@ -24,32 +25,37 @@ window.addEventListener("keydown", function(e){
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] = false;
   player.stage ="idol";
+  clearInterval(anim);
 }, false);
 function update(){
   if(keys[38]){
     //Up key
     player.stage ="up";
+    anim = setInterval(add, speed)
     player.y -= player.speed;
-    player.spriteX +=42;
   }
   if(keys[39]){
     //Right key
     player.stage ="right";
-    player.spriteX += 42;
+    anim = setInterval(add, speed);
     player.x += player.speed;
   }
   if(keys[40]){
     //Down key
     player.stage ="down";
-    player.spriteX += 42;
+    anim = setInterval(add, speed);
     player.y += player.speed;
   }
   if(keys[37]){
     //Left key
     player.stage ="left";
-    player.spriteX += 42;
+    anim = setInterval(add, speed);
     player.x -= player.speed;
   }
+}
+
+function add(){
+  player.spriteX +=42;
 }
 
 function process(){

@@ -52,7 +52,21 @@ Animate();
 }
 
 function Animate(){
-
+if(player.stage ="idol"){
+  player.spriteY =84;
+}
+if(player.stage ="up"){
+  player.spriteY =0;
+}
+if(player.stage ="right"){
+  player.spriteY =42;
+}
+if(player.stage ="left"){
+  player.spriteY =126;
+}
+if(player.stage ="down"){
+  player.spriteY =84;
+}
 }
 
 function render(){

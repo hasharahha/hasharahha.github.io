@@ -58,6 +58,7 @@ function Animate(){
 }
 
 function render(){
+  ctx.clearRect(0, 0, 500, 500);
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.height, player.width, player.x, player.y, player.height, player.width);
 }
 

@@ -45,9 +45,6 @@ function update(){
     player.stage ="left";
     player.x -= player.speed;
   }
-  else{
-    player.stage ="idol";
-  }
 }
 
 function process(){

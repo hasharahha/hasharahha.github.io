@@ -29,26 +29,45 @@ function update(){
     //Up key
     player.stage ="up";
     player.y -= player.speed;
+    player.spriteX +=42;
+  }
+  else{
+    player.stage ="idol";
   }
   if(keys[39]){
     //Right key
     player.stage ="right";
+    player.spriteX += 42;
     player.x += player.speed;
+  }
+  else{
+    player.stage ="idol"
   }
   if(keys[40]){
     //Down key
     player.stage ="down";
+    player.spriteX += 42;
     player.y += player.speed;
+  }
+  else{
+    player.stage ="idol";
   }
   if(keys[37]){
     //Left key
     player.stage ="left";
+    player.spriteX += 42;
     player.x -= player.speed;
+  }
+  else{
+    player.stage ="idol";
   }
 }
 
 function process(){
   
+  if(player.spriteX > 126){
+    player.spriteX =0;
+  }
 }
 
 function Animate(){

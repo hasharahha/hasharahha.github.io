@@ -229,7 +229,7 @@ function render(){
   ctx.drawImage(missileimg, missile2.pos, 32, missile2.width, missile2.height, missile2.x, missile2.y, missile2.width, missile1.height);
   //player1
   ctx.drawImage(players, player1.pos, 0, player1.width, player1.height, player1.x, player1.y, player1.nwidth, player1.nheight);
-  ctx.drawImage(players, player2.pos, 64, player2.width, player2.height, player2.x, player2.y, player2.nwidth, player2.nheight);
+  ctx.drawImage(players, 64, player2.pos, player2.width, player2.height, player2.x, player2.y, player2.nwidth, player2.nheight);
 }
 
 function FuelCheck(){

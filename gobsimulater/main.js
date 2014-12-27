@@ -96,8 +96,8 @@ if(player.stage =="down"){
 }
 
 function render(){
-  ctx.clearRect(0, 0, 500, 1000);
-  ctx.drawImage(skin, player.spriteX, player.spriteY, player.height, player.width, player.x, player.y, player.height, player.width);
+  ctx.clearRect(0, 0, 1000, 500);
+  ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
 }
 
 function gameloop(){

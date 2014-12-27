@@ -12,7 +12,7 @@ var player ={
   stage: "idol",
   speed: 2,
   spriteX: 0,
-  spriteY: 126
+  spriteY: 84
 };
 
 gameloop();

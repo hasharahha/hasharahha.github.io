@@ -24,7 +24,6 @@ window.addEventListener("keydown", function(e){
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] = false;
   player.stage ="idol";
-  clearInterval(anim);
 }, false);
 function update(){
   if(keys[38]){

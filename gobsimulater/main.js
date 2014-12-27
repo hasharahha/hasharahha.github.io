@@ -10,7 +10,9 @@ var player ={
   height: 42,
   width: 42,
   stage: "idol",
-  speed: 2
+  speed: 2,
+  spriteX: 0,
+  spriteY: 126
 };
 
 window.addEventListener("keydown", function(e){
@@ -48,11 +50,13 @@ function process(){
 }
 
 function Animate(){
-  
+
+  if()
+
 }
 
 function render(){
-  
+  ctx.drawImage(skin, player.spriteX, player.spriteY, player.height, player.width, player.x, player.y, player.height, player.width);
 }
 
 function gameloop(){

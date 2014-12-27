@@ -8,7 +8,7 @@ var player ={
   y: 10,
   height: 42,
   width: 42,
-  stage: down,
+  stage: "down",
   update: function(){
     ctx.drawImage(skin, 0, 0, this.height, this.width, this.x, this.y, this.height, this.width);
   }

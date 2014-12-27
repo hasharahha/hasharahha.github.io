@@ -26,6 +26,21 @@ function update(){
     player.stage ="up";
     player.y -= player.speed;
   }
+  if(keys[39]){
+    //Right key
+    player.stage ="right";
+    player.x += player.speed;
+  }
+  if(keys[40]){
+    //Down key
+    player.stage ="down";
+    player.y += player.speed;
+  }
+  if(keys[37]){
+    //Left key
+    player.stage ="left";
+    player.x -= player.speed;
+  }
 }
 
 function process(){

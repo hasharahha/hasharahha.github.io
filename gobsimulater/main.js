@@ -59,6 +59,18 @@ function add(){
 }
 
 function process(){
+  if(player.x < 1){
+    player.x =1;
+  }
+  if(player.y < 1){
+    player.y =1;
+  }
+  if(player.x > 1000-42){
+    player.x = 1000-42;
+  }
+  if(player.y > 500-42){
+    player.y =500-42;
+  }
   
   if(player.spriteX > 126){
     player.spriteX =0;
@@ -84,7 +96,7 @@ if(player.stage =="down"){
 }
 
 function render(){
-  ctx.clearRect(0, 0, 500, 500);
+  ctx.clearRect(0, 0, 500, 1000);
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.height, player.width, player.x, player.y, player.height, player.width);
 }
 

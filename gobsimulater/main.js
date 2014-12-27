@@ -14,8 +14,7 @@ var player ={
   spriteX: 0,
   spriteY: 84
 };
-var anim;
-var speed =1000;
+var speed =300;
 gameloop();
 
 window.addEventListener("keydown", function(e){
@@ -31,25 +30,25 @@ function update(){
   if(keys[38]){
     //Up key
     player.stage ="up";
-    anim = setInterval(add, speed)
+    var anim = setInterval(add, speed)
     player.y -= player.speed;
   }
   if(keys[39]){
     //Right key
     player.stage ="right";
-    anim = setInterval(add, speed);
+    var anim = setInterval(add, speed);
     player.x += player.speed;
   }
   if(keys[40]){
     //Down key
     player.stage ="down";
-    anim = setInterval(add, speed);
+    var anim = setInterval(add, speed);
     player.y += player.speed;
   }
   if(keys[37]){
     //Left key
     player.stage ="left";
-    anim = setInterval(add, speed);
+    var anim = setInterval(add, speed);
     player.x -= player.speed;
   }
 }

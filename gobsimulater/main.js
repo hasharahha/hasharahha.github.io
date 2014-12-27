@@ -48,7 +48,7 @@ function update(){
 }
 
 function process(){
-Animate();
+  
 }
 
 function Animate(){
@@ -76,6 +76,7 @@ function render(){
 
 function gameloop(){
   update();
+  Animate();
   process();
   render();
   window.requestAnimationFrame(function(){

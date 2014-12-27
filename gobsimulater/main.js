@@ -45,6 +45,9 @@ function update(){
     player.stage ="left";
     player.x -= player.speed;
   }
+  else{
+    player.stage ="idol";
+  }
 }
 
 function process(){
@@ -52,19 +55,19 @@ function process(){
 }
 
 function Animate(){
-if(player.stage ==="idol"){
+if(player.stage =="idol"){
   player.spriteY =84;
 }
-if(player.stage ==="up"){
+if(player.stage =="up"){
   player.spriteY =0;
 }
-if(player.stage ==="right"){
+if(player.stage =="right"){
   player.spriteY =42;
 }
-if(player.stage ==="left"){
+if(player.stage =="left"){
   player.spriteY =126;
 }
-if(player.stage ==="down"){
+if(player.stage =="down"){
   player.spriteY =84;
 }
 }

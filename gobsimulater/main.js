@@ -17,4 +17,4 @@ var player ={
 alert("Hello");
 setInterval(function(){
   player.update();
-}, 1000)
+}, 1000);

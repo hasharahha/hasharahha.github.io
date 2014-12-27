@@ -23,6 +23,7 @@ window.addEventListener("keydown", function(e){
 
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] = false;
+  player.stage ="idol";
 }, false);
 function update(){
   if(keys[38]){
@@ -31,17 +32,11 @@ function update(){
     player.y -= player.speed;
     player.spriteX +=42;
   }
-  else{
-    player.stage ="idol";
-  }
   if(keys[39]){
     //Right key
     player.stage ="right";
     player.spriteX += 42;
     player.x += player.speed;
-  }
-  else{
-    player.stage ="idol"
   }
   if(keys[40]){
     //Down key
@@ -49,17 +44,11 @@ function update(){
     player.spriteX += 42;
     player.y += player.speed;
   }
-  else{
-    player.stage ="idol";
-  }
   if(keys[37]){
     //Left key
     player.stage ="left";
     player.spriteX += 42;
     player.x -= player.speed;
-  }
-  else{
-    player.stage ="idol";
   }
 }
 

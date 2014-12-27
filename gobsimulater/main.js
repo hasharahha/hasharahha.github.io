@@ -14,7 +14,7 @@ var player ={
   spriteX: 0,
   spriteY: 84
 };
-var speed =300;
+var speed =100;
 gameloop();
 setInterval(add, speed);
 

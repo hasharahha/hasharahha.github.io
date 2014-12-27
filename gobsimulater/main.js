@@ -17,10 +17,12 @@ var player ={
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] = true;
+  update();
 }, false);
 
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] = false;
+  update();
 }, false);
 function update(){
   if(keys[38]){
@@ -46,7 +48,7 @@ function update(){
 }
 
 function process(){
-  
+Animate();
 }
 
 function Animate(){
@@ -58,9 +60,7 @@ function render(){
 }
 
 function gameloop(){
-  update();
   process();
-  Animate();
   render();
   window.requestAnimationFrame(function(){
     gameloop();

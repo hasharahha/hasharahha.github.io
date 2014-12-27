@@ -55,7 +55,12 @@ function update(){
 }
 
 function add(){
+  if(player.stage !="idol"){
   player.spriteX +=42;
+  }
+  else{
+    player.spriteX =0;
+  }
 }
 
 function process(){

@@ -22,10 +22,15 @@ var tiles ={
   o15: ["14, 0", 0, 0, 32, 32, 588, 0, 42, 42, "GRASS"],
   o16: ["15, 0", 224, 0, 32, 32, 630, 0, 42, 42, "SAND_SOUL"],
   o17: ["16, 0", 192, 0, 32, 32, 672, 0, 42, 42, "SAND"],
-  o18: ["16, 0", 192, 0, 32, 32, 709, 0, 42, 42, "SAND"],
-  o19: ["16, 0", 192, 0, 32, 32, 751, 0, 42, 42, "SAND"],
-  o20: ["16, 0", 192, 0, 32, 32, 793, 0, 42, 42, "SAND"],
-  o21: ["16, 0", 192, 0, 32, 32, 835, 0, 42, 42, "SAND"]
+  o18: ["17, 0", 192, 0, 32, 32, 709, 0, 42, 42, "SAND"],
+  o19: ["18, 0", 192, 0, 32, 32, 751, 0, 42, 42, "SAND"],
+  o20: ["19, 0", 192, 0, 32, 32, 793, 0, 42, 42, "SAND"],
+  o21: ["20, 0", 192, 0, 32, 32, 835, 0, 42, 42, "SAND"],
+  o22: ["21, 0", 192, 0, 32, 32, 877, 0, 42, 42, "SAND"],
+  o23: ["22, 0", 192, 0, 32, 32, 919, 0, 42, 42, "SAND"],
+  o24: ["23, 0", 192, 0, 32, 32, 961, 0, 42, 42, "SAND"],
+  o25: ["24, 0", 192, 0, 32, 32, 1003, 0, 42, 42, "SAND"],
+  o26: ["25, 0", 192, 0, 32, 32, 1045, 0, 42, 42, "SAND"]
 };
 
 tileset.onload = function(){
@@ -50,5 +55,11 @@ tileset.onload = function(){
   set.drawImage(tileset, tiles.o19[1], tiles.o19[2], tiles.o19[3], tiles.o19[4], tiles.o19[5], tiles.o19[6], tiles.o19[7], tiles.o19[8]); 
   set.drawImage(tileset, tiles.o20[1], tiles.o20[2], tiles.o20[3], tiles.o20[4], tiles.o20[5], tiles.o20[6], tiles.o20[7], tiles.o20[8]); 
   set.drawImage(tileset, tiles.o21[1], tiles.o21[2], tiles.o21[3], tiles.o21[4], tiles.o21[5], tiles.o21[6], tiles.o21[7], tiles.o22[8]); 
+  set.drawImage(tileset, tiles.o22[1], tiles.o22[2], tiles.o22[3], tiles.o22[4], tiles.o22[5], tiles.o22[6], tiles.o21[7], tiles.o22[8]); 
+  set.drawImage(tileset, tiles.o23[1], tiles.o23[2], tiles.o23[3], tiles.o23[4], tiles.o23[5], tiles.o23[6], tiles.o21[7], tiles.o22[8]); 
+  set.drawImage(tileset, tiles.o24[1], tiles.o24[2], tiles.o24[3], tiles.o24[4], tiles.o24[5], tiles.o24[6], tiles.o21[7], tiles.o22[8]); 
+  set.drawImage(tileset, tiles.o25[1], tiles.o25[2], tiles.o25[3], tiles.o25[4], tiles.o25[5], tiles.o25[6], tiles.o21[7], tiles.o22[8]); 
+  set.drawImage(tileset, tiles.o26[1], tiles.o26[2], tiles.o26[3], tiles.o26[4], tiles.o26[5], tiles.o26[6], tiles.o21[7], tiles.o22[8]); 
+  set.drawImage(tileset, tiles.o27[1], tiles.o27[2], tiles.o27[3], tiles.o27[4], tiles.o27[5], tiles.o27[6], tiles.o21[7], tiles.o22[8]); 
 
 };

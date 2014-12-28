@@ -5,11 +5,11 @@ var tileset = new Image();
 tileset.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
 
 var tiles ={
-  1: ["0, 0", 0, 0, 42, 42, 0, 0, 42, 42],
-  2: ["0, 1", 0, 0, 42, 42, 0, 0, 42, 42]
+  o1: ["0, 0", 0, 0, 42, 42, 0, 0, 42, 42],
+  o2: ["0, 1", 42, 0, 42, 42, 0, 0, 42, 42]
 };
-
+alert("tiles loaded");
 tileset.onload = function(){
-  set.drawImage(tileset, tiles.1[1], tiles.1[2], tiles.1[3], tiles.1[4], tiles.1[5], tiles.1[6], tiles.1[7], tiles.1[8]);
-  set.drawImage(tileset, tiles.2[1], tiles.2[2], tiles.2[3], tiles.2[4], tiles.2[5], tiles.2[6], tiles.2[7], tiles.2[8]);  
+  set.drawImage(tileset, tiles.o1[1], tiles.o1[2], tiles.o1[3], tiles.o1[4], tiles.o1[5], tiles.o1[6], tiles.o1[7], tiles.o1[8]);
+  set.drawImage(tileset, tiles.o2[1], tiles.o2[2], tiles.o2[3], tiles.o2[4], tiles.o2[5], tiles.o2[6], tiles.o2[7], tiles.o2[8]);  
 };

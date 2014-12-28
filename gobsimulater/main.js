@@ -65,11 +65,11 @@ function process(){
   if(player.y < 1){
     player.y =1;
   }
-  if(player.x > 1000-42){
-    player.x = 1000-42;
+  if(player.x > 1000-39){
+    player.x = 1000-39;
   }
-  if(player.y > 500-42){
-    player.y =500-42;
+  if(player.y > 500-39){
+    player.y =500-39;
   }
   
   if(player.spriteX > 126){

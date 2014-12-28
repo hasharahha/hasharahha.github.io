@@ -5,7 +5,7 @@ var tileset = new Image();
 tileset.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
 
 var tiles ={
-  o1: ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
+  o1: ["0, 0", 0, 0, 32, 32, 0, 0, 32, 32, "GRASS"],
   o2: ["1, 0", 0, 0, 32, 32, 42, 0, 42, 42, "GRASS"],
   o3: ["2, 0", 32, 0, 32, 32, 84, 0, 42, 42, "SOUL_GRASS"],
   o4: ["3, 0", 0, 96, 32, 32, 126, 0, 42, 42, "SOUL_SAND"],

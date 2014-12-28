@@ -6,9 +6,9 @@ var blockpath ={};
 var blocktile = new Image();
 blocktile.src ="https://dl.dropboxusercontent.com/s/3qb4u8ws3ehqops/block_tiles.jpg"
 blocktile.onload = function(){
-  chooseblock();
+  drawblock();
 };
-
+/*
 function chooseblock(){
   if(rnd < 100){
     var block ="BRICK";
@@ -21,6 +21,7 @@ function chooseblock(){
     drawblock();
   }
 }
+*/
 
 function drawblock(){
   setb.drawImage(blocktile, blockpath.spriteX, blockpath.spriteY, 32, 32, blockpath.x, blockpath.y, 32, 32);

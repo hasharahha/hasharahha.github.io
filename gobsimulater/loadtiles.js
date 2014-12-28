@@ -13,6 +13,13 @@ var tiles ={
   o6: ["3, 0", 0, 96, 32, 32, 210, 0, 42, 42, "SOUL_SAND"],
   o7: ["3, 0", 0, 96, 32, 32, 252, 0, 42, 42, "SOUL_SAND"],
   o8: ["2, 0", 32, 0, 32, 32, 294, 0, 42, 42, "SOUL_GRASS"],
+  o9: ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
+  o10:  ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
+  o11:  ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
+  o12:  ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
+  o13:  ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
+  o14:  ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
+  o15:  ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"]
 };
 
 tileset.onload = function(){
@@ -24,4 +31,12 @@ tileset.onload = function(){
   set.drawImage(tileset, tiles.o6[1], tiles.o6[2], tiles.o6[3], tiles.o6[4], tiles.o6[5], tiles.o6[6], tiles.o6[7], tiles.o6[8]); 
   set.drawImage(tileset, tiles.o7[1], tiles.o7[2], tiles.o7[3], tiles.o7[4], tiles.o7[5], tiles.o7[6], tiles.o7[7], tiles.o7[8]); 
   set.drawImage(tileset, tiles.o8[1], tiles.o8[2], tiles.o8[3], tiles.o8[4], tiles.o8[5], tiles.o8[6], tiles.o8[7], tiles.o8[8]); 
+  set.drawImage(tileset, tiles.o9[1], tiles.o9[2], tiles.o9[3], tiles.o9[4], tiles.o9[5], tiles.o9[6], tiles.o9[7], tiles.o9[8]); 
+  set.drawImage(tileset, tiles.o10[1], tiles.o10[2], tiles.o10[3], tiles.o10[4], tiles.o10[5], tiles.o10[6], tiles.o10[7], tiles.o10[8]); 
+  set.drawImage(tileset, tiles.o11[1], tiles.o11[2], tiles.o11[3], tiles.o11[4], tiles.o11[5], tiles.o11[6], tiles.o11[7], tiles.o11[8]); 
+  set.drawImage(tileset, tiles.o12[1], tiles.o12[2], tiles.o12[3], tiles.o12[4], tiles.o12[5], tiles.o12[6], tiles.o12[7], tiles.o12[8]); 
+  set.drawImage(tileset, tiles.o13[1], tiles.o13[2], tiles.o13[3], tiles.o13[4], tiles.o13[5], tiles.o13[6], tiles.o13[7], tiles.o13[8]); 
+  set.drawImage(tileset, tiles.o14[1], tiles.o13[2], tiles.o14[3], tiles.o14[4], tiles.o14[5], tiles.o14[6], tiles.o14[7], tiles.o14[8]); 
+  set.drawImage(tileset, tiles.o15[1], tiles.o13[2], tiles.o15[3], tiles.o15[4], tiles.o15[5], tiles.o15[6], tiles.o15[7], tiles.o15[8]); 
+
 };

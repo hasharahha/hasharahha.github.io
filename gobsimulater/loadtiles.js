@@ -72,7 +72,16 @@ tileset.onload = function(){
   set.drawImage(tileset, tiles.o32[1], tiles.o32[2], tiles.o32[3], tiles.o32[4], tiles.o32[5], tiles.o32[6], tiles.o32[7], tiles.o32[8]);
   set.drawImage(tileset, tiles.o33[1], tiles.o33[2], tiles.o33[3], tiles.o33[4], tiles.o33[5], tiles.o33[6], tiles.o33[7], tiles.o33[8]);
   set.drawImage(tileset, tiles.o34[1], tiles.o34[2], tiles.o34[3], tiles.o34[4], tiles.o34[5], tiles.o34[6], tiles.o34[7], tiles.o34[8]);
-  set.drawImage(tileset, tiles.o35[1], tiles.o35[2], tiles.o35[3], tiles.o35[4], tiles.o35[5], tiles.o35[6], tiles.o35[7], tiles.o35[8]);              
+  set.drawImage(tileset, tiles.o35[1], tiles.o35[2], tiles.o35[3], tiles.o35[4], tiles.o35[5], tiles.o35[6], tiles.o35[7], tiles.o35[8]);        
+  set.drawImage(tileset, tiles.o36[1], tiles.o36[2], tiles.o36[3], tiles.o36[4], tiles.o36[5], tiles.o36[6], tiles.o36[7], tiles.o36[8]);              
+  set.drawImage(tileset, tiles.o37[1], tiles.o37[2], tiles.o37[3], tiles.o37[4], tiles.o37[5], tiles.o37[6], tiles.o37[7], tiles.o37[8]);              
+  set.drawImage(tileset, tiles.o38[1], tiles.o38[2], tiles.o38[3], tiles.o38[4], tiles.o38[5], tiles.o38[6], tiles.o38[7], tiles.o38[8]);              
+  set.drawImage(tileset, tiles.o39[1], tiles.o39[2], tiles.o39[3], tiles.o39[4], tiles.o39[5], tiles.o39[6], tiles.o39[7], tiles.o39[8]);
+  set.drawImage(tileset, tiles.o40[1], tiles.o40[2], tiles.o40[3], tiles.o40[4], tiles.o40[5], tiles.o40[6], tiles.o40[7], tiles.o40[8]);              
+  set.drawImage(tileset, tiles.o41[1], tiles.o41[2], tiles.o41[3], tiles.o41[4], tiles.o41[5], tiles.o41[6], tiles.o41[7], tiles.o41[8]);              
+  set.drawImage(tileset, tiles.o42[1], tiles.o42[2], tiles.o42[3], tiles.o42[4], tiles.o42[5], tiles.o42[6], tiles.o42[7], tiles.o42[8]);              
+              
+      
 
 
  

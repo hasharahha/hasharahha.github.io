@@ -6,7 +6,7 @@ tileset.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
 
 var tiles ={
   o1: ["0, 0", 0, 0, 42, 42, 0, 0, 42, 42],
-  o2: ["0, 1", 42, 0, 42, 42, 0, 0, 42, 42]
+  o2: ["0, 1", 0, 0, 42, 42, 0, 42, 42, 42]
 };
 alert("tiles loaded");
 tileset.onload = function(){

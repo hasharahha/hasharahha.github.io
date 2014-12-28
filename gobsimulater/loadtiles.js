@@ -5,7 +5,7 @@ var tileset = new Image();
 tileset.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
 
 var tiles ={
-  o1: ["0, 0", 0, 0, 32, 32, 0, 0, 32, 32, "GRASS"],
+  o1: ["0, 0", 0, 0, 32, 32, 0, 0, 42, 42, "GRASS"],
   o2: ["1, 0", 0, 0, 32, 32, 42, 0, 42, 42, "GRASS"],
   o3: ["2, 0", 32, 0, 32, 32, 84, 0, 42, 42, "SOUL_GRASS"],
   o4: ["3, 0", 0, 96, 32, 32, 126, 0, 42, 42, "SOUL_SAND"],
@@ -31,7 +31,8 @@ var tiles ={
   o24: ["23, 0", 192, 0, 32, 32, 961, 0, 42, 42, "SAND"],
   o25: ["24, 0", 192, 0, 32, 32, 1003, 0, 42, 42, "SAND"],
   o26: ["25, 0", 192, 0, 32, 32, 1045, 0, 42, 42, "SAND"],
-  o27: ["25, 0", 192, 0, 32, 32, 1045, 0, 42, 42, "SAND"]
+  o27: ["25, 0", 192, 0, 32, 32, 1045, 0, 42, 42, "SAND"],
+  testtile: ["? ?", 0, 0, 32, 32, 1045, 0, 32, 32, "GRASS"]
 };
 
 tileset.onload = function(){
@@ -62,5 +63,9 @@ tileset.onload = function(){
   set.drawImage(tileset, tiles.o25[1], tiles.o25[2], tiles.o25[3], tiles.o25[4], tiles.o25[5], tiles.o25[6], tiles.o25[7], tiles.o25[8]); 
   set.drawImage(tileset, tiles.o26[1], tiles.o26[2], tiles.o26[3], tiles.o26[4], tiles.o26[5], tiles.o26[6], tiles.o26[7], tiles.o26[8]); 
   set.drawImage(tileset, tiles.o27[1], tiles.o27[2], tiles.o27[3], tiles.o27[4], tiles.o27[5], tiles.o27[6], tiles.o27[7], tiles.o27[8]); 
+
+
+
+  set.drawImage(tileset, tiles.testTile27[1], tiles.testTile[2], tiles.testTile[3], tiles.testTile[4], tiles.testTile[5], tiles.testTile[6], tiles.testTile[7], tiles.testTile[8]); 
 
 };

@@ -96,9 +96,7 @@ if(player.stage =="down"){
 }
 
 function render(){
-  /*
-  ctx.clearRect(0, 0, 1000, 500);
-  */
+  ctx.clearRect(player.x, player.y, player.width, player.height);
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
 }
 

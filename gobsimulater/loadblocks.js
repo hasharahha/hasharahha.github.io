@@ -9,6 +9,7 @@ blocktile.onload = function(){
 setb.drawImage(blocktile, 160, 0, 32, 32, 64, 32, 32, 32);
 setb.drawImage(blocktile, 192, 0, 32, 32, 256, 0, 32, 32);
 setb.drawImage(blocktile, 128, 0, 32, 32, 32, 288, 32, 32);
+setb.drawImage(blocktile, 160, 0, 32, 416, 32, 32, 32, 32);
 };
 
 

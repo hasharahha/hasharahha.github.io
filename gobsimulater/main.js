@@ -18,8 +18,8 @@ var game ={
 
 
 var mysteryBox ={
-x: parseInt(Math.random()*800),
-y: parseInt(Math.random()*400),
+x: eval(Math.random()*800),
+y: eval(Math.random()*400),
 height: 32,
 width: 32,
 spriteX: 0,

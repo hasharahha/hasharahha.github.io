@@ -12,12 +12,7 @@ var game ={
   ping: 1000/30,
   server: "US ROOM: (private): "+rnd
 }
-if(localStorage.getItem(dev)){
-  alert("Hello dev");
-}
-else{
-  alert("Under construction (currently)");
-}
+Cmsg("Under construction right now");
 var player ={
   x: 10,
   y: 10,
@@ -164,4 +159,8 @@ function gameloop(){
   window.requestAnimationFrame(function(){
     gameloop();
   }, 1000/30);
+}
+
+function Cmsg(msg){
+  alert("MESSAGE: \n "+msg);
 }

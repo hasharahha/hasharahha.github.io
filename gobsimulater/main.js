@@ -41,7 +41,8 @@ var player ={
   spriteX: 0,
   spriteY: 84,
   cheight: 42,
-  cwidth: 42
+  cwidth: 42,
+  loaded: true
 };
 var speed =100;
 gameloop();
@@ -140,7 +141,9 @@ setTimeout(function(){
 function render(){
   ctx.clearRect(0, 0, 1000, 500);
   ctx.drawImage(items, mysteryBox.spriteX, mysteryBox.spriteY, mysteryBox.width, mysteryBox.height, mysteryBox.x, mysteryBox.y, 32, 32);
+  if(player.loaded){
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.cwidth, player.cheight);
+  }
   ctx.font ="14px helvetica";
   ctx.fillStyle ="white";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);

@@ -188,5 +188,8 @@ function start(){
     bx +=32;
     by =96
     set.drawImage(tileset, 0, 0, 32, 32, bx, by, 32, 32);
+    cx +=32;
+    cy =128;
+    set.drawImage(tileset, 0, 0, 32, 32, cx, cy, 32, 32);
   }
 }

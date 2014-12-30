@@ -16,16 +16,15 @@ var game ={
   server: "US ROOM: (private): "+rnd
 }
 var mysteryBox ={
-x: null;
-y: null;
+x: parseInt(Math.random()*800),
+y: parseInt(Math.random()*400),
 height: 32,
 width: 32,
 spriteX: 0,
 spriteY: 128
 effect: "Invisibility"
 };
-mysteryBox.x = Math.floor(Math.random()*800);
-mysteryBox.y = Math.floor(Math.random()*400);
+
 Cmsg("Under construction right now");
 var player ={
   x: 10,

@@ -177,10 +177,11 @@ tileset.onload = function(){
 var x =0;
 var y =0;
 function start(){
-  var row4;
-  for(row4 =0; row4 < 30; row4++){
+  var a;
+  for(a =0; a < 30; a++){
     x +=32;
     y =96;
     set.drawImage(tileset, 0, 0, 32, 32, x, y, 32, 32);
+    alert(a);
   }
 }

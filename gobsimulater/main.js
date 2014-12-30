@@ -96,7 +96,7 @@ if(player.stage =="down"){
 }
 
 function render(){
-  ctx.clearRect(player.x+1, player.y+1, player.width+1, player.height+1);
+  ctx.clearRect(0, 0, 500, 1000);
 
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
   ctx.font ="14px helvetica";

@@ -2,6 +2,7 @@ var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
 var keys =[];
+var rnd = Math.floor(Math.random()*11);
 var skin = new Image();
 skin.src ="https://dl.dropboxusercontent.com/s/o0e18h3fc5d2jsd/character_silver.png";
 var game ={
@@ -149,13 +150,11 @@ frameNumber = 0;
 }
 return result;
 }	
-var rnd;
 function gameloop(){
   update();
   Animate();
   process();
   render();
-rnd = Math.floor(Math.random()*11);
   window.requestAnimationFrame(function(){
     gameloop();
   }, 1000/30);

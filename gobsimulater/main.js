@@ -102,6 +102,11 @@ function process(){
   if(player.spriteX > 126){
     player.spriteX =0;
   }
+  
+  if(collision(player, mysteryBox)){
+    mysteryBox.x =null;
+    mysteryBox.y =null;
+  }
 }
 
 function Animate(){

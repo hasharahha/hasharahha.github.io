@@ -227,7 +227,7 @@ function gameloop(){
   render();
   window.requestAnimationFrame(function(){
     gameloop();
-  }, 1000/30);
+  }, game.ping);
 }
 
 function Cmsg(msg){

@@ -173,7 +173,7 @@ tileset.onload = function(){
  
 
 };
-
+var columY =0;
 var ax =0;
 var ay =0;
 var bx =0;
@@ -199,6 +199,8 @@ var ky =0;
 function start(){
   static =0;
   for(a =0; a < 31; a++){
+    columY +=32;
+    set.drawImage(tileset, 0, 0, 32, 32, columY, 0, 32, 32);
     ax +=32;
     ay =64;
     set.drawImage(tileset, 0, 0, 32, 32, ax, ay, 32, 32);

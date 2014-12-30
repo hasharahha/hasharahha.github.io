@@ -148,6 +148,11 @@ if(player.effect ==2){
     player.loaded =true;
   }, 10000);
 }
+
+if(player.effect ==0){
+  player.effect =2;
+  effect();
+}
 }
 function render(){
   ctx.clearRect(0, 0, 1000, 500);

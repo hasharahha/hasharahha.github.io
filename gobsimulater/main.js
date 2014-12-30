@@ -14,9 +14,19 @@ var game ={
   width: 999,
   ping: 1000/30,
   server: "US ROOM: (private): "+rnd
-}/*
+}
+var mysteryBox ={
+x: null;
+y: null;
+height: 32,
+width: 32,
+spriteX: 0,
+spriteY: 128
+effect: "Invisibility"
+};
+mysteryBox.x = Math.floor(Math.random()*800);
+mysteryBox.y = Math.floor(Math.random()*400);
 Cmsg("Under construction right now");
-*/
 var player ={
   x: 10,
   y: 10,
@@ -112,7 +122,7 @@ if(player.stage =="down"){
 
 function render(){
   ctx.clearRect(0, 0, 1000, 500);
-
+  ctx.drawImage(items, mysteryBox.spriteX, mysteryBox.spriteY, mysteryBox.width, mysteryBox.height, mysteryBox.x, mysteryBox.y, 32, 32);
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
   ctx.font ="14px helvetica";
   ctx.fillStyle ="white";

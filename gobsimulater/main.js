@@ -104,7 +104,6 @@ function render(){
   ctx.fillStyle ="white";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
   ctx.fillText("Player Y: "+getPlayerY(), 140, 430);
-  ctx.fillText("FPS: "+getFPS());
 }
 
 function getPlayerX(){
@@ -118,6 +117,7 @@ function getPlayerY(){
   static = Math.abs(static);
   return static;
 }
+/*
 var startTime : 0;
 var frameNumber : 0;
 function getFPS(){
@@ -135,7 +135,7 @@ function getFPS(){
 		return result;
 
 }	
-
+*/
 function gameloop(){
   update();
   Animate();

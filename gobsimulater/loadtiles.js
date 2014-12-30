@@ -180,6 +180,8 @@ var bx =0;
 var by =0;
 var cy =0;
 var cx =0;
+var dx =0;
+var dy =0;
 function start(){
   for(a =0; a < 31; a++){
     ax +=32;
@@ -191,5 +193,8 @@ function start(){
     cx +=32;
     cy =128;
     set.drawImage(tileset, 0, 0, 32, 32, cx, cy, 32, 32);
+    dx +=32;
+    dy =160;
+    set.drawImage(tileset, 0, 0, 32, 32, dx, dy, 32, 32);
   }
 }

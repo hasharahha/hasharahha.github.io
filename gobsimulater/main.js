@@ -118,23 +118,23 @@ function getPlayerY(){
   static = Math.abs(static);
   return static;
 }
-	var startTime : 0;
-	var frameNumber : 0;
-	function getFPS(){
+var startTime : 0;
+var frameNumber : 0;
+function getFPS(){
 		
-		frameNumber++;
-		var d = new Date().getTime(),
-			currentTime = ( d - this.startTime ) / 1000,
-			result = Math.floor( ( this.frameNumber / currentTime ) );
+	frameNumber++;
+	var d = new Date().getTime(),
+	currentTime = ( d - this.startTime ) / 1000,
+	result = Math.floor( ( this.frameNumber / currentTime ) );
 
-		if( currentTime > 1 ){
-			startTime = new Date().getTime();
-			frameNumber = 0;
-		}
+	if( currentTime > 1 ){
+	startTime = new Date().getTime();
+	frameNumber = 0;
+		
+	}
 		return result;
 
-	}	
-};
+}	
 
 function gameloop(){
   update();

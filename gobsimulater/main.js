@@ -105,6 +105,9 @@ function render(){
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
   ctx.fillText("Player Y: "+getPlayerY(), 140, 430);
   ctx.fillText("FPS: "+getFPS(), 220, 430);
+  ctx.fillText("online: "+1, 300, 430);
+  ctx.fillStyle ="RED";
+  ctx.fillText("Made by HASHARAHHA14 aka Jacob, un-finished", 600, 450);
 }
 
 function getPlayerX(){

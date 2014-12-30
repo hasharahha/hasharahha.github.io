@@ -8,7 +8,8 @@ var game ={
   players: 1,
   height: 500,
   width: 999,
-  ping: 1000/30
+  ping: 1000/30,
+  server: "US2"
 }
 var player ={
   x: 10,
@@ -111,8 +112,11 @@ function render(){
   ctx.fillText("Player Y: "+getPlayerY(), 140, 430);
   ctx.fillText("FPS: "+getFPS(), 220, 430);
   ctx.fillText("online: "+getPlayers(), 300, 430);
-  ctx.fillStyle ="RED";
+  ctx.fillStyle ="red";
   ctx.fillText("Made by HASHARAHHA14 aka Jacob, un-finished", 600, 450);
+  ctx.fillStyle ="blue";
+  ctx.font ="12px Arial";
+  ctx.fillText("SERVER: "+game.server, 420, 430);
 }
 
 function getPlayerX(){

@@ -16,7 +16,7 @@ var game ={
   server: "US ROOM: (private): "+rnd
 }
 
-/*
+
 var mysteryBox ={
 x: parseInt(Math.random()*800),
 y: parseInt(Math.random()*400),
@@ -26,7 +26,7 @@ spriteX: 0,
 spriteY: 128
 effect: "Invisibility"
 };
-*/
+
 
 var player ={
   x: 10,

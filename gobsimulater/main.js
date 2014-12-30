@@ -16,20 +16,17 @@ var game ={
   server: "US ROOM: (private): "+rnd
 }
 
-try(){
+
 var mysteryBox ={
-x: eval(Math.random()*800),
-y: eval(Math.random()*400),
+x: Math.random()*800-1,
+y: Math.random()*400-1,
 height: 32,
 width: 32,
 spriteX: 0,
-spriteY: 128
+spriteY: 128,
 effect: "Invisibility"
 };
 
-}catch(e){
-  alert("Error: "+e);
-}
 
 
 var player ={

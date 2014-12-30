@@ -9,13 +9,14 @@ skin.src
 var items = new Image();
 items.src ="https://raw.githubusercontent.com/JBcompanyrules/images/master/img/items.png";
 var game ={
-  players: 1,
+  players: 2,
   height: 500,
   width: 999,
   ping: 1000/30,
   server: "US ROOM: (private): "+rnd
-}
+}/*
 Cmsg("Under construction right now");
+*/
 var player ={
   x: 10,
   y: 10,

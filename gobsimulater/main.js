@@ -12,7 +12,12 @@ var game ={
   ping: 1000/30,
   server: "US ROOM: (private): "+rnd
 }
-alert("You are in room: "+rnd+"\n Private Room, Enjoy");
+if(localStorage.getItem(dev)){
+  alert("Hello dev");
+}
+else{
+  alert("Under construction (currently)");
+}
 var player ={
   x: 10,
   y: 10,

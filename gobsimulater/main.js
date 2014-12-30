@@ -24,7 +24,7 @@ height: 32,
 width: 32,
 spriteX: 0,
 spriteY: 128,
-effect: "Invisibility"
+effect: "shrink"
 };
 
 
@@ -39,7 +39,9 @@ var player ={
   hitheight: 37,
   hitwidth: 37,
   spriteX: 0,
-  spriteY: 84
+  spriteY: 84,
+  cheight: 32,
+  cwidth: 32
 };
 var speed =100;
 gameloop();
@@ -104,8 +106,9 @@ function process(){
   }
   
   if(collision(player, mysteryBox)){
-    mysteryBox.x =null;
-    mysteryBox.y =null;
+    mysteryBox.x =5000;
+    mysteryBox.y =5000;
+    effect();
   }
 }
 
@@ -126,11 +129,16 @@ if(player.stage =="down"){
   player.spriteY =84;
 }
 }
-
+function effect(){
+setTimeout(function(){
+  player.cheight =32;
+  player.nheight =32;
+}, 10000);
+}
 function render(){
   ctx.clearRect(0, 0, 1000, 500);
   ctx.drawImage(items, mysteryBox.spriteX, mysteryBox.spriteY, mysteryBox.width, mysteryBox.height, mysteryBox.x, mysteryBox.y, 32, 32);
-  ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
+  ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.cwidth, player.cheight);
   ctx.font ="14px helvetica";
   ctx.fillStyle ="white";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);

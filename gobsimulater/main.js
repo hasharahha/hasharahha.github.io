@@ -4,7 +4,12 @@ var static;
 var keys =[];
 var skin = new Image();
 skin.src ="https://dl.dropboxusercontent.com/s/o0e18h3fc5d2jsd/character_silver.png";
-
+var game ={
+  players: 1,
+  height: 500,
+  width: 999,
+  ping: 1000/30
+}
 var player ={
   x: 10,
   y: 10,
@@ -105,7 +110,7 @@ function render(){
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
   ctx.fillText("Player Y: "+getPlayerY(), 140, 430);
   ctx.fillText("FPS: "+getFPS(), 220, 430);
-  ctx.fillText("online: "+1, 300, 430);
+  ctx.fillText("online: "+getPlayers(), 300, 430);
   ctx.fillStyle ="RED";
   ctx.fillText("Made by HASHARAHHA14 aka Jacob, un-finished", 600, 450);
 }
@@ -113,6 +118,10 @@ function render(){
 function getPlayerX(){
   static = Math.round(player.x/32);
     return static;
+}
+function getPlayers(){
+  static = game.players;
+  return static;
 }
 
 function getPlayerY(){

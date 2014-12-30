@@ -43,7 +43,8 @@ var player ={
   spriteY: 84,
   cheight: 42,
   cwidth: 42,
-  loaded: true
+  loaded: true,
+  bombs: 0
 };
 var speed =100;
 gameloop();
@@ -150,8 +151,12 @@ if(player.effect ==2){
 }
 
 if(player.effect ==0){
-  player.effect =2;
-  effect();
+  set.scale(-1, 1);
+  ctx.scale(-1, 1);
+  setTimeout(function(){
+    ctx.scale(1, 1,);
+    set.scale(1, 1);
+  }, 10000);
 }
 }
 function render(){

@@ -200,7 +200,7 @@ function start(){
   static =0;
   for(a =0; a < 31; a++){
     columY +=32;
-    set.drawImage(tileset, 0, 0, 32, 32, columY, 0, 32, 32);
+    set.drawImage(tileset, 0, 0, 32, 32, 0, columY, 32, 32);
     ax +=32;
     ay =64;
     set.drawImage(tileset, 0, 0, 32, 32, ax, ay, 32, 32);

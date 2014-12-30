@@ -183,6 +183,11 @@ function render(){
   ctx.fillStyle ="blue";
   ctx.font ="12px Arial";
   ctx.fillText("SERVER: "+game.server, 420, 430);
+  
+  ctx.beginPath();
+  ctx.moveTo(900, 0);
+  ctx.lineTo(900, 500);
+  ctx.stroke();
 }
 
 function getPlayerX(){

@@ -211,15 +211,15 @@ setInterval(function(){
     mysteryBox.y -=1;
     Eo++;
   }
-  else if(Eo > 0&&Eo < 8){
+  else if(Eo > 0&&Eo < 4){
     mysteryBox.y +=1;
     Eo++;
   }
-  else if(Eo > 7){
+  else if(Eo > 3){
     mysteryBox.y -=1;
     Eo =0;
   }
   else{
     Eo =0;
   }
-}, 10)
+}, 100);

@@ -9,7 +9,7 @@ var game ={
   height: 500,
   width: 999,
   ping: 1000/30,
-  server: "US2"
+  server: "US ROOM: (private): "+rnd
 }
 var player ={
   x: 10,
@@ -149,13 +149,13 @@ frameNumber = 0;
 }
 return result;
 }	
-
+var rnd;
 function gameloop(){
   update();
   Animate();
   process();
   render();
-
+rnd = Math.floor(Math.random()*11);
   window.requestAnimationFrame(function(){
     gameloop();
   }, 1000/30);

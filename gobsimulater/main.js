@@ -16,7 +16,7 @@ var game ={
   server: "US ROOM: (private): "+rnd
 }
 
-try{
+try(){
 var mysteryBox ={
 x: eval(Math.random()*800),
 y: eval(Math.random()*400),

@@ -104,7 +104,7 @@ function render(){
   ctx.fillStyle ="white";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
   ctx.fillText("Player Y: "+getPlayerY(), 140, 430);
-  ctx.fillText("FPS: "getFPS());
+  ctx.fillText("FPS: "+getFPS());
 }
 
 function getPlayerX(){

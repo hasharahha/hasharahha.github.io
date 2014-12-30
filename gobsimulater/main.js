@@ -15,6 +15,7 @@ var game ={
   ping: 1000/30,
   server: "US ROOM: (private): "+rnd
 }
+/*
 var mysteryBox ={
 x: parseInt(Math.random()*800),
 y: parseInt(Math.random()*400),
@@ -24,6 +25,7 @@ spriteX: 0,
 spriteY: 128
 effect: "Invisibility"
 };
+*/
 
 Cmsg("Under construction right now");
 var player ={

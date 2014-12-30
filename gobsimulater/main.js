@@ -208,18 +208,18 @@ function collision(first, second){
 var Eo =0;
 setInterval(function(){
   if(Eo==0){
-    mysteryBox.y -=2;
+    mysteryBox.y -=1;
     Eo++;
   }
   else if(Eo > 0&&Eo < 8){
-    mysteryBox.y +=2;
+    mysteryBox.y +=1;
     Eo++;
   }
   else if(Eo > 7){
-    mysteryBox.y -=2;
+    mysteryBox.y -=1;
     Eo =0;
   }
   else{
     Eo =0;
   }
-}, 500)
+}, 10)

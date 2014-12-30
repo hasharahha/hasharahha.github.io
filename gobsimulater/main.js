@@ -30,6 +30,7 @@ effect: "shrink"
 
 
 var player ={
+  effect: Math.floor(Math.random()*3),
   x: 10,
   y: 10,
   height: 42,
@@ -131,12 +132,22 @@ if(player.stage =="down"){
 }
 }
 function effect(){
-  player.cheight =32;
-  player.cwidth =32;
+  
+  if(player.effect ==1){
+    player.cheight =32;
+    player.cwidth =32;
 setTimeout(function(){
   player.cheight =42;
   player.nheight =42;
 }, 10000);
+}
+
+if(player.effect ==2){
+  player.loaded =false;
+  setTimeout(function(){
+    player.loaded =true;
+  }, 10000);
+}
 }
 function render(){
   ctx.clearRect(0, 0, 1000, 500);

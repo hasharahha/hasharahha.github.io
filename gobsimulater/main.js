@@ -151,9 +151,11 @@ if(player.effect ==2){
 }
 
 if(player.effect ==0){
-  ctx.scale(-1, 1);
+  set.scale(1, -1);
+  ctx.scale(1, -1);
   setTimeout(function(){
-    ctx.scale(1, 1,);
+    set.scale(1, 1);
+    ctx.scale(1, 1);
   }, 10000);
 }
 }

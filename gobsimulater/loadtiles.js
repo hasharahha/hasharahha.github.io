@@ -3,7 +3,7 @@ var set = tilecanvas.getContext("2d");
 var statictiles;
 var tileset = new Image();
 tileset.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
-
+//special shout-out to test_5435 for helping me out thx
 var tiles ={
   o1: ["0, 0", 0, 0, 32, 32, 0, 0, 32, 32, "GRASS"],
   o2: ["1, 0", 0, 0, 32, 32, 32, 0, 32, 32, "GRASS"],
@@ -192,6 +192,10 @@ var hx =0;
 var hy =0;
 var ix =0;
 var iy =0
+var jx =0;
+var jy =0;
+var kx =0;
+var ky =0;
 function start(){
   static =0;
   for(a =0; a < 31; a++){
@@ -222,6 +226,12 @@ function start(){
     ix +=32;
     iy =320;
     set.drawImage(tileset, 0, 0, 32, 32, ix, iy, 32, 32);
+    jx +=32;
+    jy =352;
+    set.drawImage(tileset, 0, 0, 32, 32, jx, jy, 32, 32);
+    kx +=32;
+    ky =384;
+    set.drawImage(tileset, 0, 0, 32, 32, kx, ky, 32, 32);
     static ++
   }
 }

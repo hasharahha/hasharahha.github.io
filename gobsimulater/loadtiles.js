@@ -76,7 +76,7 @@ var tiles ={
 };
 
 tileset.onload = function(){
-  
+  updatetiles();
 }  
   function updatetiles(){
   

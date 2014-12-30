@@ -77,8 +77,8 @@ var tiles ={
 
 tileset.onload = function(){
   
-  
-  
+}  
+  function updatetiles(){
   
   set.fillRect(0, 0, 1000, 500);
   start();

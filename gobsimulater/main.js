@@ -100,6 +100,7 @@ function render(){
 
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
   ctx.font ="14px helvetica";
+  ctx.fillStyle ="white";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
   ctx.fillText("Player Y: "+getPlayerY(), 60, 430);
 }

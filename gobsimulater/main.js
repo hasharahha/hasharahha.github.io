@@ -40,8 +40,8 @@ var player ={
   hitwidth: 37,
   spriteX: 0,
   spriteY: 84,
-  cheight: 32,
-  cwidth: 32
+  cheight: 42,
+  cwidth: 42
 };
 var speed =100;
 gameloop();
@@ -130,9 +130,11 @@ if(player.stage =="down"){
 }
 }
 function effect(){
-setTimeout(function(){
   player.cheight =32;
-  player.nheight =32;
+  player.cwidth =32;
+setTimeout(function(){
+  player.cheight =42;
+  player.nheight =42;
 }, 10000);
 }
 function render(){

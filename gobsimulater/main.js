@@ -97,11 +97,21 @@ if(player.stage =="down"){
 
 function render(){
   ctx.clearRect(player.x+1, player.y+1, player.width+1, player.height+1);
+
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
+  ctx.font ="14px helvetica";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
-  ctx.fillText("")
+  ctx.fillText("Player Y: "+getPlayerY(), 60, 430);
 }
 
+function getPlayerX(){
+  static = Math.round(player.x/32);
+    return static;
+}
+
+function getPlayerY(){
+  static = Math.round(player.y/32);
+}
 function gameloop(){
   update();
   Animate();

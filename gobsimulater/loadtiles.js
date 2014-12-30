@@ -244,6 +244,9 @@ function start(){
     mx +=32;
     my =448;
     set.drawImage(tileset, 0, 0, 32, 32, mx, my, 32, 32);
+    nx +=32;
+    ny =480;
+    set.drawImage(tileset, 0, 0, 32, 32, nx, ny, 32, 32);
     static ++
   }
 }

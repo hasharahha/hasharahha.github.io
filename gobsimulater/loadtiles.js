@@ -181,14 +181,10 @@ var by =0;
 var cy =0;
 var cx =0;
 function start(){
-  var a;
   for(a =0; a < 31; a++){
     ax +=32;
     ay =64;
     set.drawImage(tileset, 0, 0, 32, 32, ax, ay, 32, 32);
-  }
-  var b;
-  for(b =0; b < 31; a++){
     bx +=32;
     by =96
     set.drawImage(tileset, 0, 0, 32, 32, bx, by, 32, 32);

@@ -200,6 +200,8 @@ var lx =0;
 var ly =0;
 var mx =0;
 var my =0;
+var nx =0;
+var ny =0;
 function start(){
   static =0;
   for(a =0; a < 31; a++){

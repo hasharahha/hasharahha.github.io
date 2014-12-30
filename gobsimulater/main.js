@@ -151,13 +151,20 @@ if(player.effect ==2){
 }
 
 if(player.effect ==0){
+  player.effect =2;
+  console.log("for some reason, scale isn't working");
+  console.log("So for now subsitituting it with effect 2 :(");
+  effect();
+  /*
   set.scale(1, -1);
   ctx.scale(1, -1);
   setTimeout(function(){
     set.scale(1, 1);
     ctx.scale(1, 1);
   }, 10000);
+  */
 }
+
 }
 function render(){
   ctx.clearRect(0, 0, 1000, 500);

@@ -180,6 +180,7 @@ function start(){
   var row4;
   for(row4 =0; row4 < 30; row4++){
     x +=32;
+    y =96;
     set.drawImage(tileset, 0, 0, 32, 32, x, y, 32, 32);
   }
 }

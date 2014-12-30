@@ -123,7 +123,9 @@ if(player.stage =="down"){
 
 function render(){
   ctx.clearRect(0, 0, 1000, 500);
+  /*
   ctx.drawImage(items, mysteryBox.spriteX, mysteryBox.spriteY, mysteryBox.width, mysteryBox.height, mysteryBox.x, mysteryBox.y, 32, 32);
+  */
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
   ctx.font ="14px helvetica";
   ctx.fillStyle ="white";

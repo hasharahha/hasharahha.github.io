@@ -188,6 +188,10 @@ var fx =0;
 var fy =0;
 var gx =0;
 var gy =0;
+var hx =0;
+var hy =0;
+var ix =0;
+var iy =0
 function start(){
   static =0;
   for(a =0; a < 31; a++){
@@ -209,6 +213,15 @@ function start(){
     fx +=32;
     fy =224;
     set.drawImage(tileset, 0, 0, 32, 32, fx, fy, 32, 32);
+    gx +=32;
+    gy =256;
+    set.drawImage(tileset, 0, 0, 32, 32, gx, gy, 32, 32);
+    hx +=32;
+    hy =288;
+    set.drawImage(tileset, 0, 0, 32, 32, hx, hy, 32, 32);
+    ix +=32;
+    iy =320;
+    set.drawImage(tileset, 0, 0, 32, 32, ix, iy, 32, 32);
     static ++
   }
 }

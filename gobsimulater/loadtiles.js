@@ -196,6 +196,10 @@ var jx =0;
 var jy =0;
 var kx =0;
 var ky =0;
+var lx =0;
+var ly =0;
+var mx =0;
+var my =0;
 function start(){
   static =0;
   for(a =0; a < 31; a++){
@@ -234,6 +238,12 @@ function start(){
     kx +=32;
     ky =384;
     set.drawImage(tileset, 0, 0, 32, 32, kx, ky, 32, 32);
+    lx +=32;
+    ly =416;
+    set.drawImage(tileset, 0, 0, 32, 32, lx, ly, 32, 32);
+    mx +=32;
+    my =448;
+    set.drawImage(tileset, 0, 0, 32, 32, mx, my, 32, 32);
     static ++
   }
 }

@@ -102,7 +102,7 @@ function render(){
   ctx.font ="14px helvetica";
   ctx.fillStyle ="white";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
-  ctx.fillText("Player Y: "+getPlayerY(), 60, 430);
+  ctx.fillText("Player Y: "+getPlayerY(), 140, 430);
 }
 
 function getPlayerX(){
@@ -112,6 +112,7 @@ function getPlayerX(){
 
 function getPlayerY(){
   static = Math.round(player.y/32);
+  return static;
 }
 function gameloop(){
   update();

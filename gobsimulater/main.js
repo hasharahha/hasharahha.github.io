@@ -104,7 +104,7 @@ function render(){
   ctx.fillStyle ="white";
   ctx.fillText("Player X: "+getPlayerX(), 20, 430);
   ctx.fillText("Player Y: "+getPlayerY(), 140, 430);
-  ctx.fillText("FPS: "+fps.getFPS);
+  ctx.fillText("FPS: "getFPS());
 }
 
 function getPlayerX(){
@@ -118,18 +118,18 @@ function getPlayerY(){
   static = Math.abs(static);
   return static;
 }
-var fps = {
-	startTime : 0,
-	frameNumber : 0,
-	getFPS : function(){
-		this.frameNumber++;
+	var startTime : 0;
+	var frameNumber : 0;
+	function getFPS(){
+		
+		frameNumber++;
 		var d = new Date().getTime(),
 			currentTime = ( d - this.startTime ) / 1000,
 			result = Math.floor( ( this.frameNumber / currentTime ) );
 
 		if( currentTime > 1 ){
-			this.startTime = new Date().getTime();
-			this.frameNumber = 0;
+			startTime = new Date().getTime();
+			frameNumber = 0;
 		}
 		return result;
 
@@ -141,6 +141,7 @@ function gameloop(){
   Animate();
   process();
   render();
+
   window.requestAnimationFrame(function(){
     gameloop();
   }, 1000/30);

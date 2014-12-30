@@ -4,7 +4,10 @@ var static;
 var keys =[];
 var rnd = Math.floor(Math.random()*9001);
 var skin = new Image();
-skin.src ="https://dl.dropboxusercontent.com/s/o0e18h3fc5d2jsd/character_silver.png";
+skin.src 
+="https://dl.dropboxusercontent.com/s/o0e18h3fc5d2jsd/character_silver.png";
+var items = new Image();
+items.src ="https://raw.githubusercontent.com/JBcompanyrules/images/master/img/items.png";
 var game ={
   players: 1,
   height: 500,
@@ -20,6 +23,8 @@ var player ={
   width: 42,
   stage: "idol",
   speed: 2,
+  hitheight: 37,
+  hitwidth: 37,
   spriteX: 0,
   spriteY: 84
 };
@@ -164,3 +169,12 @@ function gameloop(){
 function Cmsg(msg){
   alert("MESSAGE: \n "+msg);
 }
+
+function collision(first, second){
+  return !(first.x > second.x + second.width||
+  first.x + first.hitheight < second.x||
+  first.y > second.y + second.height||
+  first.y + first.hitwidth < second.y)
+  
+}
+

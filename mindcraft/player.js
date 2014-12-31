@@ -22,9 +22,9 @@ var leftbtn ={
   width: 32
 };
 
-canvas.addEventListener("dblclick", function(event){
-  click.x = event.x - canvas.offsetLeft;
-  click.y = event.y - canvas.offsetTop;
+canvas.addEventListener("mousedown", function(event){
+  click.x = event.x - canvas.offsetLeft +5;
+  click.y = event.y - canvas.offsetTop +5;
 }, false);
 canvas.addEventListener("mouseup", function(){
   click.x = 5000;

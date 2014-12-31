@@ -14,7 +14,7 @@ var click ={
   y: 0,
   height 32,
   width: 32
-}
+};
 
 canvas.addEventListener("click", function(event){
   click.x = event.x - canvas.offsetLeft;
@@ -47,11 +47,11 @@ function update(){
 }
 
 function process(){
-/*  
+  
   if(collision(click, leftb)){
     player.x -= player.speed;
   }
-  */
+
 }
 
 function render(){

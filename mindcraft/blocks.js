@@ -11,8 +11,8 @@ block.onload = function(){
 
 var a;
 function start(){
-  for(a=0; a < 30; a++){
-    ay = 500;
+  for(a=0; a < 40; a++){
+    ay = 400;
     context.drawImage(block, 0, 0, 32, 32, ax, ay, 32, 32);
     ax +=32;
   }

@@ -34,6 +34,8 @@ function process(){
 }
 
 function render(){
+  canvas.height = game.height;
+  canvas.width = game.width;
  player.update(); 
 }
 

@@ -27,7 +27,7 @@ var leftb ={
   width: 32,
   x: 950,
   y: 500
-}
+};
 
 var player ={
   height: 64,

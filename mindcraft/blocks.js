@@ -15,6 +15,7 @@ var ey =0;
 
 block.onload = function(){
   start();
+  refresh();
 }
 
 c.addEventListener("touchstart", function(e){

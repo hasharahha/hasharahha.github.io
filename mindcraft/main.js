@@ -1,6 +1,7 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
+gameloop();
 var game ={
   height: 600,
   width: 1300,

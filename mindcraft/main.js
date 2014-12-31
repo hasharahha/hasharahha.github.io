@@ -4,7 +4,6 @@ var static;
 var playerimg = new Image();
 playerimg.src ="https://dl.dropboxusercontent.com/s/1jp0m4zu92697hw/player.png";
 var keys =[];
-gameloop();
 var game ={
   height: 600,
   width: 1300,
@@ -19,11 +18,10 @@ var player ={
   spriteX: 0,
   spriteY: 0,
   state: "idol",
-  inventory: [0, 0, 0, 0, 0, 0, 0, 0],
   health: 20,
   speed: 2
 };
-
+gameloop();
 function update(){
   
 }

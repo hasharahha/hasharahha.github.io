@@ -10,6 +10,8 @@ var game ={
 };
 
 var click ={
+  height: 32,
+  width: 32,
   x: 1,
   y: 1
 };

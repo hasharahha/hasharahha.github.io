@@ -23,6 +23,9 @@ canvas.addEventListener("touchstart", function(e){
 canvas.addEventListener("touchend", function(){
   click.x =0;
   click.y =0;
+  player.spriteX =0;
+  player.spriteY =0;
+  player.state ="idol";
 }, false);
 
 var click ={
@@ -61,6 +64,14 @@ var player ={
 };
 gameloop();
 function update(){
+  if(collision(click, leftbtn)){
+    player.spriteX =128;
+    player.x -= player.speed;
+  }
+  if(collision(click, rightbtn)){
+    player.spriteX =96;
+    player.x += player.speed;
+  }
   
 }
 function process(){

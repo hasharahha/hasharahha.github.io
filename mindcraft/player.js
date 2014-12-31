@@ -4,7 +4,7 @@ var static;
 var playerimg = new Image();
 playerimg.src ="https://dl.dropboxusercontent.com/s/1jp0m4zu92697hw/player.png";
 var game ={
-  height: 800,
+  height: 600,
   width: 1200,
   ping: 1000/30
 };
@@ -35,7 +35,7 @@ function process(){
 function render(){
   canvas.height = game.height;
   canvas.width = game.width;
- player.update(); 
+   ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32, 64);
 }
 
 

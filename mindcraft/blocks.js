@@ -43,6 +43,9 @@ function start(){
     dy =496;
     context.drawImage(block, 64, 0, 32, 32, dx, dy, 32, 32);
     dx +=32;
+    ey =528;
+    context.drawImage(block, 64, 0, 32, 32, ex, ey, 32, 32);
+    ex +=32;
   }
 }
 

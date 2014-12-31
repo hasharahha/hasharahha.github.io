@@ -9,12 +9,12 @@ canvas.width = width;
 blocks.onload = function(){
 start();
 }
-function start(){
-  var i;
+
   var ax =0;
   var ay =0;
   var bx =0;
   var by =0;
+  var i;
   for(i=0; i > 40; i++){
     alert("OKAY");
     ay =400;
@@ -23,4 +23,4 @@ function start(){
     by = 432;
    load.drawImage(blocks, 32, 0, 32, 32, bx, by, 32, 32);
   }
-}
+

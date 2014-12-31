@@ -16,11 +16,9 @@ var game ={
 };
 
 canvas.addEventListener("touchstart", function(e){
-  var X = e.x;
-  var Y = e.y;
-  click.x = X - canvas.offsetLeft;
-  click.y = Y - canvas.offsetLeft;
-  alert("("+click.x+", "+click.y+")");
+  click.x = e.x - canvas.offsetLeft;
+  click.y = e.y - canvas.offsetLeft;
+  alert(click.x);
 }, false);
 
 var click ={

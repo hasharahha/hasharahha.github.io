@@ -93,6 +93,7 @@ function gameloop(){
 update();
 process();
 render();
+refresh();
 window.requestAnimationFrame(function(){
  gameloop(); 
 }, game.ping);

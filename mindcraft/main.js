@@ -21,6 +21,12 @@ canvas.addEventListener("touchstart", function(e){
   alert(click.x+" "+click.y);
 }, false);
 
+canvas.addEventListerner("touchend", function(){
+  click.x =0;
+  click.y =0;
+  alert("Touch ended");
+})
+
 var click ={
   height: 32,
   width: 32,

@@ -25,7 +25,7 @@ canvas.addEventListerner("touchend", function(){
   click.x =0;
   click.y =0;
   alert("Touch ended");
-})
+}, false);
 
 var click ={
   height: 32,

@@ -49,3 +49,7 @@ function start(){
   }
 }
 
+function refresh(){
+ context.fillRect(lefbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
+ context.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
+}

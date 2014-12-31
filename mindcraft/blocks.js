@@ -9,6 +9,17 @@ block.onload = function(){
   start();
 }
 
+c.addEventListener("touchstart", function(e){
+  click.x = e.touches[0].pageX;
+  click.y = e.touches[0].pageY 
+}, false);
+
+c.addEventListener("touchend", function(){
+  click.x =0;
+  click.y =0;
+  player.spriteX =0;
+  player.spriteY =0;
+}, false);
 var a;
 function start(){
   for(a=0; a < 40; a++){

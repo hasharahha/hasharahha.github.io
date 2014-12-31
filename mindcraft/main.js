@@ -59,7 +59,8 @@ var player ={
   spriteY: 0,
   state: "idol",
   health: 20,
-  speed: 2
+  speed: 2,
+  weight: 3
 };
 gameloop();
 function update(){
@@ -74,7 +75,9 @@ function update(){
   
 }
 function process(){
-  
+  if(player.y > 464){
+    player.y +=player.weight;
+  }
 }
 function render(){
 canvas.height = game.height;

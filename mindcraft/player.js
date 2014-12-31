@@ -47,10 +47,11 @@ function update(){
 }
 
 function process(){
-  
+/*  
   if(collision(click, leftb)){
     player.x -= player.speed;
   }
+  */
 }
 
 function render(){

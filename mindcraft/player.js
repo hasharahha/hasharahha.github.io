@@ -9,6 +9,18 @@ var game ={
   ping: 1000/30
 };
 
+var click ={
+  x: 0,
+  y: 0,
+  static: undefined
+}
+
+canvas.addEventListener("click", function(event){
+  click.x = event.x - canvas.offsetLeft;
+  click.y = event.y - canvas.offsetTop;
+  alert("X: "+click.x+" Y:"+click.y);
+}, false)
+
 var player ={
   height: 64,
   width: 32,
@@ -36,7 +48,13 @@ function render(){
    ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32, 64);
 }
 
-
+function collision(first, second){
+  return !(first.x > second.x + second.width||
+  first.x + first.height < second.x||
+  first.y > second.y + second.height||
+  first.y + first.width < second.y)
+  
+}
 
 
 function gameloop(){

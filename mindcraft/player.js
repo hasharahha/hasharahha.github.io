@@ -12,16 +12,14 @@ var game ={
 var player ={
   height: 64,
   width: 32,
-  x: 10,
-  y: game.height - this.height,
+  x: 45,
+  y: 30
   health: 10,
   speed: 2,
   spriteX: 0,
   spriteY: 0,
   state: "idol",
-  update: function(){
-    ctx.drawImage(playerimg, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, 32, 64);
-  }
+  update: 1
 };
 gameloop();
 function update(){

@@ -40,9 +40,7 @@ var player ={
 };
 gameloop();
 function update(){
-  if(click.x = leftbtn.x&& click.y = leftbtn.y){
-    player.x -= player.speed;
-  }
+  
 }
 
 function process(){

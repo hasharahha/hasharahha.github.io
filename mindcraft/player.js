@@ -9,28 +9,6 @@ var game ={
   ping: 1000/30
 };
 
-var click ={
-  height: 32,
-  width: 32,
-  x: 1,
-  y: 1
-};
-var leftbtn ={
-  x: 950,
-  y: 500,
-  height: 32,
-  width: 32
-};
-
-canvas.addEventListener("mousedown", function(event){
-  click.x = event.x - canvas.offsetLeft +5;
-  click.y = event.y - canvas.offsetTop +5;
-}, false);
-canvas.addEventListener("mouseup", function(){
-  click.x = 5000;
-  click.y = 5000;
-}, false);
-
 var player ={
   height: 64,
   width: 32,
@@ -58,11 +36,7 @@ function render(){
   ctx.clearRect(0, 0, game.width, game.height);
   canvas.height = game.height;
   canvas.width = game.width;
-   ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32, 64);
-   ctx.fillSyle ="black";
-   ctx.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
-   ctx.fillStyle ="blue";
-   ctx.fillRect(click.x, click.y, click.width, click.height);
+   ctx.drawImage(pla
 }
 
 function collision(first, second){

@@ -21,7 +21,8 @@ canvas.addEventListener("click", function(event){
   click.x = event.x - canvas.offsetLeft;
   click.y = event.y - canvas.offsetTop;
   
-}, false)
+}, false);
+
 var leftb ={
   height: 32,
   width: 32,

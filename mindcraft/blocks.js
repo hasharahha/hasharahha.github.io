@@ -13,7 +13,7 @@ function start(){
   var i;
   var ax =0;
   var ay =0;
-  for(i =0; i > 40; i++){
+  for(i=0; i > 40; i++){
     ay =400;
     ax +=32;
    load.drawImage(blocks, 0, 0, 32, 32, ax, ay, 32, 32); 

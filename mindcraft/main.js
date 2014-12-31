@@ -86,8 +86,7 @@ ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.he
 
 ctx.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
 ctx.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
-//test
-ctx.drawImage(blocks, 0, 0, 32, 32, 32, 900, 32, 32);
+
 }
 
 function gameloop(){

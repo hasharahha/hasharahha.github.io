@@ -24,7 +24,6 @@ var player ={
   }
 };
 gameloop();
-alert("The Game works :)");
 function update(){
   
 }

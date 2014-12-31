@@ -4,6 +4,9 @@ var static;
 var playerimg = new Image();
 var blocks = new Image();
 blocks.src ="https://dl.dropboxusercontent.com/s/8l8t9xx1qybg35w/blocks.png"
+blocks.onload = function(){
+  loadTerrain();
+}
 playerimg.src ="https://dl.dropboxusercontent.com/s/1jp0m4zu92697hw/player.png";
 var keys =[];
 var game ={
@@ -35,7 +38,6 @@ canvas.height = game.height;
 canvas.width = game.width;
 ctx.clearRect(player.x, player.y, player.width, player.height);
 ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
-loadTerrain();
 }
 
 function gameloop(){

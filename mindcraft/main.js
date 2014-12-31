@@ -75,7 +75,7 @@ function update(){
   
 }
 function process(){
-  if(player.y > 464){
+  if(player.y < 464){
     player.y +=player.weight;
   }
 }

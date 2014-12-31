@@ -18,13 +18,11 @@ var game ={
 canvas.addEventListener("touchstart", function(e){
   click.x = e.touches[0].pageX;
   click.y = e.touches[0].pageY 
-  alert(click.x+" "+click.y);
 }, false);
 
 canvas.addEventListener("touchend", function(){
   click.x =0;
   click.y =0;
-  alert("Touch ended");
 }, false);
 
 var click ={
@@ -34,7 +32,19 @@ var click ={
   y: 0
 };
 
-
+//buttons
+var leftbtn ={
+  height: 64,
+  width: 64,
+  x: 900,
+  y: 520
+};
+var rightbtn ={
+  height: 64,
+  width: 64,
+  x: 1000,
+  y: 520
+};
 
 var player ={
   height: 64,

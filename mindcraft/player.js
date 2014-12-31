@@ -10,8 +10,6 @@ var game ={
 };
 
 var click ={
-  height: 32,
-  width 32,
   x: 1,
   y: 1
 };
@@ -42,7 +40,7 @@ var player ={
 };
 gameloop();
 function update(){
-  if(collision(click, leftbtn)){
+  if(click.x = leftbtn.x&& click.y = leftbtn.y){
     player.x -= player.speed;
   }
 }

@@ -15,6 +15,23 @@ var game ={
   ping: 1000/30
 };
 
+canvas.addEventListener("touchstart", function(e){
+  var X = e.x;
+  var Y = e.y;
+  click.x = X - canvas.offsetLeft;
+  click.y = Y - canvas.offsetLeft;
+  alert("("+click.x+", "+click.y+")");
+}, false);
+
+var click ={
+  height: 32,
+  width: 32,
+  x: 0,
+  y: 0
+};
+
+
+
 var player ={
   height: 64,
   width: 32,

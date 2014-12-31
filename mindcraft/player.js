@@ -22,11 +22,14 @@ var leftbtn ={
   width: 32
 };
 
-canvas.addEventListener("click", function(event){
+canvas.addEventListener("mousedown", function(event){
   click.x = event.x - canvas.offsetLeft;
   click.y = event.y - canvas.offsetTop;
-
-}, false)
+}, false);
+canvas.addEventListener("mouseup", function(){
+  click.x = 5000;
+  click.y = 5000;
+}, false);
 
 var player ={
   height: 64,

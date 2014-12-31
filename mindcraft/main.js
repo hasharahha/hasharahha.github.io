@@ -65,11 +65,11 @@ gameloop();
 function update(){
   
   if(collision(click, leftbtn)){
-    player.spriteX =128;
+    player.spriteX =96;
     player.x -= player.speed;
   }
   if(collision(click, rightbtn)){
-    player.spriteX =96;
+    player.spriteX =64;
     player.x += player.speed;
   }
   

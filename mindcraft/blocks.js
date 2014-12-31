@@ -7,20 +7,12 @@ var width =1200;
 canvas.height = height;
 canvas.width = width;
 blocks.onload = function(){
-start();
+var x =0;
+var y =0;
+var a;
+for(a = 0; a < 40; a++){
+y =400;
+load.drawImage(blocks, 0, 0, 32, 32, x, y, 32, 32);
+x +=32;
 }
-
-  var ax =0;
-  var ay =0;
-  var bx =0;
-  var by =0;
-  var i;
-  for(i=0; i > 40; i++){
-    alert("OKAY");
-    ay =400;
-    ax +=32;
-   load.drawImage(blocks, 0, 0, 32, 32, ax, ay, 32, 32); 
-    by = 432;
-   load.drawImage(blocks, 32, 0, 32, 32, bx, by, 32, 32);
-  }
-
+};

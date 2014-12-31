@@ -46,6 +46,8 @@ var rightbtn ={
   y: 520
 };
 
+
+//end of buttons
 var player ={
   height: 64,
   width: 32,
@@ -67,8 +69,11 @@ function process(){
 function render(){
 canvas.height = game.height;
 canvas.width = game.width;
-ctx.clearRect(player.x, player.y, player.width, player.height);
+ctx.clearRect(0, 0, game.width, game.height);
 ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
+
+ctx.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
+ctx.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
 }
 
 function gameloop(){

@@ -12,22 +12,14 @@ var game ={
 var click ={
   x: 0,
   y: 0,
-  height 32,
-  width: 32
-};
+  static: undefined
+}
 
 canvas.addEventListener("click", function(event){
   click.x = event.x - canvas.offsetLeft;
   click.y = event.y - canvas.offsetTop;
-  
-}, false);
-
-var leftb ={
-  height: 32,
-  width: 32,
-  x: 950,
-  y: 500
-};
+  alert("X: "+click.x+" Y:"+click.y);
+}, false)
 
 var player ={
   height: 64,
@@ -48,18 +40,12 @@ function update(){
 
 function process(){
   
-  if(collision(click, leftb)){
-    player.x -= player.speed;
-  }
-
 }
 
 function render(){
   canvas.height = game.height;
   canvas.width = game.width;
    ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32, 64);
-
-
 }
 
 function collision(first, second){

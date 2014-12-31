@@ -8,6 +8,10 @@ var bx =0;
 var by =0;
 var cx =0;
 var cy =0;
+var dx =0;
+var dy =0;
+var ex =0;
+var ey =0;
 
 block.onload = function(){
   start();
@@ -36,6 +40,9 @@ function start(){
     cy = 464;
     context.drawImage(block, 64, 0, 32, 32, cx, cy, 32, 32);
     cx +=32;
+    dy =496;
+    context.drawImage(block, 64, 0, 32, 32, dx, dy, 32, 32);
+    dx +=32;
   }
 }
 

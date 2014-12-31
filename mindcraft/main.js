@@ -19,7 +19,7 @@ var player ={
   spriteX: 0,
   spriteY: 0,
   state: "idol",
-  inventory: [],
+  inventory: [0, 0, 0, 0, 0, 0, 0, 0],
   health: 20,
   speed: 2
 };

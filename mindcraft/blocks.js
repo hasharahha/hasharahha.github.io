@@ -48,6 +48,10 @@ function start(){
     context.drawImage(block, 64, 0, 32, 32, ex, ey, 32, 32);
     ex +=32;
   }
+  setTimeout(function(){
+    //loads ore's 
+    context.drawImage(block, 64, 0, 32, 32, 64, 496);
+  }, 2000);
 }
 
 function refresh(){

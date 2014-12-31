@@ -46,7 +46,9 @@ function update(){
 }
 
 function process(){
-  
+  if(collision(click, leftbtn)){
+    player.x -= player.speed;
+  }
 }
 
 function render(){

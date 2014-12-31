@@ -49,6 +49,7 @@ function process(){
 }
 
 function render(){
+  ctx.clearRect(0, 0, game.width, game.height);
   canvas.height = game.height;
   canvas.width = game.width;
    ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32, 64);

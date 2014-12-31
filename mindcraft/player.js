@@ -9,6 +9,32 @@ var game ={
   ping: 1000/30
 };
 
+var player ={
+  height: 64,
+  width: 32,
+  x: 10,
+  y: game.height - this.height,
+  health: 10,
+  speed: 2,
+  spriteX: 0,
+  spriteY: 0,
+  state: "idol",
+  update: function(){
+    ctx.drawImage(playerimg, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, 32, 64);
+  }
+};
+
+function update(){
+  
+}
+
+function process(){
+  
+}
+
+function render(){
+ player.update(); 
+}
 
 
 

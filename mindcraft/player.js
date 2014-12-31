@@ -23,7 +23,7 @@ var player ={
     ctx.drawImage(playerimg, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, 32, 64);
   }
 };
-
+alert("The Game works :)");
 function update(){
   
 }

@@ -13,9 +13,14 @@ function start(){
   var i;
   var ax =0;
   var ay =0;
+  var bx =0;
+  var by =0;
   for(i=0; i > 40; i++){
+    alert("OKAY");
     ay =400;
     ax +=32;
    load.drawImage(blocks, 0, 0, 32, 32, ax, ay, 32, 32); 
+    by = 432;
+   load.drawImage(blocks, 32, 0, 32, 32, bx, by, 32, 32);
   }
 }

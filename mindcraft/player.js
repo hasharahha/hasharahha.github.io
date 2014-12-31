@@ -10,9 +10,10 @@ var game ={
 };
 
 var click ={
-  x: 0,
-  y: 0,
-  static: undefined
+  height: 32,
+  width 32,
+  x: 1,
+  y: 1
 };
 var leftbtn ={
   x: 950,

@@ -58,7 +58,8 @@ function render(){
   canvas.height = game.height;
   canvas.width = game.width;
    ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32, 64);
-   ctx.fillRect(leftb.x, leftb.y, leftb.width, leftb.height);
+
+
 }
 
 function collision(first, second){

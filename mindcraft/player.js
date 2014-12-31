@@ -21,14 +21,14 @@ canvas.addEventListener("click", function(event){
   click.y = event.y - canvas.offsetTop;
   
 }, false);
-
+/*
 var leftb ={
   height: 32,
   width: 32,
   x: 950,
   y: 500
 };
-
+*/
 var player ={
   height: 64,
   width: 32,

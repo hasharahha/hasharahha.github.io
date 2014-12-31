@@ -1,29 +1,27 @@
 var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
+var keys =[];
 gameloop();
 var game ={
   height: 600,
   width: 1300,
-  ping: 1000/30,
-  update: function(){
-    
-  },
-  process: function(){
-    
-  },
-  render: function(){
-    canvas.height = this.height;
-    canvas.width = this.width;
-  }
+  ping: 1000/30
+}
+function update(){
+  
+}
+function process(){
+  
+}
+function render(){
+  
 }
 
-
 function gameloop(){
-game.update();
-game.process();
-game.render();
-player.update();
+update();
+process();
+render();
 window.requestAnimationFrame(function(){
  gameloop(); 
 }, game.ping);

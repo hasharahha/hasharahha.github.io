@@ -7,6 +7,9 @@ var width =1200;
 canvas.height = height;
 canvas.width = width;
 blocks.onload = function(){
+start();
+}
+function start(){
   var i;
   var ax =0;
   var ay =0;

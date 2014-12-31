@@ -61,3 +61,9 @@ function loadTerrain(){
   }
 }
 */
+
+ctx.save();
+static = canvas.toDataURL(jpg);
+var element = document.createElement("textarea");
+element.value = static;
+document.body.appendChild(element);

@@ -25,7 +25,6 @@ canvas.addEventListener("touchend", function(){
   click.y =0;
   player.spriteX =0;
   player.spriteY =0;
-  player.state ="idol";
 }, false);
 
 var click ={

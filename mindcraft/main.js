@@ -49,7 +49,7 @@ window.requestAnimationFrame(function(){
 }, game.ping);
 }
 
-
+/*
 function loadTerrain(){
   var a;
   var ax =0;
@@ -60,3 +60,4 @@ function loadTerrain(){
     ctx.drawImage(blocks, 0, 0, 32, 32, ax, ay, 32, 32);
   }
 }
+*/

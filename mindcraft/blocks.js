@@ -13,6 +13,6 @@ blocks.onload = function(){
   for(i =0; i > 40; i++){
     ay =400;
     ax +=32;
-   ctx.drawImage(blocks, 0, 0, 32, 32, ax, ay, 32, 32); 
+   load.drawImage(blocks, 0, 0, 32, 32, ax, ay, 32, 32); 
   }
 }

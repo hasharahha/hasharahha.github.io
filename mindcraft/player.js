@@ -58,6 +58,8 @@ function render(){
    ctx.drawImage(playerimg, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32, 64);
    ctx.fillSyle ="black";
    ctx.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
+   ctx.fillStyle ="blue";
+   ctx.fillRect(click.x, click.y, click.width, click.height);
 }
 
 function collision(first, second){

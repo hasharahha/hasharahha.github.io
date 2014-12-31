@@ -63,7 +63,7 @@ var player ={
 };
 gameloop();
 function update(){
-  
+  refresh();
   if(collision(click, leftbtn)){
     player.spriteX =96;
     player.x -= player.speed;
@@ -93,7 +93,6 @@ function gameloop(){
 update();
 process();
 render();
-refresh();
 window.requestAnimationFrame(function(){
  gameloop(); 
 }, game.ping);

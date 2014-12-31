@@ -109,8 +109,10 @@ function loadTerrain(){
 }
 */
 
-ctx.save();
-static = ctx.toDataURL(jpg);
-var element = document.createElement("textarea");
-element.value = static;
-document.body.appendChild(element);
+function collision(first, second){
+  return !(first.x > second.x + second.width||
+  first.x + first.height < second.x||
+  first.y > second.y + second.height||
+  first.y + first.width < second.y)
+  
+}

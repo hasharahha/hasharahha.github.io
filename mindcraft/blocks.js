@@ -21,6 +21,11 @@ block.onload = function(){
 c.addEventListener("touchstart", function(e){
   click.x = e.touches[0].pageX;
   click.y = e.touches[0].pageY 
+  if(click.y < 400){
+    ctx.drawImage(blocks, 448, 0, 32, 32, click.x, click.y, 32, 32);
+  }
+  
+  
 }, false);
 
 c.addEventListener("touchend", function(){

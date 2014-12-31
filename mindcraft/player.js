@@ -13,7 +13,7 @@ var player ={
   height: 64,
   width: 32,
   x: 45,
-  y: 30
+  y: 30,
   health: 10,
   speed: 2,
   spriteX: 0,

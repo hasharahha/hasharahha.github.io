@@ -41,7 +41,9 @@ var player ={
 };
 gameloop();
 function update(){
-  
+  if(collision(click, leftbtn)){
+    player.x -= player.speed;
+  }
 }
 
 function process(){

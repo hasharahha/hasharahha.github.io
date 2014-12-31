@@ -22,8 +22,7 @@ c.addEventListener("touchstart", function(e){
   click.x = e.touches[0].pageX;
   click.y = e.touches[0].pageY 
   if(click.y < 400){
-    click.y = click.y/32
-    click.x = click.x/32
+    click.y = click.y -=20;
     context.drawImage(blocks, 448, 0, 32, 32, click.x, click.y, 32, 32);
   }
   

@@ -16,6 +16,9 @@
       image.src ="https://dl.dropboxusercontent.com/s/w87adjuwpfj6mxu/Screenshot_2015-01-01-04-05-09.png";
       image.onload = function(){
         ctx.drawImage(image, 685, 400, 128, 64, 0, 0, 500, 250);
+        ctx.save();
+        var data = ctx.toDataURL();
+        alert(data);
       };
       
     </script>

@@ -1,1 +1,23 @@
 <!DOCTYPE HTML>
+<html>
+  <head>
+    <title>
+      Image test: JAB
+    </title>
+  </head>
+  <body>
+    <canvas id="image" height="500" width="500">
+      Canvas not supported!
+    </canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById("image");
+      var ctx = canvas.getContext("2d");
+      var image = new Image();
+      image.src ="https://dl.dropboxusercontent.com/s/w87adjuwpfj6mxu/Screenshot_2015-01-01-04-05-09.png";
+      image.onload = function(){
+        
+      };
+      
+    </script>
+  </body>
+</html>

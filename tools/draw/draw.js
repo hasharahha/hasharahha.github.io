@@ -21,10 +21,7 @@ function update(){
 }
 
 function render(){
- ctx.beginPath();
- ctx.arc(click.x, click.y, click.width, 0, 3.14159264);
- ctx.fillStyle =color;
- ctx.fill();
+ ctx.fillRect(click.x, click.y, click.width, click.height);
 }
 
 function loop(){

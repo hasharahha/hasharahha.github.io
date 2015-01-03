@@ -16,7 +16,9 @@ var selectedSkin ={
 };
 
 function process(){
-  
+  if(selectedSkin.spriteX > 1984&&selectedSkin.spriteY =0){
+    selectedSkin.spriteY =64;
+  }
 }
 function render(){
   ctx.drawImage(skins, selectedSkin.spriteX, selectedSkin.spriteY, selectedSkin.width, selectedSkin.height, selectedSkin.x, selectedSkin.y, 128, 128);

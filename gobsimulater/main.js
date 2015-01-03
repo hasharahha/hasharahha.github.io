@@ -16,7 +16,7 @@ var game ={
   width: 999,
   ping: 1000/30,
   server: "US ROOM: (private): "+rnd
-}
+};
 
 var bomb ={
   height: 64,
@@ -92,8 +92,8 @@ function update(){
   }
   if(keys[32]){
     bomb.loaded = true;
-    bomb.x = player.x -10;
-    bomb.y = player.y + 10;
+    bomb.x = player.x;
+    bomb.y = player.y;
   }
 }
 

@@ -19,7 +19,7 @@ function process(){
   
 }
 function render(){
-  ctx.drawImage(skins, selectedSkin.spriteX, selectedSkin.spriteY, selectedSkin.width, selectedSkin.height, 42, 42);
+  ctx.drawImage(skins, selectedSkin.spriteX, selectedSkin.spriteY, selectedSkin.width, selectedSkin.height, selectedSkin.x, selectedSkin.y, 42, 42);
 }
 function loop(){
   process();

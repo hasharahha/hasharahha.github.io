@@ -7,8 +7,8 @@ skins.onload = function(){
   loop();
 };
 var selectedSkin ={
-  height: 64,
-  width: 64,
+  height: 65,
+  width: 65,
   x: 0,
   y: 0,
   spriteX: 0,
@@ -19,7 +19,7 @@ function process(){
   
 }
 function render(){
-  ctx.drawImage(skins, selectedSkin.spriteX, selectedSkin.spriteY, selectedSkin.width, selectedSkin.height, selectedSkin.x, selectedSkin.y, 42, 42);
+  ctx.drawImage(skins, selectedSkin.spriteX, selectedSkin.spriteY, selectedSkin.width, selectedSkin.height, selectedSkin.x, selectedSkin.y, 128, 128);
 }
 function loop(){
   process();

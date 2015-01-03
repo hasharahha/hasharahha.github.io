@@ -59,6 +59,7 @@ var player ={
 };
 var speed =100;
 gameloop();
+AnimBomb();
 setInterval(add, speed);
 
 window.addEventListener("keydown", function(e){
@@ -148,6 +149,7 @@ if(player.stage =="down"){
   player.spriteY =84;
 }
 }
+
 function effect(){
   
   if(player.effect ==1){
@@ -279,3 +281,17 @@ setInterval(function(){
     Eo =0;
   }
 }, 100);
+
+
+function AnimBomb(){
+  if(bomb.spriteX > 512){
+    bomb.loaded =false;
+    bomb.spriteX =0;
+  }
+  else{
+    bomb.spriteX +=64;
+  }
+  setTimeout(function(){
+    AnimBomb();
+  }, 400)
+}

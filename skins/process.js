@@ -3,7 +3,9 @@ var ctx = canvas.getContext("2d");
 var static;
 var skins = new Image();
 skins.src ="https://dl.dropboxusercontent.com/s/wm2cn84lml3bf3q/all_skins.png";
-
+skins.onload = function(){
+  loop();
+};
 var selectedSkin ={
   height: 42,
   width: 42,

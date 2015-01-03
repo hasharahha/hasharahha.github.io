@@ -292,5 +292,5 @@ function AnimBomb(){
   }
   setTimeout(function(){
     AnimBomb();
-  }, 400)
+  }, 100)
 }

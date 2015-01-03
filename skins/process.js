@@ -7,8 +7,8 @@ skins.onload = function(){
   loop();
 };
 var selectedSkin ={
-  height: 65,
-  width: 65,
+  height: 68,
+  width: 64,
   x: 0,
   y: 0,
   spriteX: 0,

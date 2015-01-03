@@ -189,7 +189,7 @@ function render(){
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.cwidth, player.cheight);
   }
   if(bomb.loaded){
-    ctx.drawImage(bombs, bomb.spriteX, bomb.spriteY, bomb.height, bomb.width, bomb.x, bomb.y, 64, 64);
+    ctx.drawImage(bombs, bomb.spriteX, bomb.spriteY, bomb.height, bomb.width, bomb.x, bomb.y, 42, 42);
   }
   ctx.font ="14px helvetica";
   ctx.fillStyle ="white";

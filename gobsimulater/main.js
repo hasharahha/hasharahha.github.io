@@ -188,7 +188,8 @@ if(player.effect ==0){
 function render(){
   ctx.clearRect(0, 0, 1000, 500);
   ctx.drawImage(items, mysteryBox.spriteX, mysteryBox.spriteY, mysteryBox.width, mysteryBox.height, mysteryBox.x, mysteryBox.y, 32, 32);
-  if(bomb.loaded){
+  if(bomb.loaded&&player.bombs >=1){
+    player.bombs -=1;
     ctx.drawImage(bombs, bomb.spriteX, bomb.spriteY, bomb.height, bomb.width, bomb.x, bomb.y, 42, 42);
   }
   if(player.loaded){

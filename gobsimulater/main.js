@@ -95,6 +95,7 @@ function update(){
     bomb.loaded = true;
     bomb.x = player.x;
     bomb.y = player.y;
+    bomb.spriteY =0;
   }
 }
 
@@ -284,12 +285,10 @@ setInterval(function(){
 
 
 function AnimBomb(){
-  if(bomb.spriteX > 512){
+  bomb.spriteY +=64;
+  if(bomb.spriteY > 512){
     bomb.loaded =false;
-    bomb.spriteX =0;
-  }
-  else{
-    bomb.spriteX +=64;
+    bomb.spriteY =0;
   }
   setTimeout(function(){
     AnimBomb();

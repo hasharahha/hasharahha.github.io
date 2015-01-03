@@ -289,6 +289,11 @@ function AnimBomb(){
   if(bomb.spriteY > 512){
     bomb.loaded =false;
     bomb.spriteY =0;
+    ctx.fillStyle ="orange";
+    ctx.fillRect(bomb.x +42, bomb.y, 32, 32);
+    ctx.fillRect(bomb.x +42, bomb.y +42, 32, 32);
+    ctx.fillRect(bomb.x -42, bomb.y, 32, 32);
+    ctx.fillRect(bomb.x, bomb.y -42, 32, 32)
   }
   setTimeout(function(){
     AnimBomb();

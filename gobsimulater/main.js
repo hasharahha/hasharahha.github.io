@@ -8,6 +8,8 @@ skin.src
 ="https://dl.dropboxusercontent.com/s/o0e18h3fc5d2jsd/character_silver.png";
 var items = new Image();
 items.src ="https://raw.githubusercontent.com/JBcompanyrules/images/master/img/items.png";
+var bombs = new Image();
+bomb.src ="https://dl.dropboxusercontent.com/s/eyho02g7vn10vn9/bombs.png";
 var game ={
   players: 1,
   height: 500,
@@ -16,6 +18,15 @@ var game ={
   server: "US ROOM: (private): "+rnd
 }
 
+var bomb ={
+  height: 64,
+  width: 64,
+  x: 0,
+  y: 0,
+  spriteX: 0,
+  spriteY: 0,
+  loaded: false
+};
 
 var mysteryBox ={
 x: Math.random()*800-1,

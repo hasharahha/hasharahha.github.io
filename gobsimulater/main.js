@@ -9,7 +9,7 @@ skin.src
 var items = new Image();
 items.src ="https://raw.githubusercontent.com/JBcompanyrules/images/master/img/items.png";
 var bombs = new Image();
-bomb.src ="https://dl.dropboxusercontent.com/s/eyho02g7vn10vn9/bombs.png";
+bombs.src ="https://dl.dropboxusercontent.com/s/eyho02g7vn10vn9/bombs.png";
 var game ={
   players: 1,
   height: 500,
@@ -89,6 +89,11 @@ function update(){
     //Left key
     player.stage ="left";
     player.x -= player.speed;
+  }
+  if(keys[32]){
+    bomb.loaded = true;
+    bomb.x = player.x -10;
+    bomb.y = player.y + 10;
   }
 }
 
@@ -182,6 +187,9 @@ function render(){
   ctx.drawImage(items, mysteryBox.spriteX, mysteryBox.spriteY, mysteryBox.width, mysteryBox.height, mysteryBox.x, mysteryBox.y, 32, 32);
   if(player.loaded){
   ctx.drawImage(skin, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.cwidth, player.cheight);
+  }
+  if(bomb.loaded){
+    ctx.drawImage(bombs, bomb.spriteX, bomb.spriteY, bomb.height, bomb.width, bomb.x, bomb.y, 64, 64);
   }
   ctx.font ="14px helvetica";
   ctx.fillStyle ="white";

@@ -37,7 +37,10 @@ var leftbtn ={
 gameloop();
 
 function update(){
-  player.y += player.weight;
+  if(terrain[player.y/32 +3][player.x/32] ==0){
+    player.y += player.weight;
+  }
+  
 }
 function render(){
   player.update();
@@ -54,9 +57,6 @@ function process(){
     player.spriteX =96;
     player.x -= player.speed;
     player.stage ="moving";
-  }
-  if(terrain[playerPosY()-1][playerPosX()] >= 1){
-    player.weight =0;
   }
 }
 

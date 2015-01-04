@@ -21,16 +21,35 @@ screen.addEventListener("touchend", function(e){
   click.y =0;
 }, false);
 
+var rightbtn ={
+ x: 980,
+ y: 480,
+ width: 32,
+ height: 32
+};
+
+
 function update(){
   
 }
 function render(){
-  
+  player.update();
+  ctx.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
 }
 function process(){
   
 }
 
+function gameloop(){
+  
+  update();
+  render();
+  process();
+  
+  window.requestAnimationFrame(function(){
+    gameloop();
+  }, 1000/30);
+}
 
 function collision(first, second){
   return !(first.x > second.x + second.width||

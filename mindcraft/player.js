@@ -13,7 +13,6 @@ var player ={
   x: 64,
   y: 64,
   health: 20,
-  inventory: [0, 0, 0, 0, 0, 0, 0, 0, 0],
   stage: "idol",
   spriteX: 0,
   spriteY: 0,

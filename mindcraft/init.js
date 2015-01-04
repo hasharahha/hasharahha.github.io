@@ -13,7 +13,7 @@ alert("initializing...");
 screen.addEventListener("touchstart", function(e){
   click.x = touches[0].pageX;
   click.y = touches[0].pageY;
-  alert("("+click.x+", "+click.y+")")
+  alert("("+click.x+", "+click.y+")");
 }, false);
 
 screen.addEventListener("touchend", function(e){

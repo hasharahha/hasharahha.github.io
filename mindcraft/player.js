@@ -1,4 +1,4 @@
-var c = document.getElementById("player");
+var c = document.getElementById("game");
 c.width =1024;
 c.height =512;
 var context = c.getContext("2d");

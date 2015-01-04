@@ -17,7 +17,36 @@ screen.addEventListener("touchend", function(e){
   click.y =0;
 }, false);
 
+var rightbtn ={
+  x: 992,
+  y: 480,
+  update: function(){
+    icon.fillStyle ="yellow",
+    icon.fillRect(this.x, this.y, 32, 32);
+  }
+}
+
 function process(){
   
 }
+function render(){
+  player.update();
+  rightbtn.update();
+}
 
+function gameloop(){
+  window.requestAnimationFrame(function(){
+    gameloop();
+  }, 1000/30);
+}
+
+
+
+function collision(first, second){
+  return !(first.x > second.x + second.width||
+  first.x + first.height < second.x||
+  first.y > second.y + second.height||
+  first.y + first.width < second.y)
+  
+  
+}

@@ -5,6 +5,7 @@ c.height =512;
 var context = c.getContext("2d");
 var playersprite = new Image();
 playersprite.src ="https://dl.dropboxusercontent.com/s/1jp0m4zu92697hw/player.png";
+playerloop();
 var player={
   height: 64,
   width: 32,

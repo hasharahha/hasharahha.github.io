@@ -30,7 +30,7 @@ function renderblocks(){
   for(var y =0; y < blockpath.length; y++){
     for(var x =0; x < blockpath[y].length; x++){
       if(blockpath[y][x] ==1){
-        setb.drawImage(blocktile, 98, 0, 32, 32, x*32, y*32, 32, 32);
+        setb.drawImage(blocktile, 0, 64, 32, 32, x*32, y*32, 32, 32);
       }
     }
   }

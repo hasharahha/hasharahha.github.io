@@ -21,6 +21,7 @@ var player={
 };
 
 function playerupdate(){
+  alert("loading :(")
   context.clearRect(player.x, player.y, player.width, player.height);
   context.drawImage(playersprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
   

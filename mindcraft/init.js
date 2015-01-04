@@ -8,7 +8,8 @@ var click ={
   width: 32,
   x: 0,
   y: 0
-}
+};
+alert("initializing...");
 screen.addEventListener("touchstart", function(e){
   click.x = touches[0].pageX;
   click.y = touches[0].pageY;

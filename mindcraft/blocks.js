@@ -8,7 +8,7 @@ block.onload = function(){
   updateloop();
 }
 
-var terrain =[
+var land =[
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -30,8 +30,8 @@ var terrain =[
 
 
 function renderblocks(){
-  for(var y = 0; y < terrain.length; y++){
-    for(var x = 0; x < terrain[y].length; x++){
+  for(var y = 0; y < land.length; y++){
+    for(var x = 0; x < land[y].length; x++){
       if(terrain[y][x] == 1){
         context.drawImage(block, 0, 0, 32, 32, x*32, y*32, 32, 32);
       }

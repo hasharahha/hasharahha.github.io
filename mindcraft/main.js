@@ -3,7 +3,8 @@ var ctx = canvas.getContext("2d");
 var static;
 var playerimg = new Image();
 var blocks = new Image();
-blocks.src ="https://dl.dropboxusercontent.com/s/8l8t9xx1qybg35w/blocks.png"
+blocks.src ="https://dl.dropboxusercontent.com/s/8l8t9xx1qybg35w/blocks.png";
+alert("Generating Terrain...")
 blocks.onload = function(){
   loadTerrain();
 }

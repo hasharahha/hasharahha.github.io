@@ -19,17 +19,4 @@ var player={
   stage: "idol"
 };
 
-function playerupdate(){
-  alert("loading :(");
-  context.clearRect(player.x, player.y, player.width, player.height);
-  context.drawImage(playersprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
-  
-}
-alert("test 5");
-
-function playerloop(){
-  playerupdate();
-  window.requestAnimationFrame(function(){
-    playerloop();
-  }, 1000/30);
-}
+alert("Stats loaded");

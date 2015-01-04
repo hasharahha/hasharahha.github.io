@@ -90,7 +90,7 @@ function gravity(){
     }
     
   }catch(e){
-    alert(e);
+   error =e;
   }
 }
 function loop(){

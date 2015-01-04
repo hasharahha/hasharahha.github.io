@@ -31,7 +31,6 @@ function generateTerrain(){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
  for(var y = 0; y < terrain.length; y++){
  for(var x = 0; x < terrain[y].length; x++){
-   alert("("+x+", "+y+")");
  if(terrain[y][x] ==1){
   ctx.drawImage(blocks, 0, 0, 32, 32, x*32, y*32, 32, 32);
  }

@@ -55,7 +55,8 @@ var player ={
   cheight: 42,
   cwidth: 42,
   loaded: true,
-  bombs: 0
+  bombs: 0,
+  moveable: true
 };
 var speed =100;
 gameloop();
@@ -76,7 +77,7 @@ function update(){
     player.stage ="up";
     player.y -= player.speed;
   }
-  if(keys[39]&&getPlayerX() != 1&&getPlayerY() != 2){
+  if(keys[39]&&player.moveable){
     //Right key
     player.stage ="right";
     player.x += player.speed;
@@ -96,6 +97,13 @@ function update(){
     bomb.x = player.x;
     bomb.y = player.y;
     bomb.spriteY =0;
+  }
+  playerupdate();
+}
+
+function playerupdate(){
+  if(getPlayerX() ==2&&getPlayerY() ==1){
+    player.movable =false;
   }
 }
 

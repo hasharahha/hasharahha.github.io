@@ -17,4 +17,6 @@ c.addEventListener("touchend", function(){
   click.y = 0;
 }, false);
 
+var terrain =[
+];
 

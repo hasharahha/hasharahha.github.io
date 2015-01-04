@@ -33,7 +33,7 @@ function renderblocks(){
         setb.drawImage(blocktile, 0, 64, 32, 32, x*32, y*32, 32, 32);
       }
       if(blockpath[y][x] ==2){
-        setb.drawImage(bloctile, 32, 64, 32, 32, x*32, y*32, 32, 32);
+        setb.drawImage(blocktile, 32, 64, 32, 32, x*32, y*32, 32, 32);
       }
     }
   }

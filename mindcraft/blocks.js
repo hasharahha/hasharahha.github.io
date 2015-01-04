@@ -5,18 +5,12 @@ block.src ="https://dl.dropboxusercontent.com/s/8l8t9xx1qybg35w/blocks.png";
 alert("Genrating terrain..")
 
 block.onload = function(){
+  try{
   updateloop();
+  }catch(e){
+    alert("Sorry: "+e+"\n Couldnt unload chunck");
+  }
 }
-
-c.addEventListener("touchstart", function(e){
-  click.x = e.touches[0].pageX;
-  click.y = e.touches[0].pageY 
-}, false);
-
-c.addEventListener("touchend", function(){
-  click.x = 0;
-  click.y = 0;
-}, false);
 
 var terrain =[
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

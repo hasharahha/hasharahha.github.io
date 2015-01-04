@@ -63,6 +63,12 @@ function generateTerrain(){
  if(terrain[y][x] ==7){
    ctx.drawImage(blocks, 192, 0, 32, 32, x*32, y*32, 32, 32);
  }
+ if(terrain[y][x] ==8){
+   ctx.drawImage(blocks, 224, 0, 32, 32, x*32, y*32, 32, 32);
+ }
+ if(terrain[y][x] ==9){
+   ctx.drawImage(blocks, 256, 0, 32, 32, x*32, y*32, 32, 32);
+ }
  }
  }
 }

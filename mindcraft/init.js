@@ -37,8 +37,12 @@ var leftbtn ={
 
 gameloop();
 functon mine(){
+  try{
   if(terrain[Math.round(click.y/32)][Math.round(click.x/32)] ==1){
     terrain[Math.round(click.y/32)][Math.round(click.x/32)] =0;
+  }
+  }catch(e){
+    alert(e);
   }
 }
 

@@ -19,6 +19,7 @@ screen.addEventListener("touchstart", function(e){
 screen.addEventListener("touchend", function(e){
   click.x =0;
   click.y =0;
+  player.spriteX =0;
 }, false);
 
 var rightbtn ={
@@ -38,7 +39,11 @@ function render(){
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
 }
 function process(){
-  
+  if(collision(click, rightbtn)){
+    player.spriteX =64;
+    player.x += player.speed;
+    player.stage ="moving";
+  }
 }
 
 function gameloop(){

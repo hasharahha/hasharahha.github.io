@@ -48,7 +48,7 @@ function renderblocks(){
 }
 
 function updatepos(){
-  if(blockpath[playerPathY][playerPathX]){
+  if(blockpath[playerPathY][playerPathX] ==1){
 player.x = player.lastX;
 player.y = player.lastY;
   }

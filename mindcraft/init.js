@@ -35,7 +35,7 @@ function update(){
 }
 function render(){
   player.update();
-  screen.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
+  icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
 }
 function process(){
   

@@ -21,6 +21,7 @@ screen.addEventListener("touchend", function(e){
   click.y =0;
 }, false);
 
+/*
 var rightbtn ={
   x: 992,
   y: 480,
@@ -54,3 +55,4 @@ function collision(first, second){
   
   
 }
+*/

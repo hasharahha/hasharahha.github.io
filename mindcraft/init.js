@@ -13,6 +13,7 @@ alert("initializing...");
 screen.addEventListener("touchstart", function(e){
   click.x = e.touches[0].pageX;
   click.y = e.touches[0].pageY;
+  mine();
 }, false);
 
 screen.addEventListener("touchend", function(e){
@@ -35,6 +36,11 @@ var leftbtn ={
 };
 
 gameloop();
+functon mine(){
+  if(terrain[Math.round(click.y/32)][Math.round(click.x/32)] ==1){
+    terrain[Math.round(click.y/32)][Math.round(click.x/32)] =0;
+  }
+}
 
 function update(){
   

@@ -7,6 +7,7 @@ blocktile.src ="https://dl.dropboxusercontent.com/s/3qb4u8ws3ehqops/block_tiles.
 blocktile.onload = function(){
 loadloop();
 }
+alert("No errors");
 var blockpath =[
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -26,7 +27,13 @@ var blockpath =[
 ];
 
 function renderblcoks(){
-  
+  for(var y =0; y < blockpath.length; y++){
+    for(var x =0; x < blockpath[y].length; x++){
+      if(blockpath[y][x] ==1){
+        setb.drawImage(blocktile, 98, 0, 32, 32, x*32, y*32, 32, 32);
+      }
+    }
+  }
 }
 
 function loadloop(){

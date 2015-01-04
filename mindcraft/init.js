@@ -55,10 +55,11 @@ function process(){
     player.x -= player.speed;
     player.stage ="moving";
   }
-  
+  /*
   if(terrain[playerPosY -1][playerPosX] >= 1){
     player.weight =0;
   }
+  */
 }
 
 function gameloop(){

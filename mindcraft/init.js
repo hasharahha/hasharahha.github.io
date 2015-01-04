@@ -38,7 +38,7 @@ var jumpbtn ={
   x: 916,
   y: 416,
   height: 32,
-  width: 64,
+  width: 96,
 }
 
 gameloop();

@@ -4,7 +4,7 @@ var block = new Image();
 block.src ="https://dl.dropboxusercontent.com/s/8l8t9xx1qybg35w/blocks.png";
 
 block.onload = function(){
-  
+  updateloop();
 }
 
 c.addEventListener("touchstart", function(e){
@@ -52,7 +52,13 @@ var terrain =[
 
 
 function renderblocks(){
-  
+  for(var y = 0; y < terrain.length; y++){
+    for(var x; x < terrain[y].length; x++){
+      if(terrain[y][x] == 1){
+        context.drawImage(blocks, 0, 0, 32, 32, x*32, y*32, 32, 32);
+      }
+    }
+  }
   
 }
 

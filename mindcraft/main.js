@@ -120,7 +120,7 @@ function collision(first, second){
   first.y + first.width < second.y)
   
 }
-
+/*
 var c = document.getElementById("terrain");
 var context = c.getContext("2d");
 var block = new Image();
@@ -140,7 +140,9 @@ c.addEventListener("touchend", function(){
   click.x = 0;
   click.y = 0;
 }, false);
+*/
 
+/*
 var terrain =[
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -179,5 +181,6 @@ funtion updateloop(){
    updateloop(); 
   }, 1000/30);
 }
+*/
 
 

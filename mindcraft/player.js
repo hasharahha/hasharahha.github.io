@@ -16,8 +16,8 @@ var player={
   y: 0,
   stage: "idol",
   update: function(){
+    context.clearRect(this.x, this.y, this.width, this.height);
     context.drawImage(playersprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
   }
 };
 
-alert("Stats loaded");

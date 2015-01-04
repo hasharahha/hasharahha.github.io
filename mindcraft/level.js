@@ -85,6 +85,10 @@ function gravity(){
     if(terrain[Math.round(player.y/32) +1][Math.round(player.x/32)] ==0){
       player.y += player.weight;
     }
+    if(terrain[Math.round(player.y)][Math.round(player.x/32) -1] ==15){
+      player.x +=32;
+    }
+    
   }catch(e){
     alert(e);
   }

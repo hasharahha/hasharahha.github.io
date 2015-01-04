@@ -12,18 +12,12 @@ var map =[
 [1, 0, 1, 0],
 [1, 1, 1, 1]
 ];
-
+loop();
 alert("loaded");
 function render(){
-    var x;
-    var y =0;
-    for(x =0; x < 128; x++){
-        if(map[y][x] ==1){
-            map[y][x] ++;
-            ctx.fillRect(map[y]*64, map[x]*64, 64, 64);
-        }
-    }
+    ctx.fillRect(map[1]*64, map[1][1]*64, 64, 64);
 }
+
 
 function loop(){
     render();

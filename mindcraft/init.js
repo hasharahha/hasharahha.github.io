@@ -34,6 +34,13 @@ var leftbtn ={
   width: 32
 };
 
+var jumpbtn ={
+  x: 916,
+  y: 416,
+  height: 32,
+  width: 32,
+}
+
 gameloop();
 /*
 functon mine(){
@@ -53,6 +60,7 @@ function render(){
   player.update();
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
   icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
+  icon.fillRect(jumpbtn.x, jumpbtb.y, jumpbtn.width, jumpbtn.height);
 }
 function process(){
   if(collision(click, rightbtn)){
@@ -64,6 +72,9 @@ function process(){
     player.spriteX =96;
     player.x -= player.speed;
     player.stage ="moving";
+  }
+  if(collision(click, jumpbtn)){
+    player.y -= 42;
   }
 }
 

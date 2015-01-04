@@ -34,7 +34,7 @@ y: Math.random()*400-1,
 height: 32,
 width: 32,
 spriteX: 0,
-spriteY: 128,
+spriteY: 128,\
 effect: "shrink"
 };
 
@@ -76,7 +76,7 @@ function update(){
     player.stage ="up";
     player.y -= player.speed;
   }
-  if(keys[39]&&getPlayerX() != 1&&getPlayerY != 2){
+  if(keys[39]&&getPlayerX() != 1&&getPlayerY() != 2){
     //Right key
     player.stage ="right";
     player.x += player.speed;

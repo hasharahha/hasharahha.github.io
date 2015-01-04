@@ -25,7 +25,7 @@ var player={
 };
 
 
-playerloop(){
+function playerloop(){
   player.update();
   window.requestAnimationFrame(function(){
     playerloop();

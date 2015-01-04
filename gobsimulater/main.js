@@ -225,7 +225,6 @@ function getPlayers(){
 
 function getPlayerY(){
   static = Math.round(player.y/32);
-  static -=14;
   static = Math.abs(static);
   return static;
 }

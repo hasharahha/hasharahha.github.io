@@ -1,1 +1,21 @@
-//
+var canvas = document.getElementById("world");
+var ctx = canvas.getContext("2d");
+canvas.height = 516;
+canvas.width =1024;
+var blocks = new Image();
+blocks.src ="https://dl.dropboxusercontent.com/s/8l8t9xx1qybg35w/blocks.png";
+
+var terrain =[
+
+];
+
+function generateTerrain(){
+
+}
+
+function loop(){
+generateTerrain();
+window.requestAnimationFrame(function(){
+loop();
+}, 100);
+}

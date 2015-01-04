@@ -17,17 +17,17 @@ var player={
   weight: 3,
   x: 32,
   y: 0,
-  stage: "idol",
-  update: function(){
-    alert("No errors");
-    context.clearRect(this.x, this.y, this.width, this.height);
-    context.drawImage(playersprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
-  }
+  stage: "idol"
 };
 
+function playerupdate(){
+  context.clearRect(player.x, player.y, player.width, player.height);
+  context.drawImage(playersprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
+  
+}
 
 function playerloop(){
-  player.update();
+  playerupdate();
   window.requestAnimationFrame(function(){
     playerloop();
   }, 1000/30);

@@ -13,7 +13,6 @@ alert("initializing...");
 screen.addEventListener("touchstart", function(e){
   click.x = e.touches[0].pageX;
   click.y = e.touches[0].pageY;
-  alert("("+click.x+", "+click.y+")");
 }, false);
 
 screen.addEventListener("touchend", function(e){
@@ -28,6 +27,12 @@ var rightbtn ={
  width: 32,
  height: 32
 };
+var leftbtn ={
+  x: 916,
+  y: 480,
+  height: 32,
+  width: 32
+};
 
 gameloop();
 
@@ -37,11 +42,17 @@ function update(){
 function render(){
   player.update();
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
+  icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
 }
 function process(){
   if(collision(click, rightbtn)){
     player.spriteX =64;
     player.x += player.speed;
+    player.stage ="moving";
+  }
+  if(collision(click, leftbtn)){
+    player.spriteX =96;
+    player.x -= player.speed;
     player.stage ="moving";
   }
 }

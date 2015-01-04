@@ -2,6 +2,8 @@ var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
 var keys =[];
+player.loaded =false;
+alert("Under construction");
 var rnd = Math.floor(Math.random()*9001);
 var skin = new Image();
 skin.src 

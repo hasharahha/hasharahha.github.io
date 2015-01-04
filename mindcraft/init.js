@@ -21,30 +21,15 @@ screen.addEventListener("touchend", function(e){
   click.y =0;
 }, false);
 
-/*
-var rightbtn ={
-  x: 992,
-  y: 480,
-  update: function(){
-    icon.fillStyle ="yellow",
-    icon.fillRect(this.x, this.y, 32, 32);
-  }
-}
-
-function process(){
+function update(){
   
 }
 function render(){
-  player.update();
-  rightbtn.update();
+  
 }
-
-function gameloop(){
-  window.requestAnimationFrame(function(){
-    gameloop();
-  }, 1000/30);
+function process(){
+  
 }
-
 
 
 function collision(first, second){
@@ -55,4 +40,3 @@ function collision(first, second){
   
   
 }
-*/

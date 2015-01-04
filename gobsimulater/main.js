@@ -76,7 +76,7 @@ function update(){
     player.stage ="up";
     player.y -= player.speed;
   }
-  if(keys[39]){
+  if(keys[39]&&getPlayerX() != 1&&getPlayerY != 2){
     //Right key
     player.stage ="right";
     player.x += player.speed;

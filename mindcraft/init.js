@@ -11,8 +11,8 @@ var click ={
 };
 alert("initializing...");
 screen.addEventListener("touchstart", function(e){
-  click.x = touches[0].pageX;
-  click.y = touches[0].pageY;
+  click.x = changedTouches[0].pageX;
+  click.y = changedTouches[0].pageY;
   alert("("+click.x+", "+click.y+")");
 }, false);
 

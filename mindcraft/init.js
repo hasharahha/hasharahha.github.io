@@ -63,7 +63,7 @@ function render(){
   icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
   icon.fillRect(jumpbtn.x, jumpbtn.y, jumpbtn.width, jumpbtn.height);
   icon.font ="14px Helvetica";
-  icon.clearRect(0, 0, 400, 40);
+  icon.clearRect(10, 10, 400, 40);
   icon.fillText("Errors: "+error, 10, 20);
 }
 function process(){

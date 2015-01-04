@@ -5,6 +5,7 @@ display.width =1024;
 var static;
 var playerimg = new Image();
 playerimg.src ="https://dl.dropboxusercontent.com/s/1jp0m4zu92697hw/player.png";
+playerloop();
 alert("Player loaded");
 var player ={
   width: 32,

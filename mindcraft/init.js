@@ -28,6 +28,7 @@ var rightbtn ={
  height: 32
 };
 
+gameloop();
 
 function update(){
   

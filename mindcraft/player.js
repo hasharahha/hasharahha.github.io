@@ -21,3 +21,11 @@ var player={
   }
 };
 
+function playerPosX(){
+  static = player.x/32;
+  return static;
+}
+function playerPosY(){
+  static = player.y/32;
+  return static;
+}

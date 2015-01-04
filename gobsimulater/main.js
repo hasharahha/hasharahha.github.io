@@ -2,7 +2,6 @@ var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var static;
 var keys =[];
-alert("Under construction");
 var rnd = Math.floor(Math.random()*9001);
 var skin = new Image();
 skin.src 
@@ -55,7 +54,7 @@ var player ={
   spriteY: 84,
   cheight: 42,
   cwidth: 42,
-  loaded: false,
+  loaded: true,
   bombs: 0
 };
 var speed =100;

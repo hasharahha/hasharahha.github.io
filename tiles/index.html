@@ -1,1 +1,32 @@
 <!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Tiles demo</title>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+  </body>
+    <script type="text/javascript">
+      var canvas = document.getElementById("game");
+      var ctx = canvas.getContext("2d");
+      canvas.height = 128;
+      canvas.width = 128;
+      var map =[
+        [1, 1, 1, 1],
+        [1, 0, 0, 1],
+        [1, 0, 0, 1],
+        [1, 1, 1, 1]
+      ];
+      
+      function render(){
+        
+      }
+      
+      function loop(){
+        render();
+        window.requestAnimationFrame(function(){
+          loop();
+        }, 100);
+      }
+    </script>
+</html>

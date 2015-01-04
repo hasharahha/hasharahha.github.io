@@ -82,7 +82,7 @@ function generateTerrain(){
 
 function gravity(){
   try{
-    if(terrain[Math.round(player.y/32 -3)][Math.round(player.x/32)] ==0){
+    if(terrain[3][Math.round(player.x/32)] ==0){
       player.y += player.weight;
     }
   }catch(e){

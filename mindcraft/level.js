@@ -76,15 +76,23 @@ function generateTerrain(){
  if(terrain[y][x] ==15){
    ctx.drawImage(blocks, 448, 0, 32, 32, x*32, y*32, 32, 32);
  }
- if(terrain[player.y/32 +3][player.x/32] ==0){
-   player.y += player.weight;
- }
  }
  }
 }
 
+function gravity(){
+  try{
+    if(terrain[Math.round(player.y/32 -3)][Math.round(player.x/32)] ==0){
+      player.y += player.weight;
+    }
+  }catch(e){
+    alert(e);
+  }
+}
 function loop(){
 generateTerrain();
+gravity();
+
 window.requestAnimationFrame(function(){
 loop();
 }, 100);

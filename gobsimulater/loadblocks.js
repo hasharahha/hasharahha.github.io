@@ -28,6 +28,7 @@ var blockpath =[
 function renderblcoks(){
   for(var y =0; y < blockpath.length; y++){
     for(var x =0; x < blockpath[y].length; x++){
+      ctx.clearRect(0, 0, 600, 1000);
       if(blockpath[y][x] ==1){
         setb.drawImage(blocktile, 98, 0, 32, 32, x*32, y*32, 32, 32);
       }

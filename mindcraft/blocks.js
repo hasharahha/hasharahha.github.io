@@ -5,11 +5,7 @@ block.src ="https://dl.dropboxusercontent.com/s/8l8t9xx1qybg35w/blocks.png";
 alert("Genrating terrain..")
 
 block.onload = function(){
-  try{
   updateloop();
-  }catch(e){
-    alert("Sorry: "+e+"\n Couldnt unload chunck");
-  }
 }
 
 var terrain =[
@@ -37,7 +33,7 @@ function renderblocks(){
   for(var y = 0; y < terrain.length; y++){
     for(var x = 0; x < terrain[y].length; x++){
       if(terrain[y][x] == 1){
-        context.drawImage(blocks, 0, 0, 32, 32, x*32, y*32, 32, 32);
+        context.drawImage(block, 0, 0, 32, 32, x*32, y*32, 32, 32);
       }
     }
   }

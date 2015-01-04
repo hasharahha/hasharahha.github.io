@@ -9,6 +9,7 @@ var click ={
   x: 0,
   y: 0
 };
+var error ="No errors";
 alert("initializing...");
 screen.addEventListener("touchstart", function(e){
   click.x = e.touches[0].pageX;
@@ -61,6 +62,8 @@ function render(){
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
   icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
   icon.fillRect(jumpbtn.x, jumpbtn.y, jumpbtn.width, jumpbtn.height);
+  icon.font ="14px Helvetica";
+  icon.fillText("Errors: "+error, 10, 10);
 }
 function process(){
   if(collision(click, rightbtn)){

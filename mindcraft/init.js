@@ -1,6 +1,8 @@
 var screen = document.getElementById("indicators");
 var icon = screen.getContext("2d");
 //this is where all button's will go
+screen.width =1024;
+screen.height =512;
 var click ={
   height: 32,
   width: 32,

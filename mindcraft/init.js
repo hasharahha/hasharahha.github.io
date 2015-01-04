@@ -73,12 +73,8 @@ function process(){
     player.x -= player.speed;
     player.stage ="moving";
   }
-  try{
-  if(collision(click, jumpbtn)&&terrain[Math.round(player.y/32]) +1][Math.round(player.x/32)] >= 1){
+  if(collision(click, jumpbtn)){
     player.y -= 42
-  }
-  }catche(e){
-    alert(e);
   }
 }
 

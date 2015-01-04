@@ -25,7 +25,7 @@ var blockpath =[
   
 ];
 
-function renderblcoks(){
+function renderblocks(){
   for(var y =0; y < blockpath.length; y++){
     for(var x =0; x < blockpath[y].length; x++){
       ctx.clearRect(0, 0, 600, 1000);

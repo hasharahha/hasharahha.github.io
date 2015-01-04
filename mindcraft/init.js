@@ -60,7 +60,7 @@ function render(){
   player.update();
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
   icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
-  icon.fillRect(jumpbtn.x, jumpbtb.y, jumpbtn.width, jumpbtn.height);
+  icon.fillRect(jumpbtn.x, jumpbtn.y, jumpbtn.width, jumpbtn.height);
 }
 function process(){
   if(collision(click, rightbtn)){

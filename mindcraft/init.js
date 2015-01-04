@@ -34,7 +34,6 @@ function update(){
   
 }
 function render(){
-  screen.clearRect(0, 0, screen.width, screen.height);
   player.update();
   screen.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
 }

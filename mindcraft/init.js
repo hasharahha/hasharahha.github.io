@@ -34,7 +34,7 @@ function update(){
 }
 function render(){
   player.update();
-  ctx.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
+  screen.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
 }
 function process(){
   

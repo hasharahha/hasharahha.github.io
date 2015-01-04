@@ -63,7 +63,8 @@ function render(){
   icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
   icon.fillRect(jumpbtn.x, jumpbtn.y, jumpbtn.width, jumpbtn.height);
   icon.font ="14px Helvetica";
-  icon.fillText("Errors: "+error, 10, 10);
+  icon.clearRect(0, 0, 40, 40);
+  icon.fillText("Errors: "+error, 10, 20);
 }
 function process(){
   if(collision(click, rightbtn)){

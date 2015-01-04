@@ -49,7 +49,7 @@ function renderblocks(){
 
 function updatepos(){
   if(blockpath[playerPathY][playerPathX]){
-    
+  
   }
 }
 function loadloop(){

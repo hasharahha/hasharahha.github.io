@@ -37,7 +37,7 @@ var leftbtn ={
 gameloop();
 
 function update(){
-  
+  player.y += player.weight;
 }
 function render(){
   player.update();

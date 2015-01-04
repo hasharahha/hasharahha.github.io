@@ -98,13 +98,7 @@ function update(){
     bomb.spriteY =0;
   }
 }
-/*
-function playerupdate(){
-  if(getPlayerX() ==2&&getPlayerY() ==1){
-    player.movable =false;
-  }
-}
-*/
+
 function add(){
   if(player.stage !="idol"){
   player.spriteX +=42;

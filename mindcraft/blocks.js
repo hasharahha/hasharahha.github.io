@@ -41,7 +41,7 @@ var terrain =[
 
 function renderblocks(){
   for(var y = 0; y < terrain.length; y++){
-    for(var x; x < terrain[y].length; x++){
+    for(var x = 0; x < terrain[y].length; x++){
       if(terrain[y][x] == 1){
         context.drawImage(blocks, 0, 0, 32, 32, x*32, y*32, 32, 32);
       }

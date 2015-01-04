@@ -38,7 +38,7 @@ var jumpbtn ={
   x: 916,
   y: 416,
   height: 32,
-  width: 32,
+  width: 64,
 }
 
 gameloop();
@@ -73,8 +73,8 @@ function process(){
     player.x -= player.speed;
     player.stage ="moving";
   }
-  if(collision(click, jumpbtn)){
-    player.y -= 42;
+  if(collision(click, jumpbtn)&&terrain[Math.round(player.y/32]) +1][Math.round(player.x/32)] >= 1){
+    player.y -= 42
   }
 }
 

@@ -49,9 +49,11 @@ function renderblocks(){
 
 function updatepos(){
   if(blockpath[playerPathY][playerPathX] ==1){
+    /*
 player.x = player.lastX;
 player.y = player.lastY;
-  }
+*/
+}
 }
 function loadloop(){
   playerPathX = Math.floor(player.x/32);

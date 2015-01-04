@@ -27,6 +27,9 @@ var blockpath =[
   
 ];
 
+var playerPathX;
+var playerPathY;
+
 function renderblocks(){
   setb.clearRect(0, 0, 1000, 500);
   for(var y =0; y < blockpath.length; y++){
@@ -44,7 +47,15 @@ function renderblocks(){
   }
 }
 
+function updatepos(){
+  if(blockpath[playerPathY][playerPathX] ==1){
+    player.x -= 32;
+  }
+}
 function loadloop(){
+  playerPathX = Math.floor(player.x/32);
+  playerPathY = Math.floor(player.y/32);
+  updatepos();
   renderblocks();
   window.requestAnimationFrame(function(){
     loadloop();

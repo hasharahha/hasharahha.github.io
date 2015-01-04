@@ -14,7 +14,10 @@ var player={
   weight: 3,
   x: 32,
   y: 0,
-  stage: "idol"
+  stage: "idol",
+  update: function(){
+    context.drawImage(playersprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
+  }
 };
 
 alert("Stats loaded");

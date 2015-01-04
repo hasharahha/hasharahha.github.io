@@ -8,7 +8,6 @@ playerloop();
 var player={
   height: 64,
   width: 32,
-  inventory: [],
   spriteX: 0,
   spriteY: 0,
   health: 20,

@@ -34,7 +34,7 @@ y: Math.random()*400-1,
 height: 32,
 width: 32,
 spriteX: 0,
-spriteY: 128,\
+spriteY: 128,
 effect: "shrink"
 };
 
@@ -225,6 +225,7 @@ function getPlayers(){
 
 function getPlayerY(){
   static = Math.round(player.y/32);
+  static -=14;
   static = Math.abs(static);
   return static;
 }

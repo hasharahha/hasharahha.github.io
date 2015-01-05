@@ -9,7 +9,7 @@ var player={
   width: 32,
   spriteX: 0,
   spriteY: 0,
-  health: 20,
+  health: 16,
   speed: 2,
   weight: 3,
   x: 32,

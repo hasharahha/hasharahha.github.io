@@ -76,7 +76,6 @@ function update(){
   
 }
 function render(){
-  player.update();
   icon.clearRect(0, 0, screen.width, screen.height);
   icon.fillStyle ="black";
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
@@ -123,6 +122,7 @@ function gameloop(){
   update();
   render();
   process();
+  player.update();
   
   window.requestAnimationFrame(function(){
     gameloop();

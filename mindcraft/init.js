@@ -78,7 +78,7 @@ function process(){
     player.stage ="moving";
   }
   if(collision(click, jumpbtn)){
-    player.y -= 42
+    jump();
   }
 }
 

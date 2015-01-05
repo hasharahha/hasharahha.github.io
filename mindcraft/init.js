@@ -8,6 +8,7 @@ snd.play();
 
 if(localStorage.getItem("user")){
   alert("You are aloud");
+  player.name = localStorage.getItem("user");
 }
 else{
   alert("Sorry you aren't authenticated");

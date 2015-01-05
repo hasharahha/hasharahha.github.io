@@ -13,7 +13,7 @@ var player={
   hunger: 25,
   speed: 2,
   weight: 3,
-  x: 128,
+  x: 500,
   y: 10,
   stage: "idol",
   update: function(){

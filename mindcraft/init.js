@@ -116,6 +116,7 @@ function process(){
   if(player.x <= 0){
     player.x +=32;
   }
+  player.update();
 }
 
 function gameloop(){
@@ -123,7 +124,6 @@ function gameloop(){
   update();
   render();
   process();
-  player.update();
   
   window.requestAnimationFrame(function(){
     gameloop();

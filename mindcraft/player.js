@@ -27,17 +27,7 @@ function playerPosX(){
   return static;
 }
 
-setInterval(function(){
-  if(Math.round(player.x/32) ==31){
-    context.translate(-1024, 0);
-    ctx.translate(-1024, 0);
-    player.x +=64;
-  }
-  if(Math.round(player.x/32) ==32){
-    player.x -=64;
-    ctx.translate(0, 0);
-  }
-}, 10000);
+
 function playerPosY(){
   static = player.y/32;
   return static;

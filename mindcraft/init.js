@@ -80,6 +80,9 @@ function render(){
   icon.drawImage(hungerIndicator, 0, 0, 16*player.hunger, 16, 20, 40, 16*player.hunger, 16);
 }
 function process(){
+  if(pos < 0){
+    pos =1;
+  }
   if(collision(click, rightbtn)){
     player.spriteX =64;
     pos -= 0.01;

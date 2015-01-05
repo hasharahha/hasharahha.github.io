@@ -108,13 +108,20 @@ loop();
 
 function jump(){
   try{
-    if(terrain[Math.round(player.y/32)+1][Math.round(player.x/32)] >= 1){
+    if(terrain[Math.round(player.y/32)+1][Math.round(player.x/32)] >= 1&&player.hunger > 3){
       player.y -= 75;
+      player.hunger -=0.1;
     }
-    if(terrain[Math.round(player.y/32)-1][Math.round(player.x/32)] >= 1){
+    if(terrain[Math.round(player.y/32)-1][Math.round(player.x/32)] >= 1&&player.hunger > 3){
       player.y -=32;
+      player.hunger -=0.1;
     }
   }catch(e){
     error =e;
   }
 }
+
+
+setInterval(function(){
+  player.hunger +=0.1;
+}, 10000);

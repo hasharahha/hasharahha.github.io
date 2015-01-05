@@ -67,7 +67,7 @@ function render(){
   icon.font ="14px Helvetica";
   icon.clearRect(10, 10, 400, 40);
   icon.fillText("Errors: "+error, 10, 20);
-  icon.drawImage(heartIndicator, 0, 0, 16, 16, 20, 20, 16, 16);
+  icon.drawImage(heartIndicator, 0, 0, 8*player.health, 16, 20, 20, 16, 16);
 }
 function process(){
   if(collision(click, rightbtn)){

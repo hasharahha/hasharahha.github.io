@@ -16,11 +16,12 @@ display: block;
 font-size: 20;
 height: 32;
 width: 128;
-border-style: dotted;
+border-style: solid;
 color: gray;
 background-color: black;
 }
 #submit{
+  display: block;
 height: 32;
 width: 128;
 background-color: gray;

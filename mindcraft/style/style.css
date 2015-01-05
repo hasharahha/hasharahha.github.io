@@ -15,7 +15,7 @@ left: 20;
 #password{
 position: absolute;
 top: 20;
-left: 50;
+left: 300;
 font-size: 20;
 height: 32;
 width: 128;
@@ -26,7 +26,7 @@ background-color: black;
 #submit{
 position: absolute;
 top: 20;
-left: 80;
+left: 400;
 height: 32;
 width: 128;
 background-color: gray;

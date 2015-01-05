@@ -1,5 +1,7 @@
 var screen = document.getElementById("indicators");
 var icon = screen.getContext("2d");
+var snd = document.getElementById("sound");
+snd.play();
 //this is where all button's will go
 var pos =0;
 var heartIndicator = new Image();

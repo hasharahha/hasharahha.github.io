@@ -103,7 +103,7 @@ gravity();
 ctx.translate(player.x-player.x*2, 0);
 window.requestAnimationFrame(function(){
 loop();
-}, 100);
+}, 10000);
 }
 
 

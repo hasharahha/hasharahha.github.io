@@ -93,6 +93,7 @@ function render(){
   icon.drawImage(hungerIndicator, 0, 0, 16*player.hunger, 16, 20, 40, 16*player.hunger, 16);
 }
 function process(){
+  /*
   if(collision(click, rightbtn)){
     player.spriteX =64;
     pos -= 0.01;
@@ -117,6 +118,7 @@ function process(){
     player.x +=32;
   }
   player.update();
+  */
 }
 
 function gameloop(){
@@ -124,7 +126,7 @@ function gameloop(){
   update();
   render();
   process();
-  
+  player.update();
   window.requestAnimationFrame(function(){
     gameloop();
   }, 1000/30);

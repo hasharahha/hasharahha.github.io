@@ -85,14 +85,14 @@ function gravity(){
     if(terrain[Math.round(player.y/32) +1][Math.round(player.x/32)] ==0){
       player.y += player.weight;
     }
-    if(terrain[Math.round(player.y/32)][Math.round(player.x/32) -1] >=1&&terrain[Math.round(player.y/32)][Math.round(player.x/32) -1] <=10){
-      player.x +=5;
+    if(terrain[Math.round(player.y/32)][Math.round(player.x/32)] >=1){
+      player.x +=2;
     }
     if(terrain[Math.round(player.y/32) -1][Math.round(player.x/32)] >=1){
       player.y +=5;
     }
-    if(terrain[Math.round(player.y/32)][Math.round(player.x/32) +1] >=1&&terrain[Math.round(player.y/32)][Math.round(player.x/32) -1] <=10){
-      player.x -=5;
+    if(terrain[Math.round(player.y/32)][Math.round(player.x/32)] >=1){
+      player.x -=2;
     }
     
   }catch(e){

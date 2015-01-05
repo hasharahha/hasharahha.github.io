@@ -82,7 +82,7 @@ function render(){
 function process(){
   if(collision(click, rightbtn)){
     player.spriteX =64;
-    pos -= 1;
+    pos -= 0.01;
     ctx.translate(pos, 0);
     context.translate(pos, 0);
     player.x -= 0.1;
@@ -90,7 +90,7 @@ function process(){
   }
   if(collision(click, leftbtn)){
     player.spriteX =96;
-    pos += 0.1;
+    pos += 0.01;
     ctx.translate(pos, 0);
     context.translate(pos, 0);
     player.x -= player.speed;

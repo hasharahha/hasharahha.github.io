@@ -100,12 +100,14 @@ function loop(){
   ctx.clearRect(0, 0, 1024, 512);
 generateTerrain();
 gravity();
-ctx.translate(-32, 0);
 window.requestAnimationFrame(function(){
 loop();
 }, 100);
 }
 
+setInterval(function(){
+  ctx.translate(-32, 0);
+}, 10000)
 
 function jump(){
   try{

@@ -3,6 +3,8 @@ var icon = screen.getContext("2d");
 //this is where all button's will go
 var heartIndicator = new Image();
 heartIndicator.src ="https://dl.dropboxusercontent.com/s/2g4zehp70amhhf8/Heart_Stages.jpeg";
+var hungerIndicator = new Image();
+hungerIndicator.src ="https://dl.dropboxusercontent.com/s/szjsmdzl7mele2i/Hunger.jpeg";
 screen.width =1024;
 screen.height =512;
 var click ={
@@ -74,6 +76,7 @@ function render(){
   icon.clearRect(10, 10, 400, 40);
   icon.fillText("Errors: "+error, 10, 20);
   icon.drawImage(heartIndicator, 0, 0, 8*player.health, 16, 20, 20, 8*player.health, 16);
+  icon.drawImage(hungerIndicator, 0, 0, 16*player.hunger, 16, 20, 40, 16*player.hunger, 16);
 }
 function process(){
   if(collision(click, rightbtn)){

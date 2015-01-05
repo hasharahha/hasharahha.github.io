@@ -1,6 +1,8 @@
 var screen = document.getElementById("indicators");
 var icon = screen.getContext("2d");
 //this is where all button's will go
+var heartIndicator = new Image();
+heartIndicator.src ="https://dl.dropboxusercontent.com/s/2g4zehp70amhhf8/Heart_Stages.jpeg";
 screen.width =1024;
 screen.height =512;
 var click ={

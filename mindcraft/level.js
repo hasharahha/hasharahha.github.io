@@ -109,7 +109,7 @@ loop();
 function jump(){
   try{
     if(terrain[Math.round(player.y/32)+1][Math.round(player.x/32)] >= 1){
-      player.y -= 42;
+      player.y -= 75;
     }
     if(terrain[Math.round(player.y/32)-1][Math.round(player.x/32)] >= 1){
       player.y -=32;

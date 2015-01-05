@@ -85,7 +85,7 @@ function process(){
     pos -= 0.05;
     ctx.translate(pos, 0);
     context.translate(pos, 0);
-    player.x -= player.speed;;
+    player.x += player.speed;;
     player.stage ="moving";
   }
   if(collision(click, leftbtn)){

@@ -123,5 +123,6 @@ function jump(){
 
 
 setInterval(function(){
-  player.hunger +=0.1;
+  player.health +=0.1;
+  player.hunger -=0.1;
 }, 10000);

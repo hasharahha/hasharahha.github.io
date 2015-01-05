@@ -100,7 +100,7 @@ function loop(){
   ctx.clearRect(0, 0, 1024, 512);
 generateTerrain();
 gravity();
-ctx.translate(player.x, player.y);
+ctx.translate(player.x-player.x*2, 0);
 window.requestAnimationFrame(function(){
 loop();
 }, 100);

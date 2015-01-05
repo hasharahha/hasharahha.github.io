@@ -13,7 +13,7 @@ var player={
   speed: 2,
   weight: 3,
   x: 32,
-  y: 0,
+  y: 10,
   stage: "idol",
   update: function(){
     context.clearRect(0, 0, c.width, c.height);

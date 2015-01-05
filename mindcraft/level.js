@@ -123,6 +123,8 @@ function jump(){
 
 
 setInterval(function(){
-  player.health +=0.1;
-  player.hunger -=0.1;
+  if(player.health < 16){
+  player.health +=0.5;
+  player.hunger -=0.5;
+}
 }, 10000);

@@ -21,6 +21,30 @@ var player={
     context.clearRect(-5000, 0, 10000, c.height);
     context.fillText(this.name, this.x-6, this.y-5);
     context.drawImage(playersprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
+
+  if(collision(click, rightbtn)){
+    this.spriteX =64;
+    pos -= 0.01;
+    ctx.translate(pos, 0);
+    context.translate(pos, 0);
+    this.x += player.speed;;
+    this.stage ="moving";
+  }
+  if(collision(click, leftbtn)){
+    this.spriteX =96;
+    pos += 0.01;
+    ctx.translate(pos, 0);
+    context.translate(pos, 0);
+    this.x -= player.speed;
+    this.stage ="moving";
+    
+  }
+  if(collision(click, jumpbtn)){
+    jump();
+  }
+  if(this.x <= 0){
+    this.x +=32;
+  }
   }
 };
 

@@ -5,6 +5,15 @@ setTimeout(function(){
 snd.play();
 }, 5000);
 //this is where all button's will go
+
+if(localStorage.getItem("user")){
+  alert("You are aloud");
+}
+else{
+  alert("Sorry you aren't authenticated");
+  window.location ='http://hasharahha.github.io/mindcraft/index.html';
+}
+
 var pos =0;
 var heartIndicator = new Image();
 heartIndicator.src ="https://dl.dropboxusercontent.com/s/2g4zehp70amhhf8/Heart_Stages.jpeg";

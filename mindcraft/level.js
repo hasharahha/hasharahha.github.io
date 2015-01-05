@@ -104,11 +104,12 @@ window.requestAnimationFrame(function(){
 loop();
 }, 100);
 }
-/*
+
 setInterval(function(){
   ctx.translate(-32, 0);
+  context.translate(-32, 0);
 }, 10000);
-*/
+
 function jump(){
   try{
     if(terrain[Math.round(player.y/32)+1][Math.round(player.x/32)] >= 1&&player.hunger > 3){

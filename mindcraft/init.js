@@ -1,6 +1,7 @@
 var screen = document.getElementById("indicators");
 var icon = screen.getContext("2d");
 //this is where all button's will go
+var pos =0;
 var heartIndicator = new Image();
 heartIndicator.src ="https://dl.dropboxusercontent.com/s/2g4zehp70amhhf8/Heart_Stages.jpeg";
 var hungerIndicator = new Image();
@@ -81,13 +82,20 @@ function render(){
 function process(){
   if(collision(click, rightbtn)){
     player.spriteX =64;
+    pos += player.speed;
+    ctx.translate(pos, 0);
+    context.translate(pos, 0);
     player.x += player.speed;
     player.stage ="moving";
   }
   if(collision(click, leftbtn)){
     player.spriteX =96;
+    pos -= player.speed;
+    ctx.translate(pos, 0);
+    context.translate(pos, 0);
     player.x -= player.speed;
     player.stage ="moving";
+    
   }
   if(collision(click, jumpbtn)){
     jump();

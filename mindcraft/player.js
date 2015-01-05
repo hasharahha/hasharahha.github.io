@@ -17,7 +17,7 @@ var player={
   y: 10,
   stage: "idol",
   update: function(){
-    context.clearRect(0, 0, 5000, c.height);
+    context.clearRect(-5000, 0, 10000, c.height);
     context.drawImage(playersprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
   }
 };

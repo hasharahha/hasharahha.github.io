@@ -61,6 +61,7 @@ function update(){
 }
 function render(){
   player.update();
+  icon.clearRect(0, 0, screen.width, screen.height);
   icon.fillStyle ="black";
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
   icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);

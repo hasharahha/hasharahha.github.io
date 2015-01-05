@@ -61,12 +61,14 @@ function update(){
 }
 function render(){
   player.update();
+  icon.fillStyle ="black";
   icon.fillRect(rightbtn.x, rightbtn.y, rightbtn.width, rightbtn.height);
   icon.fillRect(leftbtn.x, leftbtn.y, leftbtn.width, leftbtn.height);
   icon.fillRect(jumpbtn.x, jumpbtn.y, jumpbtn.width, jumpbtn.height);
   icon.fillStyle ="white";
   icon.fillText("Left", leftbtn.x, leftbtn.y);
   icon.fillText("Right", rightbtn.x, rightbtn.y);
+  icon.fillText("Jump", jumpbtn.x, jumpbtn.y);
   icon.font ="14px Helvetica";
   icon.clearRect(10, 10, 400, 40);
   icon.fillText("Errors: "+error, 10, 20);

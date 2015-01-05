@@ -88,9 +88,6 @@ function gravity(){
     if(terrain[Math.round(player.y/32)][Math.round(player.x/32)] >=1){
       player.x +=2;
     }
-    if(terrain[Math.round(player.y/32) -1][Math.round(player.x/32)] >=1){
-      player.y +=5;
-    }
     if(terrain[Math.round(player.y/32)][Math.round(player.x/32)] >=1){
       player.x -=2;
     }
@@ -113,6 +110,9 @@ function jump(){
   try{
     if(terrain[Math.round(player.y/32)+1][Math.round(player.x/32)] >= 1){
       player.y -= 42;
+    }
+    if(terrain[Math.round(player.y/32)-1][Math.round(player.x/32)] >= 1){
+      player.y -=32;
     }
   }catch(e){
     error =e;

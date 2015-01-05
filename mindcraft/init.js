@@ -104,6 +104,12 @@ function process(){
   if(collision(click, jumpbtn)){
     jump();
   }
+  if(player.x <= 0){
+    player.x +=32;
+  }
+  if(player.x >= 1024){
+    player.x -=32;
+  }
 }
 
 function gameloop(){

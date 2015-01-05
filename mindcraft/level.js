@@ -97,9 +97,9 @@ function gravity(){
   }
 }
 function loop(){
+  ctx.clearRect(0, 0, 1024, 512);
 generateTerrain();
 gravity();
-ctx.clearRect(0, 0, 1024, 512);
 ctx.translate(player.x, player.y);
 window.requestAnimationFrame(function(){
 loop();

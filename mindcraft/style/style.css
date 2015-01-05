@@ -2,6 +2,7 @@ body{
 background-image: url("http://realestatecrm.biz/wp-content/uploads/2014/10/minecraft-dirt-block-2d.png");
 }
 #username{
+  display: block;
 font-size: 20;
 height: 32;
 width: 128;
@@ -9,13 +10,9 @@ border-style: solid;
 color: gray;
 background-color: black;
 position: absolute;
-top: 20;
-left: 20;
 }
 #password{
-position: absolute;
-top: 20;
-left: 300;
+display: block;
 font-size: 20;
 height: 32;
 width: 128;
@@ -24,9 +21,6 @@ color: gray;
 background-color: black;
 }
 #submit{
-position: absolute;
-top: 20;
-left: 400;
 height: 32;
 width: 128;
 background-color: gray;

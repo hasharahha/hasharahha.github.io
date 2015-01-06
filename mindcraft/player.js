@@ -12,7 +12,7 @@ var player={
   spriteY: 0,
   health: 14,
   hunger: 25,
-  speed: 2,
+  speed: 0.5,
   weight: 3,
   x: 500,
   y: 10,

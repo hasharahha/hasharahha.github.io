@@ -24,7 +24,7 @@ var player={
 
   if(collision(click, rightbtn)){
     this.spriteX =64;
-    pos -= 1;
+    pos -= 0.005;
     ctx.translate(pos, 0);
     context.translate(pos, 0);
     this.x += player.speed;;
@@ -32,7 +32,7 @@ var player={
   }
   if(collision(click, leftbtn)){
     this.spriteX =96;
-    pos += 1;
+    pos += 0.005;
     ctx.translate(pos, 0);
     context.translate(pos, 0);
     this.x -= player.speed;

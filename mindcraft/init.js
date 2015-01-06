@@ -6,11 +6,6 @@ snd.play();
 }, 5000);
 //this is where all button's will go
 
-document.addEventListener("pagehide", function(){
-  confirm("Disconnecting from server...");
-  alert("done");
-}, false);
-
 if(localStorage.getItem("user")){
   alert("You are aloud");
   player.name = localStorage.getItem("user");

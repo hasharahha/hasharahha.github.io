@@ -93,8 +93,6 @@ function render(){
   icon.drawImage(hungerIndicator, 0, 0, 16*player.hunger, 16, 20, 40, 16*player.hunger, 16);
 }
 function process(){
-  icon.clearRect(0, 0, 500, 500);
-  icon.lineWidth ="6";
   icon.strokeStyle ="gray";
   icon.rect(72, 72, 32, 32);
   icon.stroke();

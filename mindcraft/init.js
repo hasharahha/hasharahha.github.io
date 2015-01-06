@@ -111,7 +111,7 @@ function process(){
     pos -= 0.01;
     ctx.translate(-player.speed, 0);
     context.translate(pos, 0);
-    player.x += player.speed;;
+    player.x += player.speed;
     player.stage ="moving";
   }
   if(collision(click, leftbtn)){

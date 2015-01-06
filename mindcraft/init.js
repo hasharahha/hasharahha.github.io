@@ -95,17 +95,17 @@ function render(){
 function process(){
   icon.lineWidth ="6";
   icon.strokeStyle ="gray";
-  icon.rect(72, 0, 32, 32);
+  icon.rect(72, 72, 32, 32);
   icon.stroke();
-  icon.rect(104, 0, 32, 32);
+  icon.rect(104, 72, 32, 32);
   icon.stroke();
-  icon.rect(136, 0, 32, 32);
+  icon.rect(136, 72, 32, 32);
   icon.stroke();
-  icon.rect(168, 0, 32, 32);
+  icon.rect(168, 72, 32, 32);
   icon.stroke();
-  icon.rect(200, 0, 32, 32);
+  icon.rect(200, 72, 32, 32);
   icon.stroke();
-  icon.rect(232, 0, 32, 32);
+  icon.rect(232, 72, 32, 32);
   icon.stroke();
   /*
   if(collision(click, rightbtn)){

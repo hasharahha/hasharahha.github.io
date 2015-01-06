@@ -62,17 +62,6 @@ var jumpbtn ={
 }
 
 gameloop();
-/*
-functon mine(){
-  try{
-  if(terrain[Math.round(click.y/32)][Math.round(click.x/32)] ==1){
-    terrain[Math.round(click.y/32)][Math.round(click.x/32)] =0;
-  }
-  }catch(e){
-    alert(e);
-  }
-}
-*/
 function update(){
   
 }
@@ -91,8 +80,10 @@ function render(){
   icon.fillText("Errors: "+error, 10, 20);
   icon.drawImage(heartIndicator, 0, 0, 8*player.health, 16, 20, 20, 8*player.health, 16);
   icon.drawImage(hungerIndicator, 0, 0, 16*player.hunger, 16, 20, 40, 16*player.hunger, 16);
+  player.update();
 }
 function process(){
+  /*
   icon.strokeStyle ="gray";
   icon.rect(72, 72, 32, 32);
   icon.stroke();
@@ -106,11 +97,12 @@ function process(){
   icon.stroke();
   icon.rect(232, 72, 32, 32);
   icon.stroke();
-  /*
+  */
+  
   if(collision(click, rightbtn)){
     player.spriteX =64;
     pos -= 0.01;
-    ctx.translate(pos, 0);
+    ctx.translate(-player.speed, 0);
     context.translate(pos, 0);
     player.x += player.speed;;
     player.stage ="moving";
@@ -118,7 +110,7 @@ function process(){
   if(collision(click, leftbtn)){
     player.spriteX =96;
     pos += 0.01;
-    ctx.translate(pos, 0);
+    ctx.translate(player.speed, 0);
     context.translate(pos, 0);
     player.x -= player.speed;
     player.stage ="moving";
@@ -130,8 +122,8 @@ function process(){
   if(player.x <= 0){
     player.x +=32;
   }
-  player.update();
-  */
+  
+
 }
 
 function gameloop(){

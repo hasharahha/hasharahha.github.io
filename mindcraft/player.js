@@ -6,6 +6,7 @@ var playersprite = new Image();
 playersprite.src ="https://dl.dropboxusercontent.com/s/1jp0m4zu92697hw/player.png";
 var player={
   name:"Steve",
+  inventory: [[1, 1],[0, 0],[0, 0],[0, 0], [0, 0], [0, 0]],
   height: 64,
   width: 32,
   spriteX: 0,

@@ -8,7 +8,6 @@ var player={
   name:"Steve",
   height: 64,
   width: 32,
-  inventory: [[1, 64][0, 0][0, 0][0, 0][0, 0][0, 0]],
   spriteX: 0,
   spriteY: 0,
   health: 14,

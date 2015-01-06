@@ -96,10 +96,15 @@ function process(){
   icon.lineWidth ="6";
   icon.strokeStyle ="gray";
   icon.rect(0, 72, 32, 32);
+  icon.stroke();
   icon.rect(0, 104, 32, 32);
+  icon.stroke();
   icon.rect(0, 136, 32, 32);
+  icon.stroke();
   icon.rect(0, 168, 32, 32);
+  icon.stroke();
   icon.rect(0, 200, 32, 32);
+  icon.stroke();
   icon.rect(0, 232, 32, 32);
   icon.stroke();
   /*

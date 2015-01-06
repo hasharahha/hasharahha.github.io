@@ -81,18 +81,12 @@ function render(){
   icon.drawImage(heartIndicator, 0, 0, 8*player.health, 16, 20, 20, 8*player.health, 16);
   icon.drawImage(hungerIndicator, 0, 0, 16*player.hunger, 16, 20, 40, 16*player.hunger, 16);
   icon.strokeStyle ="gray";
-  icon.rect(72, 72, 32, 32);
-  icon.stroke();
-  icon.rect(104, 72, 32, 32);
-  icon.stroke();
-  icon.rect(136, 72, 32, 32);
-  icon.stroke();
-  icon.rect(168, 72, 32, 32);
-  icon.stroke();
-  icon.rect(200, 72, 32, 32);
-  icon.stroke();
-  icon.rect(232, 72, 32, 32);
-  icon.stroke();
+  icon.strokeRect(72, 72, 32, 32);
+  icon.strokeRect(104, 72, 32, 32);
+  icon.strokeRect(136, 72, 32, 32);
+  icon.strokeRect(168, 72, 32, 32);
+  icon.strokeRect(200, 72, 32, 32);
+  icon.strokeRect(232, 72, 32, 32);
   player.update();
 }
 function process(){

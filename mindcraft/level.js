@@ -88,7 +88,7 @@ function gravity(){
     if(terrain[Math.round(player.y/32)][Math.round(player.x/32)-1] >=15){
       player.x +=1;
     }
-    if(terrain[Math.round(player.y/32)][Math.round(player.x/32)-1] >=15){
+    if(terrain[Math.round(player.y/32)][Math.round(player.x/32)+1] >=15){
       player.x -=1;
     }
     

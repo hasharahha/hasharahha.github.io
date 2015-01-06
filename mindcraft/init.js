@@ -91,27 +91,12 @@ function render(){
   player.update();
 }
 function process(){
-  /*
-  icon.strokeStyle ="gray";
-  icon.rect(72, 72, 32, 32);
-  icon.stroke();
-  icon.rect(104, 72, 32, 32);
-  icon.stroke();
-  icon.rect(136, 72, 32, 32);
-  icon.stroke();
-  icon.rect(168, 72, 32, 32);
-  icon.stroke();
-  icon.rect(200, 72, 32, 32);
-  icon.stroke();
-  icon.rect(232, 72, 32, 32);
-  icon.stroke();
-  */
   
   if(collision(click, rightbtn)){
     player.spriteX =64;
     pos -= 0.01;
     ctx.translate(-player.speed, 0);
-    context.translate(pos, 0);
+    context.translate(-player.speed, 0);
     player.x += player.speed;
     player.stage ="moving";
   }
@@ -119,7 +104,7 @@ function process(){
     player.spriteX =96;
     pos += 0.01;
     ctx.translate(player.speed, 0);
-    context.translate(pos, 0);
+    context.translate(player.speed, 0);
     player.x -= player.speed;
     player.stage ="moving";
     

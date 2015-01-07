@@ -32,14 +32,11 @@ function generateTerrain(){
   ctx.clearRect(-5000, 0, 10000, canvas.height);
   if(time >=0&&time <=1400){
     ctx.fillStyle ="lightblue";
-    zombie.loaded =false;
   }
   if(time >=1400&&time <=2800){
     ctx.fillStyle ="darkgray";
-    zombie.loaded =true;
   }
   if(time >= 2850){
-    zombie.loaded =false;
     time =0;
   }
   ctx.fillRect(0, 0, terrain[0].length*32, terrain.length*32);

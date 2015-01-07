@@ -82,8 +82,6 @@ function render(){
   icon.drawImage(hungerIndicator, 0, 0, 16*player.hunger, 16, 20, 40, 16*player.hunger, 16);
   icon.strokeStyle ="gray";
   icon.fillStyle ="white";
-  icon.drawImage(blocks, 0, 0, 32, 32, 73, 73, 30, 30);
-  icon.fillText(player.inventory[0][1], 72, 90);
   icon.strokeRect(72, 72, 32, 32);
   icon.strokeRect(104, 72, 32, 32);
   icon.strokeRect(136, 72, 32, 32);

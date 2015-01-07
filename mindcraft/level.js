@@ -105,9 +105,11 @@ function gravity(){
     if(terrain[Math.round(player.y/32)][Math.round(player.x/32)+1] >=15){
       player.x -=1;
     }
-    if(terrain[Math.round(zombie.y/32) +1][zombie.x/32] ==0&&zombie.loaded){
+    /*
+    if(terrain[Math.round(zombie.y/32) +1][zombie.x/32] ==0){
       zombie.y += player.weight;
     }
+    */
     
   }catch(e){
    error =e;

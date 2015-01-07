@@ -29,7 +29,7 @@ var player={
     }
   }
 };
-
+/*
 var zombie ={
   x: Math.round(Math.random()*terrain[0].length),
   y: 20,
@@ -43,6 +43,7 @@ var zombie ={
     }
   }
 };
+*/
 
 function playerPosX(){
   static = player.x/32;

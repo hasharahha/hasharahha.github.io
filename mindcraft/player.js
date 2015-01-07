@@ -22,7 +22,7 @@ var player={
   stage: "idol",
   loaded: true,
   update: function(){
-    context.clearRect(0, 0, terrain.length*32, terrain[0].length*128);
+    context.clearRect(0, 0, 512, 5000);
     if(this.loaded){
     context.fillText(this.name, this.x-6, this.y-5);
     context.drawImage(playersprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);

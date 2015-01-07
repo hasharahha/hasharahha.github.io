@@ -32,11 +32,14 @@ function generateTerrain(){
   ctx.clearRect(-5000, 0, 10000, canvas.height);
   if(time >=0&&time <=1400){
     ctx.fillStyle ="lightblue";
+    zombie.loaded =false;
   }
   if(time >=1400&&time <=2800){
     ctx.fillStyle ="darkgray";
+    zombie.loaded =true;
   }
   if(time >= 2850){
+    zombie.loaded =false;
     time =0;
   }
   ctx.fillRect(0, 0, terrain[0].length*32, terrain.length*32);
@@ -101,6 +104,9 @@ function gravity(){
     }
     if(terrain[Math.round(player.y/32)][Math.round(player.x/32)+1] >=15){
       player.x -=1;
+    }
+    if(terrain[Math.round(zombie.y/32) +1][zombie.x/32] ==0&&zombie.loaded){
+      zombie.y += player.weight;
     }
     
   }catch(e){

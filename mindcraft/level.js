@@ -30,7 +30,7 @@ var terrain =[
 function generateTerrain(){
   ctx.clearRect(-5000, 0, 10000, canvas.height);
   ctx.fillStyle ="darkgray";
-  ctx.fillRect(0, 0, terrain[0].length, terrain.length);
+  ctx.fillRect(0, 0, terrain[0].length*32, terrain.length*32);
  for(var y = 0; y < terrain.length; y++){
  for(var x = 0; x < terrain[y].length; x++){
  if(terrain[y][x] ==1){

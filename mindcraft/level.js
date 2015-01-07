@@ -1,5 +1,6 @@
 var canvas = document.getElementById("world");
 var ctx = canvas.getContext("2d");
+var time =0;
 canvas.height = 516;
 canvas.width =1024;
 var blocks = new Image();
@@ -29,7 +30,9 @@ var terrain =[
 
 function generateTerrain(){
   ctx.clearRect(-5000, 0, 10000, canvas.height);
-  ctx.fillStyle ="darkgray";
+  if(time >=0&&time <=1400){
+    ctx.fillStyle ="lightblue";
+  }
   ctx.fillRect(0, 0, terrain[0].length*32, terrain.length*32);
  for(var y = 0; y < terrain.length; y++){
  for(var x = 0; x < terrain[y].length; x++){

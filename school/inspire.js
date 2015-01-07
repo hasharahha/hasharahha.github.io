@@ -1,7 +1,7 @@
 var static;
 var notes;
 var save;
-
+try{
 if(localStorage.getItem(usernotes)){
 static = document.createElement('textarea');
 static.id ="notes";
@@ -22,3 +22,6 @@ setInterval(function(){
   notes = document.getElementById("notes").value;
   localStorage.setItem(usernotes, notes);
 }, 1500);
+}catch(e){
+  alert("Error: /n"+e);
+}

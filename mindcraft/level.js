@@ -33,6 +33,12 @@ function generateTerrain(){
   if(time >=0&&time <=1400){
     ctx.fillStyle ="lightblue";
   }
+  if(time >=1400&&time <=2800){
+    ctx.fillStyle ="darkgray";
+  }
+  if(time >= 2850){
+    time =0;
+  }
   ctx.fillRect(0, 0, terrain[0].length*32, terrain.length*32);
  for(var y = 0; y < terrain.length; y++){
  for(var x = 0; x < terrain[y].length; x++){
@@ -137,3 +143,7 @@ setInterval(function(){
   player.hunger -=0.5;
 }
 }, 10000);
+
+setInterval(function(){
+  time +=50;
+}, 1500);

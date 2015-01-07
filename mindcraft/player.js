@@ -5,7 +5,7 @@ var context = c.getContext("2d");
 var playersprite = new Image();
 playersprite.src ="https://dl.dropboxusercontent.com/s/1jp0m4zu92697hw/player.png";
 var zombieSprite = new Image();
-zombiesprite.src ="https://dl.dropboxusercontent.com/s/3cz7l0dllf7mibd/zombie.png";
+zombieSprite.src ="https://dl.dropboxusercontent.com/s/3cz7l0dllf7mibd/zombie.png";
 var player={
   name:"Steve",
   inventory: [[1, 1],[0, 0],[0, 0],[0, 0], [0, 0], [0, 0]],

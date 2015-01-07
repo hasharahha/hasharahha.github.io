@@ -4,6 +4,7 @@ Notes:
 Uses icon, so display is over writting terrain
 */
 check();
+alert("Okay let's start after...")
 function check(){
 try{
 if(player.inventory[0][0] ==1){

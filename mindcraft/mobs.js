@@ -19,14 +19,15 @@ var zombie ={
   loaded: false,
   ai: false,
   update: function(){
-    alert("JAB")
+
     if(this.loaded){
       context.drawImage(zombieSprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
     }
-    window.requestAnimationFrame(function(){
-      this.update();
-    }, 1000/30);
   }
 };
 
 zombie.update();
+window.requestAnimationFrame(function(){
+  zombie.update();
+  
+}, 1000/30);

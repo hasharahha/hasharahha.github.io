@@ -5,8 +5,8 @@ alert("Mob models loaded");
 
 var zombie ={
   rnd: 0,
-  x: Math.random()*1500,
-  y: 98,
+  x: 20,
+  y: 64,
   height: 64,
   width: 32,
   spriteX: 0,

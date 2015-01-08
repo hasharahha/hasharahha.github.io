@@ -16,7 +16,7 @@ var zombie ={
   health: 10,
   rate: 10/10,
   stage: "idol",
-  loaded: false,
+  loaded: true,
   ai: false,
   update: function(){
     if(this.loaded){

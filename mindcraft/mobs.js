@@ -19,7 +19,7 @@ var zombie ={
   loaded: false,
   ai: false,
   update: function(){
-
+alert("SPAM")
     if(this.loaded){
       context.drawImage(zombieSprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
     }

@@ -9,7 +9,7 @@ var zombie ={
   spriteX: 0,
   spriteY: 0,
   update: function(){
-    context.drawImage(zombieSprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
+    ctx.drawImage(zombieSprite, this.spriteX, this.spriteY, this.width, this.height, this.x, this.y, this.width, this.height);
   }
 };
 

@@ -29,6 +29,7 @@ var layerA =[
 function LoadlayerA(){
   for(var y=0; y < layerA.length; y++){
     for(var x=0; x < layerA[y].length; x++){
+     try{
      if(layerA[y][x] ==0){
       ctx.drawImage(tiles, 0, 0, 32, 32,x*32, y*32, 32, 32);
      }
@@ -37,6 +38,9 @@ function LoadlayerA(){
      }
      if(layer[y][x] ==2){
       ctx.drawImage(tiles, 32, 64, 64, x*32, y*32, 64, 64);
+     }
+     }catch(e){
+      alert(e);
      }
     }
   }

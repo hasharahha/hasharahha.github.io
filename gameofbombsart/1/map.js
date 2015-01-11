@@ -25,7 +25,11 @@ var layer1 =[
 var tiles =new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
 tiles.onload = function(){
+  try{
   loadlayer1();
+  }catch(e){
+    alert(e);
+  }
 }
 
 function loadlayer1(){

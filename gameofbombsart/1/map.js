@@ -25,7 +25,9 @@ LoadlayerA();
 function LoadlayerA(){
   for(var y=0; y < layerA.length; y++){
     for(var x=0; y < layerA[y].length; y++){
-      alert(x+", "+y);
+     if(layerA[y][x] ==0){
+      ctx.drawImage(tiles, 0, 0, 32, 32,x*32, y*32, 32, 32);
+     }
     }
   }
 }

@@ -6,6 +6,7 @@ var tiles =new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
 tiles.onload = function(){
  LoadlayerA();
+ LoadlayerB();
 };
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -86,5 +87,8 @@ function LoadlayerB(){
    }
   }
  }
+ window.requestAnimationFrame(function(){
+  LoadlayerB();
+ }, 1000/30);
 }
 alert("all good");

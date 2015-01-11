@@ -1,10 +1,12 @@
 //THE MAP 1
+alert("JAB");
+/*
 var canvas = document.getElementbyId("terrain");
 var ctx = canvas.getContext("2d");
 canvas.height =512;
 canvas.width =1024;
 alert("hello");
-/*
+
 var static;
 var layer1 =[
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

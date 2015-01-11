@@ -73,7 +73,7 @@ function LoadlayerB(){
   for(var x=0; x < layerB[y].length; x++){
    try{
     if(layerB[y][x] ==1){
-     
+     ctx.drawImage(tiles, 0, 384, 32, 32, x*32, y*32, 32, 32);
     }
     if(layerB[y][x] ==2){
      

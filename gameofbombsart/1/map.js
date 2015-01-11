@@ -4,6 +4,9 @@ canvas.height =512;
 canvas.width =1024;
 var tiles =new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
+tiles.onload = function(){
+ LoadlayerA();
+};
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -21,7 +24,7 @@ var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
-LoadlayerA();
+
 function LoadlayerA(){
   for(var y=0; y < layerA.length; y++){
     for(var x=0; y < layerA[y].length; y++){

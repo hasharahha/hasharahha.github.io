@@ -77,7 +77,7 @@ function LoadlayerB(){
      ctx.drawImage(tiles, 0, 416, 32, 32, x*32, y*32, 32, 32);
     }
     if(layerB[y][x] ==2){
-     
+     ctx.drawImage(tiles, 32, 416, 32, 32, x*32, y*32, 32, 32);
     }
     if(layerB[y][x] ==3){
      

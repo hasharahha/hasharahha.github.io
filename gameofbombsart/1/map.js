@@ -42,6 +42,10 @@ function LoadlayerA(){
      */
     }
   }
+  alert("loaded");
+  window.requestAnimationFrame(function(){
+   LoadlayerA();
+  }, 1000/30);
 }
 
 alert("all good");

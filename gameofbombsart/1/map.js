@@ -34,7 +34,7 @@ function LoadlayerA(){
       ctx.drawImage(tiles, 0, 0, 32, 32,x*32, y*32, 32, 32);
      }
      if(layerA[y][x] ==1){
-      ctx.drawImage(tiles, 0, 32, 32, 32,x*32, y*32, 32, 32);
+      ctx.drawImage(tiles, 32, 0, 32, 32,x*32, y*32, 32, 32);
      }
      if(layerA[y][x] ==2){
       ctx.drawImage(tiles, 0, 32, 64, 64, x*32, y*32, 64, 64);

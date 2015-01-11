@@ -5,7 +5,7 @@ canvas.width =1024;
 var tiles =new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/gy986kh0n660ucs/tileset.png";
 var players =new Image();
-players.src ="http://bombermine.com/api/ctor/getskin?name=ball&thumb=1";
+players.src ="http://bombermine.com/api/ctor/getskin?name=creeper&thumb=1";
 tiles.onload = function(){
  LoadlayerA();
  LoadlayerB();

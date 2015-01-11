@@ -5,7 +5,7 @@ var keys =[];
 var rnd = Math.floor(Math.random()*9001);
 var skin = new Image();
 skin.src 
-="http://bombermine.com/api/ctor/getskin?name=creeper&thumb=2";
+="http://bombermine.com/api/ctor/getskin?name=default&thumb=2";
 var items = new Image();
 items.src ="https://raw.githubusercontent.com/JBcompanyrules/images/master/img/items.png";
 var bombs = new Image();

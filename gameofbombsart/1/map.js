@@ -22,7 +22,7 @@ var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
 LoadlayerA();
-funtion LoadlayerA(){
+function LoadlayerA(){
   for(var y=0; y < layerA.length; y++){
     for(var x=0; y < layerA[y].length; y++){
       alert(x+", "+y);

@@ -40,6 +40,7 @@ function LoadlayerA(){
      }
     }
   }
+  alert(x+", "+y+"/n loaded");
   window.requestAnimationFrame(function(){
    LoadlayerA();
   }, 1000/30);

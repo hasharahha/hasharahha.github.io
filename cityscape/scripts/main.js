@@ -86,9 +86,7 @@ var layerB =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
 
-if(localStorage.layerB){
-  layerB = localStorage.layerB;
-}
+
 
 function loadLayerA(){
   for(var y=0; y<layerA.length; y++){

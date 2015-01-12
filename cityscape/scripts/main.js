@@ -83,18 +83,17 @@ function loadLayerA(){
     loadLayerA();
   }, 1000/30);
 }
-/*
+
 function loadLayerB(){
   for(var y=0; y<layerB.length; y++){
     for(var x=0; x<layerB[y].length; x++){
-      try{
         if(layerB[y][x] ==1){
         ctx.drawImage(tiles, 100, 0, 50, 50, x*50, y*50, 50, 50);
         }
-      }catche(e){
-        
-      }
     }
   }
+  window.requestAnimationFrame(function(){
+    loadLayerB();
+  }, 1000/30);
 }
-*/
+

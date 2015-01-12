@@ -72,7 +72,7 @@ function loadLayerA(){
           ctx.drawImage(tiles, 0, 0, 50, 50, x*50, y*50, 50, 50);
         }
         if(layerA[y][x] ==1){
-          ctx.drawImage(tiles, 0, 0, 50, 50, x*50, y*50, 50, 50);
+          ctx.drawImage(tiles, 50, 0, 50, 50, x*50, y*50, 50, 50);
         }
       }catch(e){
         

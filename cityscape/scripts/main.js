@@ -37,6 +37,7 @@ window.addEventListener("click", function(e){
   var cx = Math.round(clickX/50);
   var cy = Math.round(clickY/50);
   layerB[cy][cx] =selected;
+  localStorage.setItem("save", layerB);
 }, false);
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -83,7 +84,9 @@ var layerB =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
-
+if(localStorage.getItem("save")){
+  layerB = localStorage.getItem("save");
+}
 function loadLayerA(){
   for(var y=0; y<layerA.length; y++){
     for(var x=0; x<layerA[y].length; x++){

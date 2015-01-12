@@ -8,7 +8,7 @@ else{
 
 var world = document.getElementById("world");
 var ctx = world.getContext("2d");
-world.height =850;
+world.height =750;
 world.width =1400;
 var tiles = new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/d6xkkb29ni8qtsq/result.png";

@@ -11,38 +11,69 @@ src: url(https://dl.dropbox.com/s/2hvsh0hcexm5tao/minecraft_font_by_pwnage_block
 }
 
     
-    
-    
-      #login{
-  font-family: mindcraft;
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background-color:#e5e5e5;
-  width:300px;
-  height:300px;
-  border-radius:3px;
+#login{
+text-align: center;
+margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+background-color:#e5e5e5;
+width:300px;
+height:250px;
+border-radius:3px;
+border-left:5px solid #2E64FE;
+border-right:5px solid #2E64FE;
 }
 
 button{
-  width:100%;
-  height:40px;
-  background:#000;
-  color:#fff;
-  margin-top:20px;
+width:100%;
+height:40px;
+background:#2E64FE;
+color:#fff;
+margin-top:20px;
+cursor:pointer;
+border:0px solid black;
 }
-    </style>
-  </head>
-  <body>
-      <div id="login">
-    <h2>Username: </h2>
-    <input type="text" id="username" placeholder="username">
-    <h2>Password: </h2>
-    <input type="password" id="password" placeholder="password">
-    <br>
-    <button onclick="Auth()" type="button">Login</button>
-      </div>
-    </body>
-    <script type="text/javascript" src="scripts/auth.js"></script>
+
+button:hover{
+background:#666;
+}
+
+#welcome{
+display:block;
+width:100%;
+height:40px;
+background:#2E64FE;
+color:#fff;
+margin-bottom:20px;
+line-height:40px;
+}
+
+input{
+width:97%;
+height:40px;
+border:0px solid black;
+margin-bottom:10px;
+text-align:center;
+}
+
+p{
+text-align:left;
+font-size:20pt;
+margin-left:0px;
+font-size:10pt;
+text-align:center;
+color:#444;
+}
+</style>
+</head>
+<body>
+<div id="login">
+<div id="welcome">Welcome</div>
+<p id="welcome-paragraph">Welcome to our totally awesome game :)</p>
+<input type="text" id="username" placeholder="username">
+<input type="password" id="password" placeholder="password">
+<button onclick="Auth()" type="button">Login</button>
+</div>
+</body>
+<script type="text/javascript" src="scripts/auth.js"></script>
 </html>

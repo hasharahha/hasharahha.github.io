@@ -79,6 +79,9 @@ function loadLayerA(){
       }
     }
   }
+  window.requestAnimationFrame(function(){
+    loadLayerA();
+  }, 1000/30);
 }
 function loadLayerB(){
   

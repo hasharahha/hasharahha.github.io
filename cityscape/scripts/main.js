@@ -12,6 +12,8 @@ world.height =800;
 world.width =1500;
 var tiles = new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/d6xkkb29ni8qtsq/result.png";
+var plants =new Image();
+plants.src ="https://dl.dropboxusercontent.com/s/tzn1sxolugiiv10/plant_stages.png";
 
 tiles.onload =function(){
   loadLayerA();
@@ -45,7 +47,7 @@ var layerB =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
- [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+ [0, 0, 1,-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -87,6 +89,10 @@ function loadLayerA(){
 function loadLayerB(){
   for(var y=0; y<layerB.length; y++){
     for(var x=0; x<layerB[y].length; x++){
+      
+      if(layerB[y][x] ==-1){
+      ctx.drawimage(plants, 0, 0, 50, 50, x*50, y*50, 50, 50);  
+      }
         if(layerB[y][x] ==1){
         ctx.drawImage(tiles, 100, 0, 50, 50, x*50, y*50, 50, 50);
         }

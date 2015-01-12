@@ -1,12 +1,9 @@
 //all styling
-//test
-body{
-  background-color: yellow;
-}
 #login{
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  width:200px;
+  background:#e5e5e5;
+  width:300px;
   height:400px;
 }

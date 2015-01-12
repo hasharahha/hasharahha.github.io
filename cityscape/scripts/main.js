@@ -10,7 +10,6 @@ var world = document.getElementById("world");
 var ctx = world.getContext("2d");
 world.height =800;
 world.width =1500;
-world.requestFullscreen();
 var tiles = new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/d6xkkb29ni8qtsq/result.png";
 var plants =new Image();

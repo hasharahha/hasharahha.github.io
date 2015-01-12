@@ -9,7 +9,7 @@ else{
 var world = document.getElementById("world");
 var ctx = world.getContext("2d");
 world.height =1500;
-world.width =1000;
+world.width =600;
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

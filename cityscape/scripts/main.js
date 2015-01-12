@@ -8,8 +8,8 @@ else{
 
 var world = document.getElementById("world");
 var ctx = world.getContext("2d");
-world.height =800;
-world.width =1500;
+world.height =900;
+world.width =1450;
 var tiles = new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/d6xkkb29ni8qtsq/result.png";
 var plants =new Image();
@@ -19,6 +19,17 @@ tiles.onload =function(){
   loadLayerA();
   loadLayerB();
 };
+
+var keys =[];
+
+window.addEventListener("keydown", function(e){
+  keys[e.keyCode] =true;
+  bind();
+}, false);
+window.addEventListener("keyup", function(e){
+  keys[e.keyCode] =false;
+  bind();
+}, false);
 
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -97,4 +108,9 @@ function loadLayerB(){
   window.requestAnimationFrame(function(){
     loadLayerB();
   }, 1000/30);
+}
+
+
+function bind(){
+  alert("JAB");
 }

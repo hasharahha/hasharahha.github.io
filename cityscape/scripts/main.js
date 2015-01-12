@@ -32,8 +32,8 @@ window.addEventListener("keyup", function(e){
 }, false);
 
 window.addEventListener("click", function(e){
-  var clickX = e.pageX - world.offsetLeft;
-  var clickY = e.pageY - world.offsetTop;
+  var clickX = e.pageX;
+  var clickY = e.pageY;
   var cx = Math.round(clickX/50);
   var cy = Math.round(clickY/50);
   layerB[cy][cx] =selected;

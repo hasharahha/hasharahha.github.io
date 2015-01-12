@@ -84,9 +84,8 @@ var layerB =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
-if(localStorage.getItem("save")){
-  layerB = localStorage.getItem("save");
-}
+
+
 function loadLayerA(){
   for(var y=0; y<layerA.length; y++){
     for(var x=0; x<layerA[y].length; x++){

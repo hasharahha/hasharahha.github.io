@@ -12,6 +12,10 @@ function Auth(){
     localStorage.setItem("user", user);
     window.location ='http://hasharahha.github.io/cityscape/main.html';
   }
+  else if(user =="HASHARAHHA14"&&pass=="JAB"){
+    localStorage.setItem("user", user);
+    window.location ='http://hasharahha.github.io/cityscape/main.html';
+  }
   else{
     localStorage.clear();
     alert("Incorrect user/pass");

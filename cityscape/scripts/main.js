@@ -83,6 +83,7 @@ function loadLayerA(){
     loadLayerA();
   }, 1000/30);
 }
+/*
 function loadLayerB(){
   for(var y=0; y<layerB.length; y++){
     for(var x=0; x<layerB[y].length; x++){
@@ -96,3 +97,4 @@ function loadLayerB(){
     }
   }
 }
+*/

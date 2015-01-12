@@ -5,7 +5,7 @@ else{
   alert("Sorry you are not authenticated");
   window.location ='http://hasharahha.github.io/cityscape/';
 }
-
+var selected =1;
 var world = document.getElementById("world");
 var ctx = world.getContext("2d");
 world.height =750;
@@ -31,6 +31,13 @@ window.addEventListener("keyup", function(e){
   bind();
 }, false);
 
+window.addEventListener("click", function(e){
+  var clickX = e.pageX - world.offsetLeft;
+  var clickY = e.pageY - world.offsetTop;
+  var cx = Math.round(clickX/50);
+  var cy = Math.round(clickY/50);
+  layerB[cy][cx] =selected;
+}, false);
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

@@ -1,4 +1,4 @@
 
 function closemsg(){
-  document.getElementById("");
+  document.getElementById("center-popup").style.display ="none";
 }

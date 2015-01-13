@@ -1,4 +1,4 @@
-var selected =1;
+var selected =50;
 var world = document.getElementById("world");
 var ctx = world.getContext("2d");
 world.height =750;

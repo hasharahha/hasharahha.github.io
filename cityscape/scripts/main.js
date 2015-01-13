@@ -163,4 +163,5 @@ function select(id){
 functin msg(message){
   document.getElementById("message").innerHTML ="alert";
   document.getElementById("msg").innerHTML =message;
+  document.getElementById("center-popup").style.display ="block";
 }

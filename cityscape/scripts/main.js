@@ -1,10 +1,3 @@
-if(localStorage.getItem("user")){
-  alert("You are allowed");
-}
-else{
-  alert("Sorry you are not authenticated");
-  window.location ='http://hasharahha.github.io/cityscape/';
-}
 var selected =1;
 var world = document.getElementById("world");
 var ctx = world.getContext("2d");

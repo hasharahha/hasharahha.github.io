@@ -58,17 +58,27 @@
         color:#fff;
         margin-bottom:20px;
         line-height:40px;
-}
+      }
+      .inventory-tile{
+        width:50px;
+        height:50px;
+        margin-left:10px;
+        background:red;
+      }
     </style>
   </head>
   <body>
     <canvas id="world" style="">
       Sorry world can't load
     </canvas>
-    <div id="inventory"></div>
+    <div id="inventory">
+      <div class="inventory-tile"></div>
+      <div class="inventory-tile"></div>
+      <div class="inventory-tile"></div>
+    </div>
     <div id="center-popup">
     <div id="welcome">Welcome</div>
-    <div id="msg" style="height:50px;text-align:center;">You have logged in.</div>
+    <div style="height:50px;text-align:center;">You have logged in.</div>
     <button onclick="closePopUp()">Close Message</button>
     </div>
     <script type="text/javascript" src="scripts/main.js"></script>

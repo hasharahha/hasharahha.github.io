@@ -7,12 +7,10 @@ var tiles = new Image();
 tiles.src ="https://dl.dropboxusercontent.com/s/d6xkkb29ni8qtsq/result.png";
 var plants =new Image();
 plants.src ="https://dl.dropboxusercontent.com/s/tzn1sxolugiiv10/plant_stages.png";
-
 tiles.onload =function(){
   loadLayerA();
   loadLayerB();
 };
-
 var keys =[];
 
 window.addEventListener("keydown", function(e){
@@ -23,7 +21,6 @@ window.addEventListener("keyup", function(e){
   keys[e.keyCode] =false;
   bind();
 }, false);
-
 window.addEventListener("click", function(e){
   var clickX = e.pageX - world.offsetLeft;
   var clickY = e.pageY - world.offsetTop;
@@ -33,6 +30,8 @@ window.addEventListener("click", function(e){
   localStorage.setItem("save", layerB);
   localStorage.layerB =layerB;
 }, false);
+
+//layers
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

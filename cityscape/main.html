@@ -6,6 +6,7 @@
       body{
         margin:0;
         padding:0;
+        background:#000;
       }
       
       #inventory{
@@ -74,10 +75,13 @@
     <script type="text/javascript" src="scripts/checkauth.js"></script>
     <script>
     document.getElementById("welcome").innerHTML='welcome, '+user;
-    
+    document.getElementById("world").style.opacity="0.5";
+
     
       function closePopUp(){
         document.getElementById("center-popup").style.display="none";
+        document.getElementById("world").style.opacity="1";
+
       }
     </script>
   </body>

@@ -81,6 +81,7 @@ var layerB =[
 
 
 function loadLayerA(){
+  ctx.clearRect(0, 0, world.width, world.height);
   for(var y=0; y<layerA.length; y++){
     for(var x=0; x<layerA[y].length; x++){
       try{

@@ -1,1 +1,4 @@
-//test
+
+function closemsg(){
+  document.getElementById("");
+}

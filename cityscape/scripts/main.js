@@ -38,9 +38,9 @@ window.addEventListener("click", function(e){
   var clickY = e.pageY - world.offsetTop;
   var cx = Math.round(clickX/50) -1;
   var cy = Math.round(clickY/50) -1;
-  if(shop()){
-    layerB[cy][cx] =selected;
-  }
+  stats.coins -=1;
+  layerB[cy][cx] =selected;
+  shop();
   localStorage.setItem("levelB", JSON.stringify(layerB));
 }, false);
 

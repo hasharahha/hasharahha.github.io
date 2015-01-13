@@ -1,5 +1,4 @@
 //auth
-location.reload();
 if(localStorage.getItem("user")){
   alert("You have been successfully logged in")
   window.location ='http://hasharahha.github.io/cityscape/main.html';

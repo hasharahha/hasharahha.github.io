@@ -15,12 +15,11 @@ var keys =[];
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] =true;
-  bind();
+  alert(e.keyCode);
 }, false);
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] =false;
-  alert(e.keyCode);
-  bind();
+
 }, false);
 window.addEventListener("click", function(e){
   var clickX = e.pageX - world.offsetLeft;

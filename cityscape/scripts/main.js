@@ -27,8 +27,7 @@ window.addEventListener("click", function(e){
   var cx = Math.round(clickX/50) -1;
   var cy = Math.round(clickY/50) -1;
   layerB[cy][cx] =selected;
-  localStorage.setItem("save", layerB);
-  localStorage.layerB =layerB;
+  localStorage.setItem("levelB", JSON.stringify(layerB));
 }, false);
 
 window.addEventListener("mousemove", function(e){
@@ -86,6 +85,10 @@ var layerB =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
 
+if(localStorage.getItem("levelB")){
+  var data = localStorage.getItem("levelB");
+  layerB = JSON.parse(data);
+}
 
 
 function loadLayerA(){

@@ -108,6 +108,9 @@ function loadLayerB(){
         if(layerB[y][x] ==1){
         ctx.drawImage(tiles, 100, 0, 50, 50, x*50, y*50, 50, 50);
         }
+        if(layerB[y][x] ==4){
+          ctx.drawImage(tiles, 100, 50, 50, 50, x*50, y*50, 50, 50);
+        }
         if(layerB[y][x] ==5){
           ctx.drawImage(tiles, 0, 50, 50, 50, x*50, y*50, 50, 50);
         }

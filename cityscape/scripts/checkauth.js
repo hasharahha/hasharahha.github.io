@@ -1,5 +1,4 @@
 
-alert("test");
 if(localStorage.getItem("user")){
   var user = localStorage.getItem("user");
 }

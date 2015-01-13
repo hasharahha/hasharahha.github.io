@@ -156,10 +156,10 @@ function select(id){
   selected =id;
 }
 
-/*
+
 functin msg(message){
   document.getElementById("message").innerHTML ='alert';
   document.getElementById("msg").innerHTML =message;
-  document.getElementById("center-popup").style.display ="block";
+  document.getElementById("center-popup").style.display ='block';
 }
-*/
+

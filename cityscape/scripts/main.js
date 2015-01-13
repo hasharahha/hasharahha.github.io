@@ -38,7 +38,9 @@ window.addEventListener("click", function(e){
   var clickY = e.pageY - world.offsetTop;
   var cx = Math.round(clickX/50) -1;
   var cy = Math.round(clickY/50) -1;
-  shop();
+  if(shop()){
+    layerB[cy][cx] =selected;
+  }
   localStorage.setItem("levelB", JSON.stringify(layerB));
 }, false);
 
@@ -199,25 +201,25 @@ functin msg(message){
 function shop(){
   if(layerB[cy][cx] >=1){
     stats.coins +=1;
-    layerB[cy][cx] =0;
+    return true;
   }
   
   if(stats.coins >=1&&selected ==1){
     stats.coins -=1;
-    layerB[cy][cy] =selected;
+    return true;
   }
   if(stats.coins >=2&&selected ==2){
     stats.coins -=2;
-    layerB[cy][cx] =selected;
+    return true;
   }
   
   if(stats.coins >=2&&selected ==4){
     stats.coins -=2;
-    layerB[cy][cx] =selected;
+    return true;
   }
   
   if(stats.coins >=3&&selected ==5){
     stats.coins -=3;
-    layerB[cy][cx] =selected;
+    return true;
   }
 }

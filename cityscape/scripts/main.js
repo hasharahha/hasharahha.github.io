@@ -25,7 +25,7 @@ window.addEventListener("click", function(e){
   var clickX = e.pageX - world.offsetLeft;
   var clickY = e.pageY - world.offsetTop;
   var cx = Math.round(clickX/50) -1;
-  var cy = Math.round(clickY/50) +1;
+  var cy = Math.round(clickY/50) -1;
   layerB[cy][cx] =selected;
   localStorage.setItem("save", layerB);
   localStorage.layerB =layerB;

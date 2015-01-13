@@ -65,9 +65,14 @@
     <div id="center-popup">
     <div id="welcome">Welcome</div>
     <div style="height:50px;text-align:center;">You have logged in.</div>
-    <button type="button" onclick="closemsg()">Close Message</button>
+    <button onclick="closePopUp()">Close Message</button>
     </div>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/checkauth.js"></script>
+    <script>
+      function closePopUp(){
+        document.getElementById("center-popup").style.display="none";
+      }
+    </script>
   </body>
 </html>

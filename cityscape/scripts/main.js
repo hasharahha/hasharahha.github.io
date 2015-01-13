@@ -39,7 +39,9 @@ window.addEventListener("click", function(e){
   var cx = Math.round(clickX/50) -1;
   var cy = Math.round(clickY/50) -1;
   stats.coins -=1;
+  if(stats.coins > 1){
   layerB[cy][cx] =selected;
+  }
   shop();
   localStorage.setItem("levelB", JSON.stringify(layerB));
 }, false);
@@ -118,6 +120,7 @@ function loadLayerA(){
         if(layerA[y][x] ==1){
           ctx.drawImage(tiles, 50, 0, 50, 50, x*50, y*50, 50, 50);
         }
+
     
       }catch(e){
         

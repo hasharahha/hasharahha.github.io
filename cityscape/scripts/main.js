@@ -158,8 +158,11 @@ function select(id){
 
 
 functin msg(message){
+  try{
   document.getElementById("message").innerHTML ='alert';
   document.getElementById("msg").innerHTML =message;
   document.getElementById("center-popup").style.display ='block';
+}catch(er){
+  alert(er);
 }
-
+}

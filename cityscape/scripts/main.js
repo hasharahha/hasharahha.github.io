@@ -19,6 +19,7 @@ window.addEventListener("keydown", function(e){
 }, false);
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] =false;
+  alert(e.keyCode);
   bind();
 }, false);
 window.addEventListener("click", function(e){

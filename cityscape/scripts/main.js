@@ -1,6 +1,7 @@
 var selected =50;
 var world = document.getElementById("world");
 var ctx = world.getContext("2d");
+var static;
 world.height =750;
 world.width =1400;
 var tiles = new Image();
@@ -10,8 +11,19 @@ plants.src ="https://dl.dropboxusercontent.com/s/tzn1sxolugiiv10/plant_stages.pn
 tiles.onload =function(){
   loadLayerA();
   loadLayerB();
+  process();
 };
 var keys =[];
+var stats ={
+population: 0,
+coins: 0,
+stage: "Basic city"
+};
+
+if(localStorage.getItem("stats")){
+ static = localStorage.getItem("stats");
+ stats = JSON.parse(static);
+}
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] =true;
@@ -37,7 +49,9 @@ window.addEventListener("mousemove", function(e){
   sy = Math.round(mouseY/50) -1;
   ctx.rect(sx, sy, 50, 50);
 }, false);
-
+function player(){
+  
+}
 //layers
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -159,6 +173,20 @@ function select(id){
   selected =id;
 }
 
+function render(){
+ctx.drawImage(tiles, 150, 50, 16, 16, 30, 30, 16, 16);
+ctx.font ="16px Helvetica";
+ctx.fillText("Coins: "+stats.coins, 50, 30);
+}
+
+function process(){
+  render();
+  
+  
+  window.requestAnimationFrame(function(){
+    process();
+  }, 1000/60);
+}
 /*
 functin msg(message){
   document.getElementById("message").innerHTML ='alert';

@@ -195,3 +195,29 @@ functin msg(message){
 
 }
 */
+
+function shop(){
+  if(layerB[cy][cx] >=1){
+    stats.coins +=1;
+    layerB[cy][cx] =0;
+  }
+  
+  if(stats.coins >=1&&selected ==1){
+    stats.coins -=1;
+    layerB[cy][cy] =selected;
+  }
+  if(stats.coins >=2&&selected ==2){
+    stats.coins -=2;
+    layerB[cy][cx] =selected;
+  }
+  
+  if(stats.coins >=2&&selected ==4){
+    stats.coins -=2;
+    layerB[cy][cx] =selected;
+  }
+  
+  if(stats.coins >=3&&selected ==5){
+    stats.coins -=3;
+    layerB[cy][cx] =selected;
+  }
+}

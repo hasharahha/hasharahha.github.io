@@ -118,3 +118,8 @@ function loadLayerB(){
 function bind(){
   alert("JAB");
 }
+
+
+function select(id){
+  selected =id;
+}

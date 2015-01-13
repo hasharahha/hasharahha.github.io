@@ -81,7 +81,7 @@ var layerB =[
 
 
 function loadLayerA(){
-  ctx.clearRect(0, 0, world.width, world.height);
+  ctx.clearRect(-2000, -2000, world.width*2, world.height*2);
   for(var y=0; y<layerA.length; y++){
     for(var x=0; x<layerA[y].length; x++){
       try{
@@ -130,10 +130,10 @@ function bind(){
     ctx.translate(0, -10);
   }
   if(keys[40]){
-    ctx.translate(0, -10);
+    ctx.translate(0, 10);
   }
   if(keys[37]){
-    ctx.translate(10, 0);
+    ctx.translate(-10, 0);
   }
   if(keys[39]){
     ctx.translate(10, 0);

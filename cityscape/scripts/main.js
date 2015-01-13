@@ -83,7 +83,6 @@ var layerB =[
 function loadLayerA(){
   for(var y=0; y<layerA.length; y++){
     for(var x=0; x<layerA[y].length; x++){
-       ctx.clearRect(0, 0, world.width, world.height);
       try{
         if(layerA[y][x] ==0){
           ctx.drawImage(tiles, 0, 0, 50, 50, x*50, y*50, 50, 50);

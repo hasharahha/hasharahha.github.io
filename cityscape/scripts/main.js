@@ -15,11 +15,11 @@ var keys =[];
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] =true;
-  alert(e.keyCode);
+  bind();
 }, false);
 window.addEventListener("keyup", function(e){
   keys[e.keyCode] =false;
-
+  bind();
 }, false);
 window.addEventListener("click", function(e){
   var clickX = e.pageX - world.offsetLeft;
@@ -126,7 +126,18 @@ function loadLayerB(){
 
 
 function bind(){
-  alert("JAB");
+  if(keys[38]){
+    ctx.translate(0, 10);
+  }
+  if(keys[40]){
+    ctx.translate(0, -10);
+  }
+  if(keys[37]){
+    ctx.translate(-10, 0);
+  }
+  if(keys[39]){
+    ctx.translate(10, 0);
+  }
 }
 
 

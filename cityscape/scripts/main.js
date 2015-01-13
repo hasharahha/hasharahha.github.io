@@ -133,10 +133,10 @@ function bind(){
     ctx.translate(0, -10);
   }
   if(keys[37]){
-    ctx.translate(-10, 0);
+    ctx.translate(10, 0);
   }
   if(keys[39]){
-    ctx.translate(10, 0);
+    ctx.translate(-10, 0);
   }
 }
 

@@ -31,6 +31,14 @@ window.addEventListener("click", function(e){
   localStorage.layerB =layerB;
 }, false);
 
+window.addEventListener("mousemove", function(e){
+  var mouseX = e.pageX - world.offsetLeft;
+  var mouseY = e.pageY - world.offsetTop;
+  sx = Math.round(mouseX/50) -1;
+  sy = Math.round(mouseY/50) -1;
+  ctx.rect(sx, sy, 50, 50);
+}, false);
+
 //layers
 var layerA =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -127,16 +135,16 @@ function loadLayerB(){
 
 function bind(){
   if(keys[38]){
-    ctx.translate(0, 10);
+    
   }
   if(keys[40]){
-    ctx.translate(0, -10);
+    
   }
   if(keys[37]){
-    ctx.translate(10, 0);
+  
   }
   if(keys[39]){
-    ctx.translate(-10, 0);
+  
   }
 }
 

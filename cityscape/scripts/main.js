@@ -21,8 +21,8 @@ stage: "Basic city"
 };
 
 if(localStorage.getItem("stats")){
- static = localStorage.getItem("stats");
- stats = JSON.parse(static);
+ var save = localStorage.getItem("stats");
+ stats = JSON.parse(save);
 }
 
 window.addEventListener("keydown", function(e){

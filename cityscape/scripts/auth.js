@@ -4,7 +4,7 @@ if(localStorage.getItem("user")){
 }
 
 function Auth(){
-  var user = document.getElememtById("username").value;
+  var user = document.getElementById("username").value;
   var pass = document.getElementById("password").value;
   
   if(USERS[user]&&pass ==USERS[user][1]){

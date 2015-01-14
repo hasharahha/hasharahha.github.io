@@ -1,6 +1,7 @@
 //login script
 if(localStorage.getItem("user")){
-  window.location ='main.html';
+  var user = localStorage.getItem("user");
+  window.location ='main.html?USER='+user;
 }
 
 function Auth(){
@@ -16,4 +17,3 @@ function Auth(){
   }
   
 }
-alert("loaded :)");

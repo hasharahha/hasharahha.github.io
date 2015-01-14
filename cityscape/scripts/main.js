@@ -41,7 +41,6 @@ window.addEventListener("click", function(e){
     coins +=1;
   }
   shop();
-  localStorage.setItem("levelB", JSON.stringify(layerB));
   localStorage.setItem("coins", coins);
 }, false);
 
@@ -185,7 +184,7 @@ ctx.fillText(" "+coins, 50, 45);
 
 function process(){
   render();
-  
+  localStorage.setItem("levelB", JSON.stringify(levelB));
   
   window.requestAnimationFrame(function(){
     process();

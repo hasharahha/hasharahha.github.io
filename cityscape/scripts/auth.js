@@ -9,6 +9,7 @@ function Auth(){
   
   if(USERS[user]&&pass ==USERS[user][1]){
     localStorage.setItem("user", user);
+    window.location ='main.html?USER='+user;
   }
   else{
     alert("Incorrect user/pass");

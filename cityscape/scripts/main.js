@@ -20,10 +20,6 @@ coins: 5,
 stage: "Basic city"
 };
 
-if(localStorage.getItem("stats")){
- static = localStorage.getItem("stats");
- stats = JSON.parse(static);
-}
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] =true;
@@ -43,7 +39,7 @@ window.addEventListener("click", function(e){
   stats.coins -=1;
   }
   shop();
-  localStorage.setItem("levelB", JSON.stringify(layerB));
+  localStorage.setItem("layerB", JSON.stringify(layerB));
 }, false);
 
 window.addEventListener("mousemove", function(e){

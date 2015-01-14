@@ -19,11 +19,13 @@ body{
 }
 
 ul{
-  display: block;
   background-color: lightblue;
 }
 
 li{
+  padding-left: 5px;
+  padding-right: 5px;
   color: blue;
   display: inline;
 }
+

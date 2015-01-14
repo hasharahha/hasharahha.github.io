@@ -99,7 +99,7 @@ var layerB =[
  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ];
 
-if(localStorage.getItem("levelB")){
+if(localStorage.getItem("layerB")){
   var data = localStorage.getItem("levelB");
   layerB = JSON.parse(data);
 }

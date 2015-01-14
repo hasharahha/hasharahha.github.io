@@ -14,15 +14,10 @@ tiles.onload =function(){
   process();
 };
 var keys =[];
-var stats ={
-population: 0,
-coins: 5,
-stage: "Basic city"
-};
+var coins =10;
 
-if(localStorage.getItem("stats")){
- var save = localStorage.getItem("stats");
- stats = JSON.parse(save);
+if(localStorage.getItem("coins")){
+ coins = localStorage.getItem("coins");
 }
 
 window.addEventListener("keydown", function(e){
@@ -40,11 +35,11 @@ window.addEventListener("click", function(e){
   var cy = Math.round(clickY/50) -1;
   if(stats.coins >= 1&&selected < 10){
   layerB[cy][cx] =selected;
-  stats.coins -=1;
+  coins -=1;
   }
   shop();
   localStorage.setItem("levelB", JSON.stringify(layerB));
-  localStorage.setItem("stats", JSON.stringify(stats));
+  localStorage.setItem("coins", coins);
 }, false);
 
 window.addEventListener("mousemove", function(e){

@@ -9,5 +9,7 @@ HASHARAHHA14: Mindcraft/Minecraft font now works, and style has been moved succe
 
 
 
+##This project is covered by git license, developer's are:
+###Sam_2013, HASHARAHHA14
 
 

@@ -38,8 +38,7 @@ window.addEventListener("click", function(e){
   layerB[cy][cx] =selected;
   stats.coins -=1;
   }
-  static = JSON.stringify(layerB);
-  localStorage.setItem("layerB", static);
+  localStorage.setItem("layerB", JSON.stringify(layerB));
 }, false);
 
 window.addEventListener("mousemove", function(e){

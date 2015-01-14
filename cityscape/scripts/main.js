@@ -38,8 +38,8 @@ window.addEventListener("click", function(e){
   layerB[cy][cx] =selected;
   stats.coins -=1;
   }
-  shop();
-  localStorage.setItem("layerB", JSON.stringify(layerB));
+  static = JSON.stringify(layerB);
+  localStorage.setItem("layerB", static);
 }, false);
 
 window.addEventListener("mousemove", function(e){

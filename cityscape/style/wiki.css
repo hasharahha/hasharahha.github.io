@@ -7,3 +7,11 @@
 body{
   font-family: Mindcraft;
 }
+
+.header{
+  height: 150px;
+  width: 100%;
+  border-style: solid;
+  background-color: lightblue;
+  color: white;
+}

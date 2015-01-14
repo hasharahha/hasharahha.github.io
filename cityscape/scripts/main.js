@@ -44,6 +44,7 @@ window.addEventListener("click", function(e){
   }
   shop();
   localStorage.setItem("levelB", JSON.stringify(layerB));
+  localStorage.setItem("stats", JSON.stringify(stats));
 }, false);
 
 window.addEventListener("mousemove", function(e){

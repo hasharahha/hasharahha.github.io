@@ -177,7 +177,7 @@ function select(id){
 function render(){
 ctx.drawImage(tiles, 150, 50, 16, 16, 30, 30, 16, 16);
 ctx.font ="16px Helvetica";
-ctx.fillText(" "+stats.coins, 50, 45);
+ctx.fillText(" "+coins, 50, 45);
 }
 
 function process(){

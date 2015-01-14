@@ -9,6 +9,8 @@ body{
 }
 
 .header{
+  font-size: 100px;
+  text-align: center;
   height: 150px;
   width: 100%;
   border-style: solid;

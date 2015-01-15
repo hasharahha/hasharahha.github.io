@@ -94,8 +94,6 @@
         position: fixed;
         top: 0; right: 0; bottom: 0;
         background:#222;
-        border-top-left-radius:5px;
-        border-bottom-left-radius:5px;
         padding:20px;
       }
       .something-said{

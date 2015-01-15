@@ -90,11 +90,12 @@
       }
       #chat{
         
-        width:300px;
+        width:200px;
         position: fixed;
         top: 0; right: 0; bottom: 0;
         background:#222;
         padding:20px;
+        line-height:40px;
       }
       .something-said{
         color:#fff;

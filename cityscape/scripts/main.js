@@ -12,7 +12,7 @@ tiles.onload =function(){
   loadLayerB();
 };
 var keys =[];
-var coins =10;
+var coins =5;
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] =true;
@@ -27,8 +27,12 @@ window.addEventListener("click", function(e){
   var clickY = e.pageY - world.offsetTop;
   var cx = Math.round(clickX/50) -1;
   var cy = Math.round(clickY/50) -1;
-  
-  
+  if(selector > 0){
+    coins -=1;
+  }
+  layerB[cy][cx] =selector;
+  localStorage.setItem("coins", coins);
+  document.getElementById("currency").innerHTML =coins+" $";
   localStorage.setItem("levelB", JSON.stringify(layerB));
 }, false);
 

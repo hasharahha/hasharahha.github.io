@@ -3,8 +3,21 @@
   <head>
     <title>CityScape: SERVERS</title>
     <link rel="stylesheet" type="text/css" href="http://hasharahha.github.io/cityscape/style/main.css" />
-
-   
+    <style>
+      #type-here{
+        position:fixed;
+        right:0; bottom:0;
+        width:200px;
+        height:50px;
+      }
+      
+      #text-box{
+        width:100%;
+        height:100%;
+        background:#888;
+        line-height:50px;
+      }
+    </style>
   </head>
   <body>
   <div id="game"><
@@ -16,6 +29,9 @@
       <div class="something-said"><span style="color:blue">HASHARAHHA14:</span> Hi there</div>
       <div class="something-said"><span style="color:blue">HASHARAHHA14:</span> And still coding :)</div>
       <div class="something-said"><span style="color: blue">HASHARAHHA14:</span> I just added this today, at 11:40, if yu arent on private browsing the map will save, just a note :)</div>
+    </div>
+    <div id="type-here">
+      <form action="action.php"><input type="text" id="text-box" placeholder="type and press enter"/></form>
     </div>
     <div id="inventory">
       <div class="inventory-tile" style="background-position:0px 0px" onclick="select(0)"></div>

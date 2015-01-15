@@ -155,7 +155,7 @@ function bind(){
   if(keys[39]){
   
   }
-  if(keys[70]){
+  if(keys[5000]){
     document.getElementById("game").webkitRequestFullscreen();
   }
 }

@@ -28,22 +28,6 @@ window.addEventListener("click", function(e){
   var cx = Math.round(clickX/50) -1;
   var cy = Math.round(clickY/50) -1;
   
-    if(selected ==0&&layerB[cy][cx] ==1){
-      coins +=1;
-      layerB[cy][cx] =selected;
-    }
-    if(selected ==0&&layerB[cy][cx] ==4){
-      coins +=2;
-      layerB[cy][cx] =selected;
-    }
-    if(selected ==0&&layerB[cy][cx] ==5){
-      coins +=3;
-      layerB[cy][cx] =selected;
-    }
-    if(selected ==0&&layerB[cy][cx] ==6){
-      coins +=4;
-      layerB[cy][cx] =selected;
-    }
   
   localStorage.setItem("levelB", JSON.stringify(layerB));
 }, false);

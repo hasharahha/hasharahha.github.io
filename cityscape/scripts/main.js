@@ -12,6 +12,7 @@ tiles.onload =function(){
   loadLayerB();
 };
 var keys =[];
+var coins =1000;
 
 window.addEventListener("keydown", function(e){
   keys[e.keyCode] =true;
@@ -26,7 +27,26 @@ window.addEventListener("click", function(e){
   var clickY = e.pageY - world.offsetTop;
   var cx = Math.round(clickX/50) -1;
   var cy = Math.round(clickY/50) -1;
-  layerB[cy][cx] =selected;
+  try{
+    if(selected ==0&&layerB[cy][cx] ==1){
+      coins +=100;
+      layerB[cy][cx] =0;
+    }
+    if(selected ==0&&layerB[cy][cx] ==4){
+      coins +=200;
+      layerB[cy][cx] =0;
+    }
+    if(selected ==0&&layerB[cy][cx] ==5){
+      coins +=300;
+      layerB[cy][cx] =0;
+    }
+    if(selected ==0&&layerB[cy][cx] ==6){
+      coins +=400;
+      layerB[cy][cx] =0;
+    }
+  }catch(e){
+    alert(e);
+  }
   localStorage.setItem("levelB", JSON.stringify(layerB));
 }, false);
 

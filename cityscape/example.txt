@@ -1,1 +1,8 @@
 //an example
+for(scanY =0; scanY < layerB.length; scanY++){
+for(scanX =0; scanX < layerB[scanY].length){
+if(layerB[scanY][scanX] ==whatevertile){
+current[whatervertile] +=1; //object
+}
+}
+}

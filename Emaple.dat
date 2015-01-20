@@ -1,0 +1,36 @@
+this was in js file:
+
+alert("Ajax Compatible");
+window.addEventListener("keyup", function(e){
+if(e.keyCode ==13){
+chat();
+}
+}, false);
+
+
+function chat(){
+alert("Being process");
+var message = document.getElementById("message").value;
+var request = new XMLHttpRequest();
+request.open("GET", "scripts/process/sendmessage.php?name="+user+"&message="+message, false);
+request.send();
+
+
+}
+
+and this was php:
+
+<?php
+
+$message = $_GET['message'];
+$name = $_GET['name'];
+
+$file ="comments.html";
+$com = fopen($file, 'a');
+fwrite($com, "\r\n");
+fwrite($com, "<commentname>$name :</commentname> \r\n");
+fwrite($com, "<comment> $message </comment>");
+fclose($com);
+echo "Message sent";
+
+?>

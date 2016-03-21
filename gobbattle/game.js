@@ -34,5 +34,5 @@ function gameUpdate(){
 }
 setInterval(function(){
  gameUpdate();
-}, 100);
+}, 1);
 console.log("Current version: "+game.version);

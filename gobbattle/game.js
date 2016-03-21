@@ -29,6 +29,7 @@ function Keys(){
 
 
 function gameUpdate(){
+ Keys();
   engine.clearRect(0,0, 1000, 1000);
   engine.fillRect(player.x, player.y, player.height, player.width);
 }

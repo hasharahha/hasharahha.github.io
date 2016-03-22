@@ -1,6 +1,6 @@
-var game = {version:"0.1.2"};
+var game = {version:"0.1.3"};
 var engine = document.getElementById("game").getContext("2d");
-var player = {x:0, y:0, height: 42, width:42, health:100, speed:0.8, spriteX:0, spriteY:0 };
+var player = {x:0, y:0, height: 42, width:42, health:100, speed:0.5, spriteX:0, spriteY:0 };
 var keys =[];
 var player_sprite = new Image();
 player_sprite.src="player.png";

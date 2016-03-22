@@ -1,4 +1,4 @@
-var game = {version:"0.1.0"};
+var game = {version:"0.1.1"};
 var engine = document.getElementById("game").getContext("2d");
 var player = {x:0, y:0, height: 42, width:42, health:100, speed:10, spriteX:0, spriteY:0 };
 var keys =[];
@@ -37,7 +37,7 @@ function gameUpdate(){
 }
 setInterval(function(){
  gameUpdate();
-}, 50);
+}, 1);
 
 setInterval(function(){
  Keys();

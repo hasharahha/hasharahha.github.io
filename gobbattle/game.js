@@ -1,4 +1,4 @@
-var game = {version:"0.1.9", tick:1000/30};
+var game = {version:"0.2.1", tick:1000/30};
 var engine = document.getElementById("game").getContext("2d");
 var player = {x:0, y:0, height: 42, width:42, health:100, speed:1.2, spriteX:0, spriteY:0 };
 var keys =[];
@@ -31,6 +31,6 @@ setInterval(function(){
 
 setInterval(function(){
  Keys();
-}, 1);
+}, 50);
 
 console.log("Current version: "+game.version);

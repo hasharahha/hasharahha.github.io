@@ -1,4 +1,4 @@
-var game = {version:"0.1.5"};
+var game = {version:"0.1.6", tick:100};
 var engine = document.getElementById("game").getContext("2d");
 var player = {x:0, y:0, height: 42, width:42, health:100, speed:1.5, spriteX:0, spriteY:0 };
 var keys =[];
@@ -15,8 +15,8 @@ window.addEventListener('keyup', function(e){
 function Keys(){ // GOT TO LOVE THEM KEYS ^^ 
  if(keys[38]){ player.y -=player.speed; player.spriteY=0;}
  if(keys[40]){ player.y +=player.speed; player.spriteY=84;}
- if(keys[37]){ player.x -=player.speed; player.spriteY=148;}
- if(keys[39]){ player.x +=player.speed; player.spriteY=48;}
+ if(keys[37]){ player.x -=player.speed; player.spriteY=126;}
+ if(keys[39]){ player.x +=player.speed; player.spriteY=42;}
 }
 
 
@@ -28,7 +28,7 @@ function gameUpdate(){
 }
 setInterval(function(){
  gameUpdate();
-}, 10);
+}, game.tick);
 
 
 console.log("Current version: "+game.version);

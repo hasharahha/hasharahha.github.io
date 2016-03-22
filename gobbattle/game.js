@@ -1,7 +1,10 @@
 var game = {version:"0.0.4"};
 var engine = document.getElementById("game").getContext("2d");
-var player = {x:0, y:0, height: 50, width:50, health:100, speed:10 };
+var player = {x:0, y:0, height: 42, width:42, health:100, speed:10, spriteX:0, spriteY:0 };
 var keys =[];
+var player_sprite = new Image();
+player_sprite.src="player.png";
+player_sprite.onload = function(){ this.loaded=true; };
 window.addEventListener('keydown', function(e){
  keys[e.keyCode]=true;
  Keys();
@@ -31,7 +34,7 @@ function Keys(){
 function gameUpdate(){
  Keys();
   engine.clearRect(0,0, 1000, 1000);
-  engine.fillRect(player.x, player.y, player.height, player.width);
+  engine.drawImage(player_sprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
 }
 setInterval(function(){
  gameUpdate();

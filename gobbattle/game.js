@@ -1,4 +1,4 @@
-var game = {version:"0.1.4"};
+var game = {version:"0.1.5"};
 var engine = document.getElementById("game").getContext("2d");
 var player = {x:0, y:0, height: 42, width:42, health:100, speed:1.5, spriteX:0, spriteY:0 };
 var keys =[];
@@ -13,10 +13,10 @@ window.addEventListener('keyup', function(e){
 }, false);
 
 function Keys(){ // GOT TO LOVE THEM KEYS ^^ 
- if(keys[38]){ player.y -=player.speed; player.spriteX=0;}
- if(keys[40]){ player.y +=player.speed; player.spriteX=84;}
- if(keys[37]){ player.x -=player.speed; player.spriteX=148;}
- if(keys[39]){ player.x +=player.speed; player.spriteX=48;}
+ if(keys[38]){ player.y -=player.speed; player.spriteY=0;}
+ if(keys[40]){ player.y +=player.speed; player.spriteY=84;}
+ if(keys[37]){ player.x -=player.speed; player.spriteY=148;}
+ if(keys[39]){ player.x +=player.speed; player.spriteY=48;}
 }
 
 

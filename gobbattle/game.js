@@ -1,4 +1,4 @@
-var game = {version:"0.0.4"};
+var game = {version:"0.1.0"};
 var engine = document.getElementById("game").getContext("2d");
 var player = {x:0, y:0, height: 42, width:42, health:100, speed:10, spriteX:0, spriteY:0 };
 var keys =[];
@@ -32,11 +32,14 @@ function Keys(){
 
 
 function gameUpdate(){
- Keys();
   engine.clearRect(0,0, 1000, 1000);
   engine.drawImage(player_sprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
 }
 setInterval(function(){
  gameUpdate();
-}, 1);
+}, 50);
+
+setInterval(function(){
+ Keys();
+}, 100);
 console.log("Current version: "+game.version);

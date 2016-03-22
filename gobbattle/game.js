@@ -1,6 +1,6 @@
-var game = {version:"0.1.7", tick:100};
+var game = {version:"0.1.8", tick:1000/30};
 var engine = document.getElementById("game").getContext("2d");
-var player = {x:0, y:0, height: 42, width:42, health:100, speed:6, spriteX:0, spriteY:0 };
+var player = {x:0, y:0, height: 42, width:42, health:100, speed:1.2, spriteX:0, spriteY:0 };
 var keys =[];
 var player_sprite = new Image();
 player_sprite.src="player.png";
@@ -21,14 +21,16 @@ function Keys(){ // GOT TO LOVE THEM KEYS ^^
 
 
 
-function gameUpdate(){
+function renderUpdate(){
   engine.clearRect(0,0, 1000, 1000);
   engine.drawImage(player_sprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
-  Keys();
 }
 setInterval(function(){
  gameUpdate();
 }, game.tick);
 
+setInterval(function(){
+ Keys();
+}, 1);
 
 console.log("Current version: "+game.version);

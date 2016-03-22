@@ -1,4 +1,4 @@
-var game = {version:"0.2.2", tick:1000/30};
+var game = {version:"0.2.3", tick:1000/30};
 var engine = document.getElementById("game").getContext("2d");
 var player = {x:0, y:0, height: 42, width:42, health:100, speed:5, spriteX:0, spriteY:0 };
 var keys =[];
@@ -25,12 +25,8 @@ function renderUpdate(){
   engine.clearRect(0,0, 1000, 1000);
   engine.drawImage(player_sprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, player.width, player.height);
 }
-setInterval(function(){
- renderUpdate();
-}, game.tick);
 
-setInterval(function(){
- Keys();
-}, 50);
+window.requestAnimationFrame(renderUpdate);
+setInterval(function(){  Keys(); }, 50);
 
 console.log("Current version: "+game.version);

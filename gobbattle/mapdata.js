@@ -5,7 +5,7 @@ Just your friendly neighborhood map :D
 var map ={
   image: "tileset.png",
   tile_id:{
-    0:{name:"grass",walk:true,x:0,y:0},
+    0:{name:"grass",walk:true,x:224,y:0},
     1:{name:"floor",walk:false,x:0,y:416}
   },
   data:[

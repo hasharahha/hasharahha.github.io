@@ -1,4 +1,4 @@
-var game = {version:"1.0.1", tick:50};
+var game = {version:"1.0.2", tick:50};
 var engine = document.getElementById("game").getContext("2d");
 var renderMap = document.getElementById("map").getContext("2d");
 var player = {x:0, y:0, height: 42, width:42, health:100, speed:5, spriteX:0, spriteY:0 };
@@ -16,14 +16,7 @@ function Keys(){ // GOT TO LOVE THEM KEYS ^^
 }
 
 function renderUpdate(){
- if(tileset.loaded){
-  for(var y=0; y<map.data.length; y++){
-   for(var x=0; x<map.data[y].length; x++){
-    renderMap.drawImage(tileset, map.tile_id[map.data[y][x]].x, map.tile_id[map.data[y][x]].y, 32, 32, x*32, y*32, 32, 32);
-    tileset.loaded=false;
-   }
-  }
- }
+ if(tileset.loaded){ for(var y=0; y<map.data.length; y++){ for(var x=0; x<map.data[y].length; x++){ renderMap.drawImage(tileset, map.tile_id[map.data[y][x]].x, map.tile_id[map.data[y][x]].y, 32, 32, x*32, y*32, 32, 32); tileset.loaded=false; } } }
  
   engine.clearRect(0,0, 1000, 1000);
   engine.drawImage(player_sprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32,32);

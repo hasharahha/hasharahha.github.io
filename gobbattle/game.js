@@ -19,10 +19,10 @@ player.collisionY = Math.round(player.y/32);
  if(keys[40]&&map.tile_id[map.data[player.collisionY+1][player.collisionX]].walk){ player.y +=player.speed; player.spriteY=84;}
  if(keys[37]&&map.tile_id[map.data[player.collisionY][player.collisionX-1]].walk){ player.x -=player.speed; player.spriteY=126;}
  if(keys[39]&&map.tile_id[map.data[player.collisionY][player.collisionX+1]].walk){ player.x +=player.speed; player.spriteY=42;}
- if(keys[38]&&!map.tile_id[map.data[player.collisionY-1][player.collisionX]].walk){ player.y +=0.1; player.spriteY=0;}
- if(keys[40]&&!map.tile_id[map.data[player.collisionY+1][player.collisionX]].walk){ player.y -=0.1; player.spriteY=84;}
- if(keys[37]&&!map.tile_id[map.data[player.collisionY][player.collisionX-1]].walk){ player.x +=0.1; player.spriteY=126;}
- if(keys[39]&&!map.tile_id[map.data[player.collisionY][player.collisionX+1]].walk){ player.x -=0.1; player.spriteY=42;}
+ if(keys[38]&&!map.tile_id[map.data[player.collisionY-1][player.collisionX]].walk){ player.y -=0.2; player.spriteY=0;}
+ if(keys[40]&&!map.tile_id[map.data[player.collisionY+1][player.collisionX]].walk){ player.y +=0.2; player.spriteY=84;}
+ if(keys[37]&&!map.tile_id[map.data[player.collisionY][player.collisionX-1]].walk){ player.x -=0.2; player.spriteY=126;}
+ if(keys[39]&&!map.tile_id[map.data[player.collisionY][player.collisionX+1]].walk){ player.x +=0.2; player.spriteY=42;}
 }
 
 function renderUpdate(){

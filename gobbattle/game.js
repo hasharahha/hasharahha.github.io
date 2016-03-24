@@ -10,8 +10,8 @@ window.addEventListener('keyup', function(e){ keys[e.keyCode]=false; }, false);
 
 function Keys(){ // GOT TO LOVE THEM KEYS ^^
 
-player.collisionX = player.x+5;
-player.collisionY = player.y-5;
+player.collisionX = player.x+8;
+player.collisionY = player.y-8;
 player.collisionX = Math.round(player.collisionX/32);
 player.collisionY = Math.round(player.collisionY/32);
  if(keys[38]&&map.tile_id[map.data[player.collisionY-1][player.collisionX]].walk){ player.y -=player.speed; player.spriteY=0;}
@@ -25,7 +25,7 @@ function renderUpdate(){
  
   engine.clearRect(0,0, 1000, 1000);
   engine.drawImage(player_sprite, player.spriteX, player.spriteY, player.width, player.height, player.x, player.y, 32,32);
-  engine.fillRect(player.x+5, player.y+5, 17, 17);
+  engine.fillRect(player.x+8, player.y-8, 5, 5);
  window.requestAnimationFrame(renderUpdate);
 }
 

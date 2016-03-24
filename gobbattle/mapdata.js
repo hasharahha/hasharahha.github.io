@@ -6,7 +6,7 @@ var map ={
   image: "tileset.png",
   tile_id:{
     0:{name:"grass",walk:true,x:192,y:0},
-    1:{name:"brick",walk:false,x:0,y:416}
+    1:{name:"brick",walk:false,x:0,y:416},
     2:{name:"brick2",walk:false,x:32,y:416}
   },
   data:[

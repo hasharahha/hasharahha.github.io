@@ -18,7 +18,7 @@ function Keys(){ // GOT TO LOVE THEM KEYS ^^
 function renderUpdate(){
  if(tileset.loaded){
   for(var y=0; y<map.data.length; y++){
-   for(var x=0; x<map.data.y.length; x++){
+   for(var x=0; x<map.data[y].length; x++){
     renderMap.drawImage(tileset, map.tile_id[x].x, map.tile_id[x].y, 32, 32, x*32, y*32, 32, 32);
     tileset.loaded=false;
    }

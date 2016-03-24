@@ -13,17 +13,16 @@ function Keys(){ // GOT TO LOVE THEM KEYS ^^
 player.collisionX = Math.round(player.x/32);
 player.collisionY = Math.round(player.y/32);
 
-console.log("Player location: "+player.collisionX+" "+player.collisionY);
 
 
  if(keys[38]&&map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.y -=player.speed; player.spriteY=0;}
  if(keys[40]&&map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.y +=player.speed; player.spriteY=84;}
  if(keys[37]&&map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.x -=player.speed; player.spriteY=126;}
  if(keys[39]&&map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.x +=player.speed; player.spriteY=42;}
- if(keys[38]&&!map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.y +=player.speed; player.spriteY=0;}
- if(keys[40]&&!map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.y -=player.speed; player.spriteY=84;}
- if(keys[37]&&!map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.x +=player.speed; player.spriteY=126;}
- if(keys[39]&&!map.tile_id[map.data[player.collisionY][player.collisionX]].walk){ player.x -=player.speed; player.spriteY=42;}
+ if(keys[38]&&!map.tile_id[map.data[player.collisionY-1][player.collisionX]].walk){ player.y +=player.speed; player.spriteY=0;}
+ if(keys[40]&&!map.tile_id[map.data[player.collisionY+1][player.collisionX]].walk){ player.y -=player.speed; player.spriteY=84;}
+ if(keys[37]&&!map.tile_id[map.data[player.collisionY][player.collisionX-1]].walk){ player.x +=player.speed; player.spriteY=126;}
+ if(keys[39]&&!map.tile_id[map.data[player.collisionY][player.collisionX+1]].walk){ player.x -=player.speed; player.spriteY=42;}
 }
 
 function renderUpdate(){

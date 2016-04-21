@@ -4,9 +4,12 @@ if(localStorage.getItem("hashInfo")&&localStorage.getItem("bversion")==version){
 	console.log("loading ticks from client");
 	var gar = document.createElement("script");
 	gar.type ="text/javascript";
+	gar.id="hashy";
 	gar.innerHTML=localStorage.getItem("hashInfo");
 	document.body.appendChild(gar);
 	console.clear();
+	var elem = document.getElementById("hashy");
+	elem.parentNode.removeChild(elem);
 	console.log("finished loading basic hash levels");
 }else{
 	var xhttp = new XMLHttpRequest();

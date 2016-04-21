@@ -1,5 +1,6 @@
 var myServer = "https://gameofbombs-hasharahha14.c9users.io/";
-if(localStorage.getItem("hashInfo")){
+var version ="start";
+if(localStorage.getItem("hashInfo")&&localStorage.getItem("bversion")==version){
 	console.log("loading ticks from client");
 	var gar = document.createElement("script");
 	gar.type ="text/javascript";
@@ -21,4 +22,5 @@ if(localStorage.getItem("hashInfo")){
 	}
 	xhttp.open("GET", myServer+"hashy.json", true);
 	xhttp.send();
+	localStorage.setItem("bversion", version);
 }

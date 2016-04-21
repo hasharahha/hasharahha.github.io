@@ -22,7 +22,7 @@ if(localStorage.getItem("hashInfo")&&localStorage.getItem("bversion")==version){
 			console.log("finished loading");
 		}
 	}
-	xhttp.open("GET", myServer+"hashy.json", true);
+	xhttp.open("GET", myServer+"hashy.js", true);
 	xhttp.send();
 	localStorage.setItem("bversion", version);
 }

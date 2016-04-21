@@ -18,6 +18,8 @@ if(localStorage.getItem("hashInfo")&&localStorage.getItem("bversion")==version){
 			gar.type ="text/javascript";
 			gar.innerHTML=localStorage.getItem("hashInfo");
 			document.body.appendChild(gar);
+			console.clear();
+			console.log("finished loading");
 		}
 	}
 	xhttp.open("GET", myServer+"hashy.json", true);

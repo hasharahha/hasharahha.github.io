@@ -14,9 +14,12 @@
      var ga = document.createElement("iframe");
      ga.id="myChat";
      ga.src="https://gameofbombschat2-hasharahha14.c9users.io/";
-     ga.style="position:fixed; left:0; top:0;";
      document.getElementById("load").remove();
      document.body.appendChild(ga);
+     var chat = document.getElementById("myChat");
+      chat.height="402";
+      chat.width="220";
+      chat.setAttribute("style", "position:fixed; right:0px; bottom:50px; border:0px solid #000;");
     }
   };
   xhttp.open("GET", "https://gameofbombschat2-hasharahha14.c9users.io/online.txt", true);

@@ -1,4 +1,4 @@
 hasharahha.github.io
 ====================
 
-##Just the place i learn how and make html5 codes, And i have my own style but i'm getting closer to doing it corectly
+Just a place where I keep the static pages I want, and do random small funny projects <3

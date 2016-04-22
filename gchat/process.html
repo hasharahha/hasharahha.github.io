@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <h4>
+        processing....
+    </h4>
+    <h5 id="timer">???</h5>
+    <script src="query.js" type="text/javascript"></script>
+    <script>
+    /* global QueryString*/
+    var time=0;
+    var countdown=0;
+        if(QueryString.time){
+        countdown=QueryString.time;
+        setInterval(function(){
+            countdown--;
+            if(countdown<=0){
+                window.location='https://gameofbombschat2-hasharahha14.c9users.io/?reload=true';
+            }
+            document.getElementById("timer").innerHTML='Connecting in.. '+JSON.stringify(countdown);
+        }, 1000);
+        }
+    </script>
+</html>

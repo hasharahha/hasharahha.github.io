@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<title> hash.agar.io </title>
+<title>vhash.agar.io </title>
 <style>
   myChat {
     margin: 0; padding: 0; height: 100%; overflow: hidden;
@@ -9,9 +9,7 @@
 <h3 id="load">Server is loading<br>
 <b>if it takes to long to load server is most likely down</b></h3>
 <script>
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4 && xhttp.status == 200) {
+
      var ga = document.createElement("iframe");
      ga.id="myChat";
      ga.src="https://agartest-hasharahha14.c9users.io/";
@@ -19,9 +17,6 @@
      document.body.appendChild(ga);
      var chat = document.getElementById("myChat");
       chat.setAttribute("style", "position:fixed; left:0px; top:0px; border:0px solid #000;");
-    }
-  };
-  xhttp.open("GET", "https://agartest-hasharahha14.c9users.io/", true);
-  xhttp.send();
+
 </script>
 </body>

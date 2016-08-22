@@ -19,7 +19,7 @@ if(localStorage.getItem("pinkInfo")&&localStorage.getItem("cversion")==version){
 			console.log("pink atlas loading");
 			var gar = document.createElement("script");
 			gar.type ="text/javascript";
-			gar.id="hashy";
+			gar.id="hashyP";
 			gar.innerHTML=localStorage.getItem("pinkInfo");
 			document.body.appendChild(gar);
 			var elem = document.getElementById("hashyP");

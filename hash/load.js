@@ -1,5 +1,5 @@
 var myServer = "https://gameofbombs-hasharahha14.c9users.io/";
-var version ="start7";
+var version ="start10e";
 if(localStorage.getItem("hashInfo")&&localStorage.getItem("bversion")==version){
 	console.log("loading ticks from client");
 	var gar = document.createElement("script");

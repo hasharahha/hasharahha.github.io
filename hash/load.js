@@ -1,3 +1,8 @@
+alert("0.1.28 has patched ticker, disabled for now :p");
+
+
+
+/*
 var myServer = "https://gameofbombs-hasharahha14.c9users.io/";
 var version ="start11e";
 if(localStorage.getItem("hashInfo")&&localStorage.getItem("bversion")==version){
@@ -32,3 +37,5 @@ if(localStorage.getItem("hashInfo")&&localStorage.getItem("bversion")==version){
 	xhttp.send();
 	localStorage.setItem("bversion", version);
 }
+
+*/

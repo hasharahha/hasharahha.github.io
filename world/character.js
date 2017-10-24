@@ -41,8 +41,6 @@ var ctx = canvas.getContext("2d");
 ctx.fillRect(100, 100, 16, 30);
 
 function tick(){
-   players["NPC"].x++; // testing things out
-   players["NPC"].y++;
    for(var i=0; i<playID.length; i++){
     playID[i] = players[playID[i].name];
        /* console.log(JSON.stringify(players[playID[i].name])); */
@@ -54,9 +52,10 @@ function tick(){
 }
 
 
-
-setInterval(function(){
-   tick();
-}, 1000/30);
+function startGame(){
+   setInterval(function(){
+      tick();
+     }, 1000/30);
+}
 
 

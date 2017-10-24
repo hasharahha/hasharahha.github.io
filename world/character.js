@@ -37,8 +37,8 @@ console.log(JSON.stringify(players));
 
 // render stuff
 var canvas = document.getElementById("world");
-var world = canvas.getContext("2d");
-world.fillRect(100, 100, 16, 30);
+var ctx = canvas.getContext("2d");
+ctx.fillRect(100, 100, 16, 30);
 
 function tick(){
    ctx.clearRect(0, 0, 1000, 1000);

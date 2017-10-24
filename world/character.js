@@ -45,7 +45,7 @@ function tick(){
    players["NPC"].y++;
    for(var i=0; i<playID.length; i++){
     playID[i] = players[playID[i].name];
-      console.log(JSON.stringify(players[playID[i].name]));
+       /* console.log(JSON.stringify(players[playID[i].name])); */
    }
    ctx.clearRect(0, 0, 1000, 1000);
  for(var i=0; i<playID.length; i++){

@@ -1,6 +1,8 @@
-var placeholder; // logic for character creation
+var placeholder; // logic for character creation 
 var players ={};
 function createPlayer(name, age, species){
+   this.x = Math.floor(Math.random()*800);
+   this.y = Math.floor(Math.random()*400);
    this.name = name;
    this.luck = Math.floor(Math.random()*10);
    this.age = age;

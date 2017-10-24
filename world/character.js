@@ -40,3 +40,10 @@ var canvas = document.getElementById("world");
 var world = canvas.getContext("2d");
 world.fillRect(100, 100, 16, 30);
 
+function tick(){
+   ctx.clearRect(0, 0, 1000, 1000);
+ for(var i=0; i<=playID.length; i++){
+  ctx.fillRect(playID[i].x, playID[i].y, playID[i].width, playID[i].height);  
+ }
+}
+

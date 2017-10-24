@@ -38,5 +38,5 @@ console.log(JSON.stringify(players));
 // render stuff
 var canvas = document.getElementById("world");
 var world = canvas.getContext("2d");
-world.fillRect(100, 100);
+world.fillRect(100, 100, 16, 30);
 

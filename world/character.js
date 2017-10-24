@@ -1,4 +1,5 @@
 var placeholder; // logic for character creation
+var players ={};
 function createPlayer(name, age, species){
    this.name = name;
    this.luck = Math.floor(Math.random()*10);
@@ -23,3 +24,5 @@ function createPlayer(name, age, species){
   this.mana+=Math.round(luck);
 }
 
+players["Test"] = new createPlayer("Test", 17, "demihuman");
+console.log(JSON.stringify(players));

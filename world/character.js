@@ -1,7 +1,6 @@
 var placeholder; // logic for character creation
-function createPlayer(name, health, age, species){
+function createPlayer(name, age, species){
    this.name = name;
-   this.health = health;
    this.luck = Math.floor(Math.random()*10);
    this.age = age;
       if(this.species){
@@ -11,10 +10,16 @@ function createPlayer(name, health, age, species){
    }
   if(species=="human"){
     this.mana=0;
+     this.health=150;
   }else if(species=="elve"){
     this.mana=500;
-  }else{
+    this.health=100;
+  }else if(this.species=="demihuman"){
+      this.mana=100;
+      this.health=300;
+    }else{
    this.mana=luck; 
   }
   this.mana+=Math.round(luck);
 }
+

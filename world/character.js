@@ -54,7 +54,7 @@ function tick(){
  }
 }
 
-setTimeout(function(){
+setInterval(function(){
    tick();
 }, 1000/30);
 

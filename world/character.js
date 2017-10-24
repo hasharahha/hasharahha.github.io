@@ -25,8 +25,8 @@ function createPlayer(name, age, species){
    this.mana=this.luck; 
   }
   this.mana+=Math.round(this.luck);
-   playID[playID.length] = this;
    this.id = playID.length;
+   playID[playID.length] = this;
 }
 
 players["Test"] = new createPlayer("Test", 17, "demihuman");

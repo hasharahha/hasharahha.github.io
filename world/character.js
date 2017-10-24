@@ -53,10 +53,7 @@ function tick(){
  }
 }
 
-function randomPlayer(rnd){ //temp
-   placeholder = ["joe", "bob", "nat", "cat", "flew"];
-   var players[placeholders[rnd]] = new createPlayer(placeholders[rnd], 10);
-}
+
 
 setInterval(function(){
    tick();

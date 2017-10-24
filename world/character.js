@@ -19,7 +19,7 @@ function createPlayer(name, age, species){
       this.mana=100;
       this.health=300;
     }else{
-   this.mana=luck; 
+   this.mana=this.luck; 
   }
   this.mana+=Math.round(luck);
 }

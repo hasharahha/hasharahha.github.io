@@ -31,7 +31,7 @@ function createPlayer(name, age, species){
    playID[playID.length] = this;
 }
 
-players["Test"] = new createPlayer("Test", 17, "demihuman");
+players["NPC"] = new createPlayer("NPC", 17, "demihuman");
 console.log(JSON.stringify(players));
 
 
@@ -41,9 +41,16 @@ var ctx = canvas.getContext("2d");
 ctx.fillRect(100, 100, 16, 30);
 
 function tick(){
+   players["NPC"].x++; // testing things out
+   players["NPC"].y++;
    ctx.clearRect(0, 0, 1000, 1000);
  for(var i=0; i<=playID.length; i++){
   ctx.fillRect(playID[i].x, playID[i].y, playID[i].width, playID[i].height);  
  }
 }
+
+setTimeout(function(){
+   tick();
+}, 1000/30);
+
 

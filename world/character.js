@@ -1,4 +1,4 @@
-var placeholder; // logic for character creation 
+var placeholder; var elapsedTime; // logic for character creation 
 var players ={};
 var playID = [];
 function createPlayer(name, age, species){
@@ -32,6 +32,7 @@ function createPlayer(name, age, species){
 }
 
 players["NPC"] = new createPlayer("NPC", 17, "demihuman");
+p-layers["NPC2"] = new createPlayer("NPC2", 12, "elve");
 console.log(JSON.stringify(players));
 
 
@@ -50,6 +51,9 @@ function tick(){
   ctx.fillRect(playID[i].x, playID[i].y, playID[i].width, playID[i].height);  
  }
 }
+
+
+
 
 
 function startGame(){

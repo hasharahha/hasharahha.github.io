@@ -1,6 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <title> World </title>
-<canvas id="world" height="800" width="1200" style="border: 1px solid black;"></canvas>
+  <div id="menu">
+    <h3> World <h3>
+      <h4 onclick="Start()"> Play </h4>
+  </div>
+<canvas id="world" height="800" width="1200" style="border: 1px solid black; display:none;"></canvas>
 <script type="text/javascript" src="/world/character.js"></script>
+      <script>
+        function Start(){
+         document.getElementById("menu").setAttribute("style").display="none"; 
+         document.getElementById("world").setAttribute("style").display="block"; 
+        }
+      </script>
 </html>

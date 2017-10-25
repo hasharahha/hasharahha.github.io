@@ -1,14 +1,16 @@
 #menu{
+position: absolute;
 color: #fff;
  background-color: #666;
 font-weight: bold;
-width: 500px
+width: 100%;
 padding: 40px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px; }
-border: 1px solid black;
-height: 500px;
-margin: 0;
+border: 25px solid black;
+text-align: center;
+left: 0;
+top: 50%
 }
 
 

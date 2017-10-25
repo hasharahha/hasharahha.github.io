@@ -5,7 +5,15 @@ position: absolute
 top: 0; left: 0: right: 0; down: 0;
 }
 #menu{
+color: #fff;
+ background-color: #666;
+font-weight: bold;
+padding: 10px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px; }
 border: 1px solid black;
+  height: 500px;
+  width: 500px;
 margin: auto
 position: absolute
 top: 0; left: 0: right: 0; down: 0;

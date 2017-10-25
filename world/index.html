@@ -3,15 +3,9 @@
 <title> World </title>
   <div id="menu" style="text-align: center; font: " >
     <h3> Worlds <h3>
-      <button id="button" onlick="Start();">Begin!</button>
+      <button id="button" onlick="document.getElementById("menu").style='hidden';
+         document.getElementById("world").style='block';">Begin!</button>
   </div>
 <canvas id="world" height="800" width="1200" style="border: 1px solid black; display:none;"></canvas>
 <script type="text/javascript" src="/world/character.js"></script>
-      <script>
-        function Start(){
-         document.getElementById("menu").style='hidden';
-         document.getElementById("world").style='block';
-        }
-       
-      </script>
 </html>

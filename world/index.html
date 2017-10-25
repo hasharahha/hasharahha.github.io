@@ -1,16 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <title> World </title>
-  <div id="menu">
-    <h3> World <h3>
-      <button onlick="Start();">Begin!</button>
+  <div id="menu" style="text-align: center; font:  >
+    <h3> Worlds <h3>
+      <button id="button" onlick="Start();">Begin!</button>
   </div>
 <canvas id="world" height="800" width="1200" style="border: 1px solid black; display:none;"></canvas>
 <script type="text/javascript" src="/world/character.js"></script>
       <script>
         function Start(){
-         document.getElementById("menu").style='none';
+         document.getElementById("menu").style='hidden';
          document.getElementById("world").style='block';
         }
+        
+        document.getElementById("button").onclick=Start();
       </script>
 </html>

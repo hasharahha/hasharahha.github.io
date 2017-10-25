@@ -3,14 +3,14 @@
 <title> World </title>
   <div id="menu">
     <h3> World <h3>
-      <h4 onclick="Start()"> Play </h4>
+      <button onlick="Start();">Begin!</button>
   </div>
 <canvas id="world" height="800" width="1200" style="border: 1px solid black; display:none;"></canvas>
 <script type="text/javascript" src="/world/character.js"></script>
       <script>
         function Start(){
-         document.getElementById("menu").setAttribute("style").display="none"; 
-         document.getElementById("world").setAttribute("style").display="block"; 
+         document.getElementById("menu").style='none';
+         document.getElementById("world").style='block';
         }
       </script>
 </html>

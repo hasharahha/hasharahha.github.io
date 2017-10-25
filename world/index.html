@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <title> World </title>
-  <div id="menu" style="text-align: center; padding: 70px 0px; " >
+  <link rel="stylesheet" type="text/css" href="/world/layout.css">
+  <div id="menu" class="menu">
     <h3> Worlds <h3>
-      <button id="button" onlick="document.getElementById("menu").style='hidden';
-         document.getElementById("world").style='block';">Begin!</button>
+      <button id="button" class="button" >Begin!</button>
   </div>
-<canvas id="world" height="800" width="1200" style="border: 1px solid black; display:none;"></canvas>
+      <div class="game">
+        <canvas id="world" height="800" width="1200" style="border: 1px solid black; display:none;"></canvas>
+      </div>
 <script type="text/javascript" src="/world/character.js"></script>
 </html>

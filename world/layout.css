@@ -1,4 +1,11 @@
 .menu{
+border: 1px solid black;
+margin: auto
+position: absolute
+top: 0; left: 0: right: 0; down: 0;
+}
+#menu{
+border: 1px solid black;
 margin: auto
 position: absolute
 top: 0; left: 0: right: 0; down: 0;

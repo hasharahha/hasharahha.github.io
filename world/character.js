@@ -32,7 +32,7 @@ function createPlayer(name, age, species){
 }
 
 players["NPC"] = new createPlayer("NPC", 17, "demihuman");
-p-layers["NPC2"] = new createPlayer("NPC2", 12, "elve");
+players["NPC2"] = new createPlayer("NPC2", 12, "elve");
 console.log(JSON.stringify(players));
 
 

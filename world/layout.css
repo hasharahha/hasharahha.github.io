@@ -40,3 +40,10 @@ background-color: blueviolet;
 height: 75vh;
 background-color: black;
 }
+
+[hashtag="player"]{
+height: 25vh;
+width: 25vh;
+text-align: center;
+border: 1px; solid; grey;
+}

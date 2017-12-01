@@ -37,13 +37,13 @@ background-color: blueviolet;
 }
 
 [hashtag="game"]{
-height: 75vh;
+height: 72.5vh;
 background-color: black;
 }
 
-canvas{
-height: 25vh;
-width: 25vh;
-text-align: center;
-border: 1px; solid; grey;
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 850px;
 }

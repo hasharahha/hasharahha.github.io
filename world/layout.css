@@ -1,10 +1,24 @@
-.menu{
-	position: relative;
-	width: 700vw;
-	height: 800vh;
+body{
+	margin: 0;
+	background-color: black;
 }
-.playbutton{
-	position: absolute;
-	left: 50%
-	top: 50%;
+
+*{
+	boxing-size: border-box;
+	color: white;
+	border: 2px solid white;
+}
+
+.bit-1 { width: 12.5% }
+.bit-2 { width: 25% }
+.bit-3 { width: 37.5% }
+.bit-4 { width: 50% }
+.bit-5 { width: 62.5% }
+.bit-6 { width: 75% }
+.bit-7 { width: 87.5% }
+.bit-8 { width: 100% }
+
+[class*="bit-"]{
+	float: left;
+	padding: 10px;
 }

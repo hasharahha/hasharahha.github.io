@@ -28,9 +28,15 @@ h2{
 }
 
 [hashtag="title"]{
-text-align: center;	
+text-align: center;
 }
 
 [hashtag="buttons"]{
-text-align: center;	
+text-align: center;
+background-color: blueviolet;
+}
+
+[hashtag="game"]{
+height: 200em;
+background-color: black;
 }

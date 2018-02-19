@@ -5,7 +5,7 @@ body{
 
 *{
 	boxing-size: border-box;
-	color: white;
+	color: #2ABDF7;
 }
 
 h2{
@@ -33,12 +33,12 @@ text-align: center;
 
 [hashtag="buttons"]{
 text-align: center;
-background-color: blueviolet;
+background-color: #27d3e3;
 }
 
 [hashtag="game"]{
 height: 72.5vh;
-background-color: black;
+background-color: #2ae6f7;
 }
 
 canvas {
@@ -46,5 +46,5 @@ canvas {
     margin: 2.5vh auto auto auto;
     display: block;
     width: 850px;
-    background-color: white;
+    background-color: #2ae6f7;
 }

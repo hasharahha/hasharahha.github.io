@@ -1,5 +1,13 @@
+body{
+  background-color: #e1c4ff
+}
+
 #header{
   background-color: #cc99ff;
   padding: 30px;
   text-align: center;
+}
+h1{
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
 }

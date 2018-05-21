@@ -30,12 +30,13 @@ a:link{
 
 li{
   float: left;
+  background-color: #cc99ff;
 }
 li a {
    text-decoration: none;
    color: white;
    text-align: center;
-   padding: 20px;
+   padding: 30px;
    display: block;
 }
 
